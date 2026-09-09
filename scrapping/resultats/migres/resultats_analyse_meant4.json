@@ -1,0 +1,57 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le prestataire a systématiquement honoré les échéances fixées, y compris dans des contextes de contraintes temporelles importantes"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les échanges ont été transparents et efficaces tout au long des projets"
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les rendus ont dépassé les attentes et ont généré des résultats mesurables significatifs"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe a démontré une capacité remarquable à répondre rapidement aux demandes et à s'ajuster aux changements"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les compétences techniques ont permis de résoudre des défis complexes et d'aligner les solutions sur les besoins stratégiques"
+      }
+    ],
+    "points_forts": [
+      "Forte réactivité et agilité",
+      "Respect systématique des délais",
+      "Expertise technique solide",
+      "Approche centrée client",
+      "Communication claire et transparente",
+      "Résolution de problèmes complexes",
+      "Flexibilité et adaptation aux besoins",
+      "Résultats mesurables et significatifs"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Méthodologie agile et approche itérative efficace",
+      "Équipe de petite taille mais très performante",
+      "Capacité à créer des solutions évolutives et dynamiques"
+    ],
+    "concurrent": "Meant4.com",
+    "service_type": "web",
+    "nb_avis_analyses": 5
+  }
+]

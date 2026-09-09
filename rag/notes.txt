@@ -1,0 +1,80 @@
+========================================
+NOTES — PIPELINE RAG (rag-service/)
+========================================
+
+--- INSTALLATION (une seule fois) ---
+
+cd rag-service
+python -m venv .venv
+.venv\Scripts\activate          (Windows)
+pip install -r requirements.txt
+
+Remplir le fichier .env (voir .env.example) :
+  SUPABASE_URL=
+  SUPABASE_SERVICE_KEY=
+  GEMINI_API_KEY=
+  LLM_PROVIDER=gemini
+  ANTHROPIC_API_KEY=
+
+
+--- SQL À EXÉCUTER DANS SUPABASE (une seule fois) ---
+
+1. Corriger la colonne embedding (dimension 768, pas 1536) :
+   alter table etat_marche drop column embedding;
+   alter table etat_marche add column embedding vector(768);
+
+2. Créer la fonction de recherche vectorielle :
+   -> exécuter tout le contenu de sql/match_competitors.sql
+
+
+--- GÉNÉRER LES EMBEDDINGS ---
+
+(à relancer après chaque nouveau concurrent ou nouvelle analyse de sentiment
+ migrée — ne traite que les lignes avec embedding = null)
+
+python scripts/embed_new_entries.py
+
+
+--- TESTER LE RAG ---
+
+python scripts/test_rag.py "ta question ici"
+
+Exemples :
+python scripts/test_rag.py "Quel est le prix moyen d'une application mobile chez nos concurrents, et lequel a le meilleur rapport qualité-prix ?"
+python scripts/test_rag.py "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget et est-ce qu'il a de bons avis sur le respect des délais ?"
+
+
+--- SWITCH GEMINI <-> CLAUDE ---
+
+Dans .env, changer :
+  LLM_PROVIDER=gemini     (dev, gratuit)
+  LLM_PROVIDER=claude     (soutenance — nécessite ANTHROPIC_API_KEY rempli)
+
+
+========================================
+RAPPEL — ORDRE COMPLET DU PIPELINE
+========================================
+
+1. node discovery.js --service=mobile
+   node discovery.js --service=web
+   -> génère/complète competitors.json (local)
+
+2. node migrate-to-supabase.mjs
+   -> envoie competitors.json vers Supabase (table competitors)
+
+3. node monitoring-supabase.mjs [--service=mobile|web] [--limit=N]
+   -> vérifie les prix, met à jour etat_marche + historique_prix
+   -> remet embedding à null si un prix a changé
+
+4. python analyze_reviews.py <fichier_avis.json>
+   -> génère resultats/resultats_analyse_*.json (analyse de sentiment via Claude)
+
+5. node migrate-avis-analyse.mjs
+   -> envoie les analyses vers Supabase (table avis_analyse)
+   -> remet embedding à null pour les concurrents concernés
+
+6. python scripts/embed_new_entries.py
+   -> génère les embeddings manquants (nouveaux concurrents + ceux remis à null)
+
+7. python scripts/test_rag.py "question"
+   -> pose une question au RAG

@@ -1,0 +1,3 @@
+concurrent,service_type,sentiment_global,score_sentiment,nb_avis_analyses,points_forts,points_faibles,themes_recurrents_negatifs,themes_recurrents_positifs
+Blaaaz,marketing,positif,0.95,1,Équipe sympathique et agréable | Réactivité constante | Qualité des rendus livrés | Compréhension fine des besoins clients | Créativité exceptionnelle | Suivi personnalisé et durable,,,
+Blaaaz,web,positif,0.95,1,Réactivité remarquable | Compréhension des enjeux métier | Attention au détail | Fiabilité et régularité | Partenaire de confiance durable,,,

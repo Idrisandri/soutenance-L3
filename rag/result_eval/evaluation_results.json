@@ -1,0 +1,744 @@
+{
+  "metriques": {
+    "nb_questions_testees": 19,
+    "temps_reponse_moyen_sec": 8.25,
+    "taux_comportement_correct": 100.0,
+    "rappel_questions_pertinentes": "14/14 (100.0%)",
+    "precision_rejet_hors_sujet": "3/3 (100.0%)",
+    "similarite_moyenne_globale": 0.704,
+    "hit_rate_at_5": "80.0% (5 question(s) avec vérité terrain)",
+    "mrr": 0.8
+  },
+  "details": [
+    {
+      "id": "q01",
+      "question": "Quel est le prix moyen d'une application mobile chez nos concurrents ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.724,
+      "temps_reponse_sec": 12.45,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici les éléments pour vous positionner face à la concurrence. \n\nLes données disponibles ne permettent pas de calculer un prix moyen global pour l'ensemble des acteurs car cette information est manquante pour 3 d'entre eux. Cependant, voici les données précises que vous pouvez exploiter :\n\n### 1. Coût moyen de projet (donnée disponible pour 2 concurrents sur 5)\nPour les seuls concurrents dont le coût moyen est renseigné, le prix d'une application mobile se situe dans la même fourchette :\n*   **Build Me App** : 10 000 $ - 49 999 $\n*   **Altar.io** : 10 000 $ - 49 999 $\n*   *Tymate, Niji et Les Fabricants : donnée non disponible (\"No content available\").*\n\n### 2. Budget minimum de projet (disponible pour tous)\nPour affiner votre positionnement commercial, vous pouvez vous comparer aux tickets d'entrée (budget minimum) pratiqués :\n*   **Entrée de gamme / Accessibles** : \n    *   **Tymate** : 5 000 $ +\n    *   **Niji** : 5 000 $ +\n*   **Milieu de gamme** : \n    *   **Build Me App** : 10 000 $ +\n    *   **Altar.io** : 25 000 $ +\n*   **Haut de gamme** : \n    *   **Les Fabricants** : 50 000 $ +",
+      "sources": [
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.728
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.726
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.726
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.723
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.719
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "Quel concurrent a le meilleur rapport qualité-prix pour un développement mobile ?",
+      "categorie": "pertinente_prix_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.728,
+      "temps_reponse_sec": 12.02,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Sur la base des données fournies, **Build Me App** présente le meilleur rapport qualité-prix pour le développement mobile. \n\nVoici les arguments clés exploitables directement par votre équipe commerciale :\n\n### 1. Le positionnement imbattable de **Build Me App**\n* **Des tarifs très compétitifs :** Un taux horaire bas (**25$ - 49$ / hr**) et un ticket d'entrée accessible (budget min. de **10 000$+**).\n* **Une qualité maximale validée :** Une note parfaite de **5/5** (score de sentiment de 0,98 sur 18 avis). Les clients soulignent une *\"qualité des livrables dépassant les attentes\"* et un respect systématique des délais.\n* **Aucun point de vigilance** sur le budget ou la gestion de projet (le seul point faible historique concernait le marketing digital, déjà corrigé).\n\n### 2. Pourquoi il surpasse son principal challenger qualifié (**Altar.io**)\n* **Altar.io** obtient également d'excellents retours (4.9/5), mais pour un coût nettement supérieur : taux horaire double (**50$ - 99$ / hr**) et budget minimum de **25 000$+.**\n* Les avis clients d'Altar.io mentionnent explicitement des freins sur le rapport qualité-prix : *\"coût potentiellement plus élevé que certains concurrents\"* et *\"estimations de temps parfois inexactes\"*.\n\n---\n\n### ⚠️ Limites de l'analyse (À garder en tête pour vos rdv clients) :\nLes données ne permettent pas de comparer le rapport qualité-prix de tous les acteurs. **Niji, Les Fabricants** et **Tymate** ne disposent d'aucune analyse d'avis clients ni de coût moyen de projet. \n\n* *Note commerciale :* Bien que **Niji** affiche un taux horaire similaire à Build Me App (25$ - 49$) et un budget min. inférieur (5 000$+), l'absence de données sur sa qualité réelle ne permet pas de l'évaluer sur le plan du \"rapport qualité-prix\".",
+      "sources": [
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.733
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.732
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.726
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.725
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.725
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.743,
+      "temps_reponse_sec": 10.32,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici les éléments clés à utiliser face à votre prospect pour un budget de **15 000 €** :\n\n### 1. Le concurrent direct le mieux identifié : **Lemon Interactive**\nC’est le seul concurrent pour lequel nous disposons de données précises validant ce positionnement tarifaire.\n* **Adéquation budgétaire :** Parfaite. Leur tranche de projet la plus courante se situe entre **10 000 € et 50 000 €** (avec un panier moyen/médian de 40 000 €). Un projet à 15 000 € correspond exactement à leur cœur de cible d'entrée de gamme.\n* **Arguments pour vous positionner face à eux :** Lemon Interactive a une excellente réputation (Note : 4,48/5, évaluation tarifs : 5/5) et est fort en SEO/SEA et réactivité. Pour vous différencier, misez sur votre propre valeur ajoutée technique ou méthodologique.\n\n### 2. Les concurrents potentiels (données partielles)\nLes concurrents suivants ont un ticket d'entrée inférieur à 15 000 €, ils peuvent donc théoriquement se positionner, mais **les données fournies ne permettent pas de connaître le coût moyen de leurs projets** :\n\n* **Neoweb** et **DA VINCI COM** : Affichent un budget minimum de **5 000 $** et des taux horaires élevés (100 $ - 149 $ / hr). Ils peuvent être compétitifs sur cette tranche.\n* **SAS Webagencelille.com** : Budget minimum de **5 000 $** avec un taux horaire très bas (25 $ - 49 $ / hr). Ils se positionneront probablement comme une alternative low-cost.\n* **La revanche des sites** : Budget minimum très bas de **1 000 $** avec un taux horaire de 25 $ - 49 $ / hr.\n\n**En résumé pour votre argumentaire :** \nVotre principal rival sur ce dossier sera **Lemon Interactive**. Préparez vos arguments pour vous différencier de leur profil \"agence web & marketing digital globale très réactive\".",
+      "sources": [
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.746
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.745
+        },
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.744
+        },
+        {
+          "nom": "DA VINCI COM",
+          "service_type": "web",
+          "similarity": 0.742
+        },
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.74
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Quels sont les points faibles récurrents mentionnés dans les avis clients de nos concurrents ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.667,
+      "temps_reponse_sec": 10.97,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici une synthèse des points faibles récurrents de vos concurrents, directement exploitable pour vos pitchs commerciaux afin de valoriser votre rigueur et votre méthodologie :\n\n### 1. Gestion des délais et précision des estimations (Le point faible majeur)\nC'est le point faible le plus partagé entre les concurrents identifiés :\n*   **Altar.io** : Les estimations de temps de projet sont parfois inexactes.\n*   **TRIARE, LLC** : Rencontre des retards occasionnels sur certains jalons et manque d'anticipation sur les délais (manque de marge de sécurité).\n\n> **Argument commercial pour vous :** Mettez en avant votre rigueur dans le chiffrage, votre respect strict des jalons et votre transparence sur les plannings (méthodologie agile maîtrisée, marges de sécurité intégrées).\n\n### 2. Suivi de projet, communication et proactivité\nPlusieurs concurrents pèchent sur l'accompagnement et la visibilité au quotidien :\n*   **Altar.io** : Manque de visibilité sur l'avancement du projet, mises à jour de statut insuffisantes et accès difficile aux documents en temps réel durant les sessions.\n*   **TRIARE, LLC** : Manque de proactivité (les suggestions d'amélioration ne sont pas toujours proposées spontanément).\n*   **SolveIt** : Processus d'intégration initial à optimiser et planification des réunions parfois perfectible.\n\n> **Argument commercial pour vous :** Valorisez votre proximité lilloise, vos rituels de communication (ex: démos hebdomadaires, accès permanent à un outil de suivi comme Jira/Trello), et votre rôle de conseil force de proposition.\n\n---\n\n**Limites des données pour votre analyse :**\n*   **La revanche des sites** : Aucune donnée d'avis client n'est disponible.\n*   **Ideine** : Aucun point faible n'a été signalé dans les avis clients.",
+      "sources": [
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.678
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.666
+        },
+        {
+          "nom": "TRIARE, LLC",
+          "service_type": "web",
+          "similarity": 0.666
+        },
+        {
+          "nom": "SolveIt",
+          "service_type": "mobile",
+          "similarity": 0.664
+        },
+        {
+          "nom": "Ideine",
+          "service_type": "mobile",
+          "similarity": 0.662
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Y a-t-il des concurrents connus pour ne pas respecter les délais ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.655,
+      "temps_reponse_sec": 6.08,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Bonjour l'équipe commerciale,\n\nD'après les données disponibles, **il est impossible de savoir si certains concurrents ne respectent pas leurs délais**. \n\nEn effet, pour l'ensemble des concurrents listés (*La revanche des sites, Contraste Europe, Apresta, Les Fabricants* et *Neoweb*), **aucune analyse d'avis clients n'est disponible**. Nous ne disposons donc d'aucun retour d'expérience sur leur gestion des délais.",
+      "sources": [
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.666
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.656
+        },
+        {
+          "nom": "Apresta",
+          "service_type": "web",
+          "similarity": 0.654
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.651
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.65
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "Quel est le budget minimum demandé par les agences de développement web à Lille ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.738,
+      "temps_reponse_sec": 14.96,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici un récapitulatif des budgets minimums demandés par les concurrents identifiés à Lille, classés par positionnement tarifaire pour vous aider à vous positionner :\n\n*   **Le ticket d'entrée standard (environ 5 000 € / $) :**\n    *   **SAS Webagencelille.com** : $5,000+\n    *   **Les-Tilleuls.coop** : $5,000+\n    *   **Lemon Interactive** : 5 000 €+ *(Note : bien que leur budget minimum soit de 5 000 €, leur budget médian réel est de 40 000 €)*.\n\n*   **Le ticket d'entrée intermédiaire (8 000 €) :**\n    *   **BASH** : 8 000 €+ *(Note : la tranche de projet la plus courante chez eux reste inférieure à 10 000 €)*.\n\n*   **Le ticket d'entrée premium (50 000 €) :**\n    *   **Hello Pomelo** : 50 000 €+ *(Positionnement grands comptes)*.\n\n**Utilisation commerciale directe :**\n*   Si votre budget minimum est **inférieur à 5 000 €**, vous êtes plus accessible que l'ensemble des concurrents listés.\n*   Si vous ciblez des budgets **entre 5 000 € et 10 000 €**, vous êtes en concurrence frontale avec Lemon Interactive, BASH, Webagencelille et Les-Tilleuls.coop.\n*   Le segment des projets à **plus de 50 000 €** est dominé par Hello Pomelo (et potentiellement Lemon Interactive, dont la fourchette haute atteint 100 000 €).",
+      "sources": [
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.79
+        },
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.734
+        },
+        {
+          "nom": "BASH",
+          "service_type": "web",
+          "similarity": 0.723
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.723
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.721
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "Quelle est l'agence la mieux notée sur Clutch parmi nos concurrents mobile ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.779,
+      "temps_reponse_sec": 14.62,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici l'information clé directement exploitable pour vos rendez-vous commerciaux :\n\nL'agence la mieux notée sur Clutch parmi vos concurrents mobiles est **Build Me App**.\n\n### **Fiche d'identité du leader de la notation : Build Me App**\n* **Note Clutch :** **5/5** (sur 17 avis)\n* **Sentiment global :** Très positif (score de **0.98** sur 18 avis)\n* **Leurs points forts selon les clients :** Réactivité et disponibilité exceptionnelles, communication transparente, respect systématique des délais et livrables de qualité supérieure.\n* **Leur positionnement tarifaire :** Taux horaire bas ($25 - $49 / hr) pour un budget de projet minimum de $10,000+.\n\n---\n\n### **Comparatif avec les autres concurrents évalués :**\n* **Altar.io :** 4.9/5 (28 avis | Sentiment : 0.96) – *Budget min. plus élevé ($25,000+)*.\n* **Atelier256 :** 4.5/5 (2 avis | Sentiment : 0.9) – *Projets de très grande envergure (coût moyen de $200k à $1M)*.\n* **User Agency** et **Niji** : Aucune donnée de notation ou analyse d'avis n'est disponible dans les données fournies pour ces deux agences.\n\n### **Conseil de positionnement pour votre discours commercial :**\nBien que **Build Me App** affiche une note parfaite de 5/5 avec des tarifs très agressifs ($25-$49/h), vous pouvez vous positionner face à eux en mettant en avant la proximité locale d'une agence basée à Lille et notre expertise sur-mesure, face à un acteur qui se positionne sur des coûts de développement potentiellement offshore/low-cost.",
+      "sources": [
+        {
+          "nom": "User Agency",
+          "service_type": "mobile",
+          "similarity": 0.784
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.784
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.779
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.778
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.768
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "Compare les tarifs entre le développement web et le développement mobile chez nos concurrents.",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.714,
+      "temps_reponse_sec": 10.68,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici une synthèse comparative directement utilisable pour vos rendez-vous commerciaux :\n\n### 1. Budget minimum de projet : Alignement total\n* **Web et Mobile :** Il n'y a pas de différence sur le ticket d'entrée. Tous les concurrents analysés, qu'ils soient positionnés sur le web (Neoweb, Apresta, ikomobi) ou le mobile (Web Maniac, Tymate), exigent un budget minimum de **$5 000+**.\n\n### 2. Taux horaires : Le mobile est potentiellement plus cher\n* **Développement Web :** Les tarifs sont standardisés et homogènes. Tous les acteurs (Neoweb, Apresta, ikomobi) appliquent un taux horaire de **$100 à $149 / h**.\n* **Développement Mobile :** Les tarifs sont plus disparates et tirent vers le haut. \n  * *Tymate* s'aligne sur les prix du web (**$100 - $149 / h**).\n  * *Web Maniac* se positionne sur une gamme supérieure avec un taux horaire de **$150 à $199 / h**.\n\n---\n\n**Limite des données pour votre discours commercial :**\nLes données disponibles ne précisent pas le \"Coût moyen de projet\" pour ces concurrents. Nous pouvons comparer les tarifs à l'heure, mais pas le coût final global d'une application web par rapport à une application mobile chez eux.",
+      "sources": [
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.719
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.718
+        },
+        {
+          "nom": "Apresta",
+          "service_type": "web",
+          "similarity": 0.711
+        },
+        {
+          "nom": "ikomobi",
+          "service_type": "web",
+          "similarity": 0.711
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.71
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "Un prospect nous compare à Altar.io, que sais-tu sur leurs prix et leur réputation ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.726,
+      "temps_reponse_sec": 9.72,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Altar.io"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Voici les éléments factuels clés sur **Altar.io** (positionné sur le mobile) pour vous aider à vous positionner face à eux :\n\n### 1. Leurs Tarifs (Positionnement Prix)\n*   **Budget minimum de projet :** $25,000+\n*   **Taux horaire :** $50 - $99 / heure\n*   **Coût moyen de projet :** $10,000 - $49,999\n*   **Point de vigilance concurrentiel :** Les clients signalent un **coût potentiellement plus élevé** que certains de leurs concurrents.\n\n### 2. Leur Réputation (Points forts)\nAltar.io bénéficie d'une excellente réputation avec une note de **4.9/5** (sur 28 avis) et un score de sentiment extrêmement positif (0.96 sur 30 avis).\n*   **Qualité :** Systématiquement supérieure aux attentes.\n*   **Gestion de projet :** Respect constant des délais et des budgets, avec une équipe hautement réactive, collaborative et proactive dans sa communication.\n\n### 3. Leurs Faiblesses (Vos arguments pour faire la différence)\nVous pouvez orienter votre pitch de vente en insistant sur notre rigueur là où certains clients ont trouvé Altar.io perfectible :\n*   **Manque de visibilité :** Des clients ont regretté une visibilité parfois insuffisante sur l'avancement du projet et des mises à jour de statut trop rares. *(Valorisez notre transparence et nos rituels de suivi).*\n*   **Estimations de temps perfectibles :** Leurs estimations de délais de réalisation se révèlent parfois inexactes. *(Valorisez notre précision de chiffrage).*\n*   **Accessibilité des documents :** Des difficultés d'accès en temps réel aux documents de travail ont été signalées durant les sessions de travail. *(Valorisez nos outils de partage collaboratif en temps réel).*",
+      "sources": [
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.795
+        },
+        {
+          "nom": "Blaaaz",
+          "service_type": "web",
+          "similarity": 0.717
+        },
+        {
+          "nom": "Scalo",
+          "service_type": "web",
+          "similarity": 0.713
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.711
+        },
+        {
+          "nom": "Pragmea",
+          "service_type": "web",
+          "similarity": 0.692
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Quels arguments puis-je utiliser face à un concurrent qui a des avis négatifs sur la communication ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.62,
+      "temps_reponse_sec": 11.69,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "D'après les données réelles fournies, **aucun des concurrents listés ne présente d'avis négatifs, que ce soit sur la communication ou sur un autre sujet**. \n\n* **Lemon Interactive, Adveris et Hello Pomelo** ont tous des évaluations de sentiment extrêmement positives (scores de 0.95 à 0.98) et aucun point faible signalé. Au contraire, la réactivité, l'écoute et la fluidité de la communication sont systématiquement citées comme leurs points forts.\n* **La revanche des sites et DA VINCI COM** ne disposent d'aucune analyse d'avis clients.\n\nLes données ne permettent donc pas d'identifier un concurrent affaibli sur ce point pour construire une argumentation offensive directe.\n\n### Comment utiliser ces données pour votre discours commercial ?\n\nPuisque la communication est le point fort des leaders du marché lillois (Lemon Interactive, Adveris, Hello Pomelo), vous devez vous aligner sur ces exigences pour être compétitif. Face à un prospect, présentez ces arguments basés sur les standards du marché :\n\n1. **La réactivité et la disponibilité :** Promettez des délais de réponse rapides (un point fort clé de Lemon Interactive et Hello Pomelo).\n2. **L'écoute et la fluidité :** Valorisez un suivi client de proximité et une communication constructive (comme valorisé chez Adveris et Lemon Interactive).\n3. **La maîtrise agile :** Utilisez une méthodologie qui implique le client à chaque étape pour garantir la transparence (à l'image de Hello Pomelo).",
+      "sources": [
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.637
+        },
+        {
+          "nom": "DA VINCI COM",
+          "service_type": "web",
+          "similarity": 0.619
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.619
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.614
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.613
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "Quel est le taux horaire pratiqué par SensioLabs ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.715,
+      "temps_reponse_sec": 6.37,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "SensioLabs"
+      ],
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0,
+      "reponse": "Bonjour,\n\nD'après les données fournies, **SensioLabs** ne figure pas parmi les concurrents analysés. Il m'est donc impossible de vous indiquer leur taux horaire sur cette base. \n\nLes données disponibles ne concernent que SLASH CONSULTING, Hello Pomelo, Les-Tilleuls.coop et Redlab agency.",
+      "sources": [
+        {
+          "nom": "SLASH CONSULTING",
+          "service_type": "web",
+          "similarity": 0.721
+        },
+        {
+          "nom": "SLASH CONSULTING",
+          "service_type": "mobile",
+          "similarity": 0.717
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.716
+        },
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.713
+        },
+        {
+          "nom": "Redlab agency",
+          "service_type": "web",
+          "similarity": 0.709
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "Que disent les avis clients à propos de Ideine ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.685,
+      "temps_reponse_sec": 7.53,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Ideine"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Voici ce que disent les avis clients concernant **Ideine** :\n\n### **Ideine (Mobile)**\n*Note : 4,18/5 (basée sur 2 avis)*\n* **Sentiment général :** Très positif (score de 0,95).\n* **Points forts identifiés :**\n  * Très grande réactivité et disponibilité.\n  * Accompagnement complet du projet.\n  * Cadence de livraison régulière.\n  * Expertise technique avérée.\n* **Points faibles :** Aucun point faible n'a été signalé.\n\n### **Ideine (Web)**\n* **Aucune donnée d'avis client n'est disponible** pour cette entité.\n\n---\n\n**Argument de positionnement pour vos commerciaux :**\nSur la partie mobile, Ideine est perçue comme un partenaire réactif et rigoureux dans ses livraisons. Cependant, leur note est basée sur un échantillon très faible (seulement 2 avis). Vous pouvez mettre en avant votre propre volume de retours clients ou votre méthodologie d'accompagnement pour vous différencier.",
+      "sources": [
+        {
+          "nom": "Ideine",
+          "service_type": "mobile",
+          "similarity": 0.777
+        },
+        {
+          "nom": "Ideine",
+          "service_type": "web",
+          "similarity": 0.768
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.634
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.628
+        },
+        {
+          "nom": "Denkimedia",
+          "service_type": "web",
+          "similarity": 0.62
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "Quel est le budget minimum de projet demandé par Build Me App ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.719,
+      "temps_reponse_sec": 5.89,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Build Me App"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Le budget minimum de projet demandé par **Build Me App** est de **10 000 $ et plus ($10,000+)**. \n\n*(Pour information, leur coût moyen de projet se situe ensuite entre 10 000 $ et 49 999 $).*",
+      "sources": [
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.791
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.711
+        },
+        {
+          "nom": "Memory Squared",
+          "service_type": "mobile",
+          "similarity": 0.703
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.696
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.696
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "Quelle est la note Clutch de Kode Creators ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.648,
+      "temps_reponse_sec": 5.39,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Kode Creators"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "La note de **Kode Creators** est de **5/5** (basée sur 19 avis).",
+      "sources": [
+        {
+          "nom": "Kode Creators",
+          "service_type": "mobile",
+          "similarity": 0.73
+        },
+        {
+          "nom": "Glush",
+          "service_type": "web",
+          "similarity": 0.633
+        },
+        {
+          "nom": "Meant4.com",
+          "service_type": "web",
+          "similarity": 0.63
+        },
+        {
+          "nom": "Memory Squared",
+          "service_type": "mobile",
+          "similarity": 0.625
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.624
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Quelle est la météo à Lille aujourd'hui ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 1.03,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q12",
+      "question": "Peux-tu me donner la recette d'une quiche lorraine ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.99,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q13",
+      "question": "Quel est le cours actuel du bitcoin ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.93,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q14",
+      "question": "Quel est le prix d'une application mobile chez un concurrent basé à Tokyo ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.718,
+      "temps_reponse_sec": 6.72,
+      "comportement_correct": null,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Bonjour,\n\nLes données fournies ne permettent pas de répondre à votre question. Elles concernent uniquement des concurrents de notre marché (Niji, Tymate, Les Fabricants, Web Maniac et ikomobi) et ne contiennent aucune information sur un concurrent basé à Tokyo ou sur ses tarifs.",
+      "sources": [
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.738
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.718
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.712
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.712
+        },
+        {
+          "nom": "ikomobi",
+          "service_type": "web",
+          "similarity": 0.709
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "Quels concurrents proposent aussi des services de référencement SEO ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "a_trouve_des_sources": true,
+      "nb_sources": 5,
+      "similarite_moyenne": 0.685,
+      "temps_reponse_sec": 8.45,
+      "comportement_correct": null,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Bonjour l'équipe,\n\n**Réponse rapide :** Les données fournies ne permettent pas de répondre à cette question.\n\n**Explication pour vos échanges :** \nLes fiches de nos concurrents (*la revanche des sites*, *ouiflow.io*, *SAS Webagencelille.com*, *Neoweb* et *Celaneo*) contiennent uniquement des informations tarifaires (budget minimum, taux horaire) et l'état des avis clients. Elles ne détaillent pas les expertises ou les services spécifiques qu'ils proposent, comme le référencement SEO.",
+      "sources": [
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.692
+        },
+        {
+          "nom": "ouiflow.io",
+          "service_type": "web",
+          "similarity": 0.685
+        },
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.683
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.683
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "web",
+          "similarity": 0.68
+        }
+      ]
+    }
+  ]
+}

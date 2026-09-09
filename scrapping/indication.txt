@@ -1,0 +1,123 @@
+Mise en place (une seule fois)
+
+1. Installer le SDK officiel
+
+npm install scrapegraph-js
+
+Plus simple à utiliser que des appels fetch bruts pour cette fonctionnalité.
+
+2. Lancer la découverte des concurrents
+
+node discovery.js --service=mobile
+node discovery.js --service=web
+
+Va chercher sur Clutch la liste des concurrents (nom, URL du profil, ville) et crée competitors.json en local. Il ne prend pas encore les prix. Le script fusionne avec le fichier existant, donc pas de doublons ni de perte si tu le relances plus tard. Rien n'est encore dans Supabase à ce stade.
+
+3. Migrer vers Supabase
+
+node migrate-to-supabase.mjs
+
+Envoie les fichiers JSON locaux (competitors.json, etat_marche.json, historique_prix.json) vers Supabase, dans les tables competitors, etat_marche, historique_prix. Convertit aussi les taux horaires texte ("$50 - $99") en valeurs numériques min/max exploitables.
+
+Utilisation régulière (à répéter dans le temps)
+
+4. Lancer le monitoring
+
+node monitoring-supabase.mjs --service=mobile          # les 24 mobile seulement
+node monitoring-supabase.mjs --service=web 
+
+Traite tous les concurrents enregistrés dans Supabase.
+
+Pour tester sans consommer trop de crédits :
+
+node monitoring-supabase.mjs --limit=2
+
+Ne traite que les 2 premiers concurrents.
+
+Ce que fait chaque script
+Script	Rôle	Fréquence
+discovery.js	Trouve les concurrents sur Clutch (nom, URL, ville) → competitors.json	Une fois, puis occasionnellement si nouveaux concurrents
+migrate-to-supabase.mjs	Transfère les fichiers JSON locaux vers Supabase	Une fois au début (ou après chaque nouveau discovery)
+monitoring-supabase.mjs	Lit les concurrents depuis Supabase, revérifie leurs prix, compare avec l'ancien état	Répété régulièrement (2-3x/semaine)
+
+Logique du monitoring :
+
+Rien n'a changé → aucune action.
+Un prix a changé → ajoute une ligne dans historique_prix (jamais écrasé, nourrit le futur modèle prédictif) et met à jour etat_marche (1 ligne par concurrent, nourrit le RAG).
+Pourquoi pas tous les jours ?
+Les prix sur Clutch ne bougent pas si vite (souvent stables plusieurs semaines).
+Chaque lancement consomme des crédits ScrapeGraphAI (1 appel par concurrent).
+Le rate limit (10 req/min) et le throttle de 8s entre appels rendent ça lent avec beaucoup de concurrent
+
+
+
+5. Scraper les avis clients
+
+bash
+node avis.js --url=https://clutch.co/profile/xxx --nom="NomEntreprise" --service=mobile
+Récupère tous les avis (titre, corps, note) d'un profil Clutch, avec pagination automatique (s'arrête tout seul quand une page est vide). Écrit le résultat dans avis/nomentreprise-mobile.json, déjà au format attendu par l'analyse (concurrent + service_type injectés sur chaque avis).
+
+Pour scraper en masse plutôt qu'un par un :
+
+bash
+node avis.js --all
+Traite automatiquement tous les concurrents de Supabase ayant au moins 1 avis connu (etat_marche.nombre_avis), pour ne pas gaspiller des appels API sur les profils sans avis. Combinable avec --service=, --limit=, ou --noms="Atelier256,Glush" pour cibler une liste précise.
+
+6. Analyser le sentiment des avis
+
+bash
+python analyze_reviews.py atelier256.json
+python analyze_reviews.py meant4.json
+python analyze_reviews.py glush.json
+Va chercher chaque fichier dans avis/, envoie tous les avis d'un concurrent en un seul appel batché à Claude (pas d'appel avis par avis), et force une sortie structurée : sentiment global, score, thèmes détectés (liste fermée : délais, communication, qualité, prix, réactivité, expertise technique), points forts/faibles. La sortie est toujours en français, même si les avis sont en anglais (source Clutch). Écrit le résultat dans resultats/resultats_analyse_<nom>.json.
+
+7. Migrer les analyses vers Supabase
+
+bash
+node migrate-avis-analyse.mjs
+Scanne resultats/ pour tous les fichiers d'analyse générés, matche chaque résultat sur competitors via (nom, service_type) — important car une même entreprise peut avoir un profil mobile et un profil web distincts — et upsert dans la table avis_analyse. Une fois migré, chaque fichier est déplacé dans resultats/migres/, donc relancer la commande ne re-traite jamais deux fois le même fichier.
+
+Ce que fait chaque script (suite)
+
+Script	Rôle	Fréquence
+avis.js	Scrape les avis clients (titre, corps, note) d'un ou plusieurs profils Clutch → avis/*.json	Une fois par concurrent, ou re-scrape ponctuel si --force
+analyze_reviews.py	Analyse de sentiment par lot (Claude), sortie structurée en français → resultats/*.json	Après chaque nouveau lot d'avis scrapé
+migrate-avis-analyse.mjs	Transfère les analyses vers Supabase (avis_analyse), archive les fichiers traités	Après chaque analyze_reviews.py
+Logique du pipeline avis :
+
+Contrairement au monitoring des prix (qui ne récupère que le nombre d'avis sur chaque profil), ce pipeline récupère le contenu complet des avis, une seule fois par profil — pas besoin de le relancer régulièrement comme le monitoring, sauf si de nouveaux avis sont publiés sur un profil déjà traité (auquel cas --force permet de re-scraper).
+
+Structure des dossiers :
+
+avis/          → avis bruts scrapés, un fichier par concurrent
+resultats/     → analyses générées par Claude, avant migration
+resultats/migres/ → analyses déjà migrées vers Supabase (archive)
+
+
+## ⚠️ Important : pourquoi migration.js (Clutch) ne touche QUE les identités
+
+Le fichier `migration.js` du pipeline Clutch a 3 fonctions :
+- migrerCompetitors()   → tourne réellement, upsert dans `competitors` (nom/url/ville/service_type)
+- migrerEtatMarche()    → NE FAIT RIEN dans ce pipeline (etat_marche.json n'existe jamais en local)
+- migrerHistorique()    → NE FAIT RIEN non plus (historique_prix.json n'existe jamais en local)
+
+Pourquoi : contrairement à LaFabriqueDuNet, le discovery Clutch ne scrape QUE
+nom/url/ville (pas les prix), pour économiser des crédits sur un gros volume
+de pages. Les prix ne sont jamais scrapés/migrés depuis un fichier local.
+
+Conséquence : relancer migration.js sur un competitors.json mis à jour
+(ex: 30 → 32 entreprises) est TOTALEMENT SAFE pour les données déjà en prod :
+- Les 30 entreprises existantes ne sont ré-upsertées que sur leurs colonnes
+  d'identité (aucun changement réel).
+- La table etat_marche (prix/notes) n'est jamais touchée par ce script.
+- Les 2 nouvelles sont juste insérées dans `competitors`.
+
+C'est monitoring-supabase.mjs qui fait le VRAI premier scraping de prix,
+pour toute nouvelle entreprise (ancienneDonnee = null → aChange() = true
+→ première mesure enregistrée normalement).
+
+Donc l'ordre correct pour ajouter de nouveaux concurrents Clutch est bien :
+1. discovery.js (récupère/complète competitors.json)
+2. migration.js (upsert identités seulement — safe à relancer)
+3. monitoring-supabase.mjs (premier scraping de prix pour les nouveaux,
+   detection de changement pour les anciens)

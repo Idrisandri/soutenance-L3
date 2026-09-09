@@ -1,0 +1,70 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence livre systématiquement les projets dans les délais convenus et respecte les jalons définis pour chaque phase."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe maintient une communication transparente et régulière avec des réponses rapides aux questions, disponible à toute heure via réunions virtuelles et messagerie."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livrables dépassent les attentes avec des applications fonctionnelles, des sites performants et une expérience utilisateur soignée."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les tarifs correspondent aux budgets des clients avec un excellent rapport qualité-prix et une structure de paiement accommodante."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe répond promptement aux demandes de modifications et implémente rapidement les ajustements durant les phases de test."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre des compétences variées et approfondies couvrant le développement mobile, web, backend, IA et marketing digital."
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité exceptionnelles",
+      "Respect systématique des délais",
+      "Communication transparente et proactive",
+      "Qualité des livrables dépassant les attentes",
+      "Flexibilité et adaptation aux demandes clients",
+      "Approche collaborative et professionnelle",
+      "Offre complète de services sous un même toit",
+      "Excellent rapport qualité-prix",
+      "Gestion de projet structurée et organisée",
+      "Engagement et passion pour les projets clients"
+    ],
+    "points_faibles": [
+      "Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+    ],
+    "autres_points": [
+      "Relation de confiance et partenariat à long terme",
+      "Service client allant au-delà des attentes",
+      "Attitude honnête et digne de confiance",
+      "Équipe attentionnée et soucieuse du succès client",
+      "Résultats mesurables : augmentation du trafic, conversions, téléchargements",
+      "Capacité à gérer projets de startups de bout en bout"
+    ],
+    "concurrent": "Build Me App",
+    "service_type": "mobile",
+    "nb_avis_analyses": 18
+  }
+]

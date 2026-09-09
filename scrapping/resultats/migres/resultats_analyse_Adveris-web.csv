@@ -1,0 +1,3 @@
+concurrent,service_type,sentiment_global,score_sentiment,nb_avis_analyses,points_forts,points_faibles,themes_recurrents_negatifs,themes_recurrents_positifs
+Adveris,web,positif,0.98,3,Qualité exceptionnelle et professionnalisme | Équipe réactive et efficace | Excellente écoute et suivi client | Capacité à s'adapter à des contraintes de délais | Forte recommandabilité,,,qualite | reactivite | communication
+Adveris,branding,positif,0.95,1,Expertise branding | Qualité de l'équipe | Accompagnement complet,,,

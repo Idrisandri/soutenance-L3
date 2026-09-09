@@ -1,0 +1,73 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les équipes de Memory Squared maintiennent une communication claire, régulière et proactive à travers plusieurs canaux (Slack, email, appels vidéo, réunions en personne) avec des mises à jour constantes sur l'avancement du projet."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe répond rapidement aux retours, aux changements de scope et aux problèmes émergents, souvent le même jour ou le lendemain, et agit sur les demandes avec efficacité."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livraisons montrent une qualité exceptionnelle, avec des solutions bien pensées, un design soigné, une infrastructure solide et des fonctionnalités fonctionnelles qui dépassent souvent les attentes initiales."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Memory Squared respecte systématiquement les délais convenus, livre souvent en avance et maintient des calendriers serrés tout en conservant une qualité élevée."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une expertise technique solide en architecture logicielle, en design UX/UI, en intégrations API et en technologies variées (React Native, Laravel, Java, etc.), et propose des améliorations stratégiques."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le rapport qualité-prix est jugé excellent par les clients, offrant une bonne valeur pour le coût investi, malgré des tarifs parfois supérieurs aux concurrents."
+      }
+    ],
+    "points_forts": [
+      "Communication exceptionnelle et proactive",
+      "Respect rigoureux des délais et des budgets",
+      "Qualité de livrable supérieure aux attentes",
+      "Expertise technique et architectural solide",
+      "Approche consultative et suggestions d'améliorations",
+      "Flexibilité face aux évolutions de scope",
+      "Compréhension profonde du contexte métier client",
+      "Équipe petite mais très compétente",
+      "Mentalité de partenariat plutôt que simple prestataire",
+      "Excellentes capacités de design UX/UI",
+      "Gestion de projet professionnelle et transparente",
+      "Disponibilité et engagement personnel du CEO"
+    ],
+    "points_faibles": [
+      "Souhaitable d'avoir davantage de mise à jour hebdomadaire proactive (signalé dans un avis)"
+    ],
+    "autres_points": [
+      "L'équipe est appréciée pour son atmosphère collaborative et son bon entente interne, inspirant confiance",
+      "Capacité remarquable à gérer des projets complexes avec des exigences changeantes sans compromettre la qualité",
+      "Approche agile avec méthodologie Scrum largement adoptée et appréciée",
+      "Utilisation cohérente d'outils de gestion moderne (Productive, Figma, Slack, ClickUp, Asana)",
+      "Plusieurs clients mentionnent qu'ils recommandent Memory Squared et envisagent des projets futurs",
+      "Capacité à travailler efficacement sur des projets internationaux malgré les distances géographiques",
+      "Engagement visible du CEO Mateusz personnellement dans les projets, ce qui renforce la confiance"
+    ],
+    "concurrent": "Memory Squared",
+    "service_type": "mobile",
+    "nb_avis_analyses": 30
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.9,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les applications livrées sont pleinement opérationnelles, compatibles multi-appareils et ont généré des résultats mesurables significatifs pour les clients"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe maintient un dialogue constant et recherche activement du feedback tout au long du processus de développement"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les modifications demandées sont implémentées promptement et l'équipe démontre une grande capacité d'adaptation"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La maîtrise de la méthodologie Agile et l'intégration fluide avec les équipes internes témoignent d'un savoir-faire solide"
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "La ponctualité de l'équipe est soulignée positivement"
+      }
+    ],
+    "points_forts": [
+      "Réactivité et flexibilité exceptionnelles",
+      "Communication proactive avec recherche active de feedback",
+      "Qualité des livrables avec résultats mesurables",
+      "Excellente collaboration et intégration d'équipe",
+      "Maîtrise des méthodologies Agile"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Impact business quantifiable : réduction de 60% des erreurs et 50% du temps de gestion",
+      "Qualité de soutien et accompagnement client"
+    ],
+    "concurrent": "Atelier256",
+    "service_type": "mobile",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.9,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les solutions développées sont pleinement opérationnelles et génèrent des résultats mesurables significatifs pour les clients"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande capacité d'adaptation et intègre les modifications demandées sans délai"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les échanges sont soutenus et proactifs tout au long du cycle de développement"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe maîtrise les méthodologies modernes et assure une compatibilité multiplateforme"
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les livraisons respectent les échéances fixées"
+      }
+    ],
+    "points_forts": [
+      "Réactivité et flexibilité",
+      "Communication proactive",
+      "Qualité des livrables",
+      "Collaboration efficace",
+      "Résultats mesurables",
+      "Maîtrise Agile"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Intégration harmonieuse avec les équipes clientes",
+      "Approche dynamique de gestion de projet",
+      "Recherche active de feedback"
+    ],
+    "concurrent": "Atelier256",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  }
+]

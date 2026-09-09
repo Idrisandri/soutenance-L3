@@ -1,0 +1,48 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Équipe hautement disponible et réactive pour tous les échanges client ainsi qu'une hotline rapidement accessible."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Écoute active du client et accompagnement complet tout au long du projet avec ateliers de conception détaillés."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Livraisons concrètes et régulières tous les trois semaines permettant un lancement progressif de l'activité."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Professionnalisme démontré et capacités techniques confirmées par la gestion de projets ambitieux et le développement de plusieurs applications complexes."
+      }
+    ],
+    "points_forts": [
+      "Très grande réactivité et disponibilité",
+      "Accompagnement complet du projet",
+      "Cadence de livraison régulière",
+      "Expertise technique avérée",
+      "Écoute client et communication professionnelle",
+      "Relation de confiance long terme"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Capacité à gérer des projets complexes et ambitieux",
+      "Convivialité de la collaboration"
+    ],
+    "concurrent": "Ideine",
+    "service_type": "mobile",
+    "nb_avis_analyses": 2
+  }
+]

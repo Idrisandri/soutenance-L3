@@ -1,0 +1,30 @@
+[
+  {
+    "concurrent": "Atelier256",
+    "titre": "Atelier256 s'est distingué par une approche dynamique et flexible du développement de projets informatiques.",
+    "corps": "L'équipe Atelier256 a livré avec succès une application parfaitement fonctionnelle et compatible avec différents appareils. Son intégration harmonieuse avec l'équipe interne a permis une collaboration fluide et rapide. L'équipe a utilisé la méthodologie Agile pour gérer efficacement les tâches et a su s'adapter avec souplesse.",
+    "note": 4,
+    "service_type": "mobile"
+  },
+  {
+    "concurrent": "Atelier256",
+    "titre": "Ils ont activement recherché des commentaires à chaque étape du développement et ont rapidement intégré les changements nécessaires.",
+    "corps": "Atelier256 a mis en place avec succès une plateforme qui a permis au client de réduire de 60 % les erreurs de saisie manuelle et de diminuer de 50 % le temps consacré à l'enregistrement des vendanges et aux tâches de gestion du vignoble. L'équipe est ponctuelle, communicative, proactive, réactive, flexible et d'un grand soutien.",
+    "note": 5,
+    "service_type": "mobile"
+  },
+  {
+    "concurrent": "Atelier256",
+    "titre": "Atelier256 s'est distingué par une approche dynamique et flexible du développement de projets informatiques.",
+    "corps": "L'équipe Atelier256 a livré avec succès une application parfaitement fonctionnelle et compatible avec différents appareils. Son intégration harmonieuse avec l'équipe interne a permis une collaboration fluide et rapide. L'équipe a utilisé la méthodologie Agile pour gérer efficacement les tâches et a su s'adapter avec souplesse.",
+    "note": 4,
+    "service_type": "web"
+  },
+  {
+    "concurrent": "Atelier256",
+    "titre": "Ils ont activement recherché des commentaires à chaque étape du développement et ont rapidement intégré les changements nécessaires.",
+    "corps": "Atelier256 a mis en place avec succès une plateforme qui a permis au client de réduire de 60 % les erreurs de saisie manuelle et de diminuer de 50 % le temps consacré à l'enregistrement des vendanges et aux tâches de gestion du vignoble. L'équipe est ponctuelle, communicative, proactive, réactive, flexible et d'un grand soutien.",
+    "note": 5,
+    "service_type": "web"
+  }
+]

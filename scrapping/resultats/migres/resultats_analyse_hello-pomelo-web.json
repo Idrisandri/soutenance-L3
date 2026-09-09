@@ -1,0 +1,62 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les équipes ont démontré une grande réactivité et une capacité rapide à répondre aux demandes et aux problèmes."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'écoute attentive et les échanges rigoureux avec les chefs de projet ont assuré une compréhension fine des besoins et une collaboration fluide."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Maîtrise avérée des technologies, des méthodologies agiles et capacité à proposer des solutions innovantes et sur mesure."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Livrables de haute qualité, travail rigoureux et organisé qui a constamment dépassé les attentes des clients."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Respect systématique des délais impartis, y compris dans des contextes exigeants avec des demandes de dernière minute."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Respect du budget convenu dans le cadre du projet."
+      }
+    ],
+    "points_forts": [
+      "Réactivité de l'équipe",
+      "Excellente communication et écoute client",
+      "Expertise technique et maîtrise agile",
+      "Qualité des livrables",
+      "Respect des délais",
+      "Rigueur et organisation",
+      "Capacité d'adaptation",
+      "Solutions innovantes et créatives"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Dynamisme et force de proposition de l'équipe",
+      "Partenariat durable, certains clients poursuivant la collaboration"
+    ],
+    "concurrent": "Hello Pomelo",
+    "service_type": "web",
+    "nb_avis_analyses": 10
+  }
+]

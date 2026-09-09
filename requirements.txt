@@ -1,0 +1,7 @@
+anthropic
+google-genai
+python-dotenv
+voyageai
+supabase
+google-generativeai
+Brotli>=1.2.0

@@ -1,0 +1,1603 @@
+{
+  "metriques": {
+    "nb_questions_testees": 19,
+    "temps_reponse_moyen_sec": 9.92,
+    "taux_comportement_correct": 100.0,
+    "rappel_questions_pertinentes": "14/14 (100.0%)",
+    "precision_rejet_hors_sujet": "3/3 (100.0%)",
+    "similarite_moyenne_globale": 0.693,
+    "hit_rate_at_5": "80.0% (5 question(s) avec vérité terrain)",
+    "mrr": 0.8
+  },
+  "details": [
+    {
+      "id": "q01",
+      "question": "Quel est le prix moyen d'une application mobile chez nos concurrents ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.72,
+      "temps_reponse_sec": 14.91,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici les éléments directement exploitables pour vos échanges commerciaux concernant le prix d'une application mobile chez vos concurrents :\n\n### 1. Constat principal : Des données globales limitées\nIl est **impossible de calculer un prix moyen général** pour l'ensemble des concurrents car l'information sur le \"coût moyen de projet\" est manquante (*No content available*) pour 8 des 10 concurrents mobile.\n\n### 2. Les seuls coûts moyens de projet connus\nSeuls deux concurrents affichent un coût moyen de projet :\n*   **Build Me App** : Entre **10 000 $ et 49 999 $** (taux horaire : 25 $ - 49 $)\n*   **Altar.io** : Entre **10 000 $ et 49 999 $** (taux horaire : 50 $ - 99 $)\n\n### 3. Grille des budgets minimums exigés (Alternative pour se positionner)\nPour situer votre offre, vous pouvez vous comparer aux budgets minimums de projet exigés par vos concurrents pour démarrer un développement mobile :\n\n*   **Budget de départ bas (5 000 $ +) :** \n    *   *Niji* (Taux horaire : 25 $ - 49 $)\n    *   *Celaneo* (Taux horaire : 50 $ - 99 $)\n    *   *Tymate*, *Whatson Web* (Taux horaire : 100 $ - 149 $)\n    *   *Web Maniac* (Taux horaire le plus élevé : 150 $ - 199 $)\n*   **Budget de départ intermédiaire (10 000 $ + à 25 000 $ +) :**\n    *   *Build Me App*, *Dernier Cri* (Minimum : 10 000 $)\n    *   *Altar.io* (Minimum : 25 000 $)\n*   **Budget de départ élevé (50 000 $ + à 75 000 $ +) :**\n    *   *Les Fabricants* (Minimum : 50 000 $)\n    *   *Contraste Europe* (Minimum : 75 000 $)",
+      "sources": [
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.734,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.732,
+          "confiance_faible": false,
+          "extrait": "Niji (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.729,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.727,
+          "confiance_faible": false,
+          "extrait": "Tymate (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "mobile",
+          "similarity": 0.725,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Dernier Cri",
+          "service_type": "mobile",
+          "similarity": 0.721,
+          "confiance_faible": false,
+          "extrait": "Dernier Cri (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.72,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.716,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (mobile)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "mobile",
+          "similarity": 0.715,
+          "confiance_faible": false,
+          "extrait": "Celaneo (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.712,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.708,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (web)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.705,
+          "confiance_faible": false,
+          "extrait": "Altar.io (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 30 avis) :\nPoints forts : Qualité systématiquement supérieure aux attentes; Communications proactives et régulières; Respect constants des délais et budgets; Équipe hautement réactive et collaborative\nPoints faibles : Visibilité de projet et mises à jour de statut parfois insuffisantes; Estimations de temps parfois inexactes; Accessibilité documentaire en temps réel durant sessions; Coût potentiellement plus élevé que certains concurrents"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "Quel concurrent a le meilleur rapport qualité-prix pour un développement mobile ?",
+      "categorie": "pertinente_prix_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.713,
+      "temps_reponse_sec": 13.9,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici l'analyse directement exploitable par votre équipe commerciale pour répondre à cette question :\n\nLe concurrent qui présente le meilleur rapport qualité-prix pour le développement mobile est **Build Me App**. \n\nVoici les arguments précis pour appuyer ce positionnement face à vos prospects :\n\n### 1. Le Leader du rapport Qualité-Prix : **Build Me App**\n*   **Côté Prix (Tranché basse) :** Il propose l'un des taux horaires les plus bas du marché (**25 $ - 49 $ / hr**) avec un budget de projet minimum accessible (10 000 $+) et un coût moyen de projet maîtrisé (entre 10 000 $ et 49 999 $).\n*   **Côté Qualité (Excellente) :** Il obtient la note maximale de **5/5** (sur 17 avis) et un score de sentiment de **0.98**. Les clients saluent une réactivité exceptionnelle, le respect systématique des délais et une \"qualité des livrables dépassant les attentes\". \n*   *Seul point de vigilance commerciale :* Ils ont eu des faiblesses initiales sur la stratégie marketing digital, mais ce point a été corrigé.\n\n---\n\n### Comment se situent les autres concurrents sur ce positionnement ?\n\n*   **Niji :** Propose les mêmes tarifs attractifs (25 $ - 49 $ / hr) mais **aucune donnée d'avis client** n'est disponible. Il est donc impossible de garantir leur niveau de qualité sur cette base.\n*   **Altar.io :** Présente une excellente qualité (4.9/5, sentiment 0.96) mais avec un positionnement prix plus élevé (taux de **50 $ - 99 $ / hr**). Les avis clients soulignent d'ailleurs un \"coût potentiellement plus élevé que certains concurrents\" et des \"estimations de temps parfois inexactes\".\n*   **Atelier256 :** Bien que qualitatif, il s'adresse à une autre cible budgétaire avec un coût moyen de projet très élevé (**200 000 $ - 999 999 $**).\n*   **ikomobi :** Bien qu'il présente d'excellents avis, ses données concernent le **développement Web** (et non mobile) avec un taux horaire supérieur (100 $ - 149 $ / hr).\n\n### Limites des données à garder en tête :\nPour plusieurs concurrents mobiles (Contraste Europe, Whatson Web, Tymate, Dernier Cri, Web Maniac, Les Fabricants, Celaneo), **aucun avis client n'est disponible** dans nos sources. Nous ne pouvons donc pas évaluer objectivement leur niveau de qualité pour le comparer à leur prix.",
+      "sources": [
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.727,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.724,
+          "confiance_faible": false,
+          "extrait": "Niji (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.722,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "mobile",
+          "similarity": 0.715,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.714,
+          "confiance_faible": false,
+          "extrait": "Tymate (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.714,
+          "confiance_faible": false,
+          "extrait": "Altar.io (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 30 avis) :\nPoints forts : Qualité systématiquement supérieure aux attentes; Communications proactives et régulières; Respect constants des délais et budgets; Équipe hautement réactive et collaborative\nPoints faibles : Visibilité de projet et mises à jour de statut parfois insuffisantes; Estimations de temps parfois inexactes; Accessibilité documentaire en temps réel durant sessions; Coût potentiellement plus élevé que certains concurrents"
+        },
+        {
+          "nom": "Dernier Cri",
+          "service_type": "mobile",
+          "similarity": 0.714,
+          "confiance_faible": false,
+          "extrait": "Dernier Cri (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.714,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.704,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (mobile)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "mobile",
+          "similarity": 0.703,
+          "confiance_faible": false,
+          "extrait": "Celaneo (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "ikomobi",
+          "service_type": "web",
+          "similarity": 0.7,
+          "confiance_faible": false,
+          "extrait": "ikomobi (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 8 avis) :\nPoints forts : Expertise technique et recommandations technologiques pertinentes; Qualité constante des livrables et attention à l'UX; Communication transparente et relations humaines basées sur la confiance; Réactivité et flexibilité face aux évolutions de projet\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.7,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité exceptionnelles; Communication proactive avec recherche active de feedback; Qualité des livrables avec résultats mesurables; Excellente collaboration et intégration d'équipe\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.746,
+      "temps_reponse_sec": 15.76,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici les éléments précis issus de nos données pour vous positionner face à un prospect avec un budget de **15 000 €** :\n\n### 1. Le concurrent le plus directement positionné : **Lemon Interactive**\nC'est le concurrent pour lequel nous avons les données les plus précises et qui cible exactement ce type de budget.\n*   **Tranche la plus courante :** 10 000 € - 50 000 € (le projet à 15 000 € est au cœur de leur cible).\n*   **Fourchette de prix :** 10 000 € à 100 000 € (Budget médian : 40 000 €).\n*   **Points forts à contrer :** Excellente réactivité, communication fluide et forte expertise technique (SEO, SEA, digital).\n*   **Argument commercial pour vous différencier :** À 15 000 €, le prospect se situe dans la \"fourchette basse\" des projets de Lemon Interactive (leur médiane étant à 40 000 €). Vous pouvez valoriser le fait que chez vous, avec ce budget, il sera un client prioritaire et bénéficiera d'une attention maximale, contrairement à une structure où il serait un \"petit projet\".\n\n### 2. Le concurrent \"haut de gamme\" à écarter : **Adveris**\nBien qu'ils acceptent des projets dès 5 000 €, ils ne sont pas le meilleur fit pour ce budget.\n*   **Tranche la plus courante :** 50 000 € - 200 000 € (Budget médian : 100 000 €).\n*   **Argument commercial :** Un projet à 15 000 € est très marginal pour eux. Vous serez beaucoup plus compétitifs et impliqués qu'eux sur ce niveau de budget.\n\n### 3. Les autres concurrents (Données limitées)\nLes agences suivantes affichent un budget minimum de **5 000 $+** (ou 1 000 $+ pour Archand) et peuvent donc techniquement répondre à la demande, mais nous n'avons pas d'historique sur leurs coûts réels de projet pour confirmer s'ils sont habitués à des budgets de 15 000 € :\n*   **Neoweb, NiceToMeetYou, ATELIER 33, DA VINCI COM, Wapiti Agency, Whatson Web, Octelio Conseil** (Taux horaire moyen : 100 $ - 149 $ / h).\n*   **SAS Webagencelille.com** (Taux horaire bas : 25 $ - 49 $ / h).\n*   **Web Maniac** (Taux horaire élevé : 150 $ - 199 $ / h).\n*   **Archand** (Budget min : 1 000 $+, taux horaire : 25 $ - 49 $ / h).\n\n**En synthèse pour votre appel :** Votre principal adversaire sur cette opportunité est **Lemon Interactive**. Cadrez votre proposition en montrant que chez vous, un budget de 15 000 € reçoit l'attention d'un projet majeur, avec un accompagnement sur-mesure et réactif.",
+      "sources": [
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.764,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.758,
+          "confiance_faible": false,
+          "extrait": "SAS Webagencelille.com (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "web",
+          "similarity": 0.748,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "NiceToMeetYou",
+          "service_type": "web",
+          "similarity": 0.747,
+          "confiance_faible": false,
+          "extrait": "NiceToMeetYou (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "ATELIER 33",
+          "service_type": "web",
+          "similarity": 0.746,
+          "confiance_faible": false,
+          "extrait": "ATELIER 33 (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "DA VINCI COM",
+          "service_type": "web",
+          "similarity": 0.746,
+          "confiance_faible": false,
+          "extrait": "DA VINCI COM (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Wapiti Agency",
+          "service_type": "web",
+          "similarity": 0.744,
+          "confiance_faible": false,
+          "extrait": "Wapiti Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "web",
+          "similarity": 0.743,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.741,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Octelio Conseil",
+          "service_type": "web",
+          "similarity": 0.739,
+          "confiance_faible": false,
+          "extrait": "Octelio Conseil (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.738,
+          "confiance_faible": false,
+          "extrait": "Lemon Interactive (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 10 000 EUR à 100 000 EUR\nBudget médian : 40 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.48/5 (9 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 9 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Communication fluide et constructive; Expertise technique en SEO, SEA et marketing digital; Qualité professionnelle des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Archand",
+          "service_type": "web",
+          "similarity": 0.735,
+          "confiance_faible": false,
+          "extrait": "Archand (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Quels sont les points faibles récurrents mentionnés dans les avis clients de nos concurrents ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.682,
+      "temps_reponse_sec": 17.57,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici une synthèse claire, structurée et directement exploitable par votre équipe commerciale pour vous positionner face à la concurrence sur le marché du développement web et mobile.\n\n*Note de conformité : Les données analysées correspondent bien aux fiches des concurrents fournis, spécialisés en développement web et mobile.*\n\n---\n\n### 🚨 Les 4 faiblesses récurrentes de nos concurrents (et comment les contrer)\n\n#### 1. Le manque de transparence financière et les coûts \"surprises\"\nC'est un point de friction majeur chez plusieurs concurrents, ce qui génère une forte frustration chez les clients.\n* **Les faits (chez les concurrents) :** \n  * *Inov Agency* est critiquée pour ses tarifs trompeurs et ses coûts abusifs.\n  * *Crystal'ID* impose des tarifs mensuels très élevés (270-350€/mois) sans que le client ne soit propriétaire de son propre site, avec un manque de clarté sur les frais et contrats.\n  * *Tallium Inc.* a déjà imposé des choix technologiques non approuvés ayant entraîné des dérives budgétaires.\n  * *Altar.io* est perçue comme potentiellement plus chère que le marché.\n* **Votre argument commercial :** Mettez en avant notre **transparence tarifaire totale**, des devis détaillés dès le départ, la **pleine propriété de votre code/site** par le client, et l'engagement qu'aucun surcoût technologique ne sera appliqué sans validation écrite préalable.\n\n#### 2. L'absence de suivi et de support après la livraison (le syndrome \"livré, oublié\")\nBeaucoup de clients se plaignent de se retrouver livrés à eux-mêmes une fois le projet terminé.\n* **Les faits (chez les concurrents) :**\n  * *Crystal'ID* : Suivi totalement absent après les premiers mois.\n  * *Inov Agency* & *AmphiBee* : Support client jugé inefficace ou insuffisant, suivi défaillant.\n* **Votre argument commercial :** Valorisez notre **accompagnement post-lancement**. Nous ne créons pas seulement des outils, nous assurons un suivi rigoureux, une maintenance réactive et un support client structuré sur le long terme.\n\n#### 3. La distance géographique et les barrières linguistiques\nL'éloignement ou l'usage exclusif de langues étrangères est un frein pour les clients qui recherchent une relation humaine et fluide.\n* **Les faits (chez les concurrents) :**\n  * *Tallium Inc.* souffre d'un manque de présence physique locale pour les clients qui préfèrent les rencontres physiques, ainsi que d'erreurs de communication liées au travail à distance.\n  * *Redlab*, *AMELA Technology* et *TRIARE* affichent des faiblesses sur les compétences linguistiques (anglais oral perfectible, barrière de la langue occasionnelle ou allemand limité).\n* **Votre argument commercial :** Jouez la carte de la **proximité lilloise** ! \"Nous sommes à Lille, nos équipes parlent votre langue, nous comprenons votre écosystème régional et nous pouvons nous rencontrer physiquement dans vos locaux pour des ateliers de travail.\"\n\n#### 4. Le manque de structure au démarrage du projet (Onboarding) et les dérives de planning\nLa phase de démarrage et le respect des délais intermédiaires sont parfois négligés.\n* **Les faits (chez les concurrents) :**\n  * *Inov Agency* : Manque de clarté et de structure lors de l'intégration du client.\n  * *SolveIt* : Processus d'intégration initial perfectible.\n  * *Altar.io* & *TRIARE* : Estimations de temps parfois inexactes, retards de jalons et manque d'anticipation sur les délais.\n* **Votre argument commercial :** Présentez notre **méthodologie d'onboarding claire et rassurante** (un process d'intégration structuré dès la signature) et notre rigueur dans le respect des plannings grâce à une gestion de projet transparente.\n\n---\n\n### 💡 Rappel utile pour vos rendez-vous clients :\nCertains concurrents comme **Apresta, Adveris et ikomobi** n'ont aucun point faible signalé dans les données fournies. Face à eux, ne cherchez pas à attaquer leurs failles, mais différenciez-vous plutôt sur votre positionnement de partenaire local Lillois et votre méthodologie de co-conception.",
+      "sources": [
+        {
+          "nom": "Crystal'ID",
+          "service_type": "web",
+          "similarity": 0.71,
+          "confiance_faible": false,
+          "extrait": "Crystal'ID (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.25, basé sur 16 avis) :\nPoints forts : Réactivité opérationnelle pour les modifications de site; Expertise en référencement Google (pour certains clients); Design attractif et personnalisé; Résultats concrets mesurables pour quelques clients\nPoints faibles : Tarification très élevée (270-350€/mois) sans propriété du site; Manque de transparence sur les conditions contractuelles et les frais; Référencement décevant ou inefficace pour la majorité; Suivi absent après les premiers mois"
+        },
+        {
+          "nom": "Inov Agency",
+          "service_type": "web",
+          "similarity": 0.709,
+          "confiance_faible": false,
+          "extrait": "Inov Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.35, basé sur 6 avis) :\nPoints forts : Disponibilité et écoute du client; Réactivité face aux demandes; Capacité à travailler avec divers profils d'entreprises; Accueil chaleureux et bienveillant\nPoints faibles : Manque de clarté et de structure à l'intégration; Service lent et suivi défaillant; Support client inefficace; Tarification trompeuse et coûts abusifs"
+        },
+        {
+          "nom": "AmphiBee",
+          "service_type": "web",
+          "similarity": 0.69,
+          "confiance_faible": false,
+          "extrait": "AmphiBee (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.7, basé sur 1 avis) :\nPoints forts : Innovation et modernité; Facilité d'utilisation; Adapté aux utilisateurs technophiles\nPoints faibles : Support client insuffisant; Manque de visibilité; Absence d'avis établis/reconnaissance"
+        },
+        {
+          "nom": "Redlab agency",
+          "service_type": "web",
+          "similarity": 0.688,
+          "confiance_faible": false,
+          "extrait": "Redlab agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (36 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.97, basé sur 37 avis) :\nPoints forts : Excellence globale de la qualité du code et absence de bugs; Réactivité exceptionnelle aux demandes et changements; Communication transparente et proactive tout au long des projets; Respect rigoureux des délais et des jalons\nPoints faibles : Barrière linguistique occasionnelle mentionnée par un client; Documentation structurée pourrait être plus détaillée dans certains cas; Pas de travail les week-ends (mentionné une seule fois, perçu négativement par un client); Transition design-développement peut être sujette à des ajustements mineurs sur qualité/performance"
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.682,
+          "confiance_faible": false,
+          "extrait": "Altar.io (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 30 avis) :\nPoints forts : Qualité systématiquement supérieure aux attentes; Communications proactives et régulières; Respect constants des délais et budgets; Équipe hautement réactive et collaborative\nPoints faibles : Visibilité de projet et mises à jour de statut parfois insuffisantes; Estimations de temps parfois inexactes; Accessibilité documentaire en temps réel durant sessions; Coût potentiellement plus élevé que certains concurrents"
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.68,
+          "confiance_faible": false,
+          "extrait": "AMELA Technology (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (26 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 25 avis) :\nPoints forts : Respect constant des délais et des budgets; Réactivité exceptionnelle aux demandes et ajustements; Expertise technique profonde et diversifiée; Excellente qualité de code et de livrables\nPoints faibles : Compétences linguistiques orales à améliorer (anglais); Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+        },
+        {
+          "nom": "TRIARE, LLC",
+          "service_type": "web",
+          "similarity": 0.676,
+          "confiance_faible": false,
+          "extrait": "TRIARE, LLC (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $50,000 - $199,999\nNote : 4.9/5 (39 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.92, basé sur 43 avis) :\nPoints forts : Expertise technique et compétence reconnue; Qualité constante des livérables; Réactivité et disponibilité exceptionnelles; Respect des délais et organisation de projet\nPoints faibles : Quelques retards occasionnels sur certains jalons; Compétences linguistiques limitées en allemand pour un client; Manque d'anticipation sur les délais (pas assez de marge); Suggestions proactives d'améliorations pas toujours proposées spontanément"
+        },
+        {
+          "nom": "SolveIt",
+          "service_type": "mobile",
+          "similarity": 0.675,
+          "confiance_faible": false,
+          "extrait": "SolveIt (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nNote : 5/5 (51 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 53 avis) :\nPoints forts : Gestion de projet exceptionnelle et structurée; Réactivité et disponibilité exceptionnelles; Expertise technique solide et variée; Qualité de code et architecture robuste\nPoints faibles : Nécessité de formation interne sur certaines technologies spécifiques; Processus d'intégration initial pouvant être optimisé; Besoin d'amélioration occasionnel sur la planification des réunions"
+        },
+        {
+          "nom": "Apresta",
+          "service_type": "web",
+          "similarity": 0.669,
+          "confiance_faible": false,
+          "extrait": "Apresta (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 4 avis) :\nPoints forts : Réactivité et disponibilité; Qualité de la réalisation et attention aux détails; Écoute du client et prise en compte des besoins; Professionnalisme et expertise technique\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Tallium Inc.",
+          "service_type": "web",
+          "similarity": 0.669,
+          "confiance_faible": false,
+          "extrait": "Tallium Inc. (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $40,000 to $1.5 million\nNote : 5/5 (42 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 40 avis) :\nPoints forts : Qualité exceptionnelle des livrables; Communication transparente et proactive; Respect régulier et fiable des délais; Réactivité et disponibilité constante\nPoints faibles : Quelques erreurs de communication occasionnelles liées au contexte de travail à distance; Choix technologiques non approuvés ayant eu des implications budgétaires dans un cas; Absence de présence physique locale pour certains clients préférant des rencontres en personne"
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.667,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "ikomobi",
+          "service_type": "web",
+          "similarity": 0.666,
+          "confiance_faible": false,
+          "extrait": "ikomobi (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 8 avis) :\nPoints forts : Expertise technique et recommandations technologiques pertinentes; Qualité constante des livrables et attention à l'UX; Communication transparente et relations humaines basées sur la confiance; Réactivité et flexibilité face aux évolutions de projet\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Y a-t-il des concurrents connus pour ne pas respecter les délais ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.653,
+      "temps_reponse_sec": 9.23,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici la réponse directe pour votre équipe commerciale, basée uniquement sur les données Clutch fournies :\n\n**Non, aucun concurrent de la liste n'est identifié comme ne respectant pas les délais.**\n\nVoici les faits précis que vous pouvez utiliser :\n\n*   **Données insuffisantes pour la majorité :** Pour l'écrasante majorité des concurrents à Lille (Contraste Europe, Les Fabricants, Celaneo, Les-Tilleuls.coop, Tymate, NiceToMeetYou, Neoweb, Dernier Cri), les fiches de données n'indiquent **aucune analyse d'avis clients disponible**. Il est donc impossible de se prononcer sur leur respect des délais.\n*   **Un concurrent exemplaire sur ce point :** Le seul concurrent pour lequel nous disposons d'une analyse d'avis clients est **AMELA Technology (web)**. Les données indiquent au contraire que l'un de leurs points forts est le **« Respect constant des délais et des budgets »**.\n\n*Note : Ces informations concernent bien des prestations de développement web et mobile sur la zone de Lille et ses environs, conformément à notre périmètre de données.*",
+      "sources": [
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.659,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (web)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "web",
+          "similarity": 0.657,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (web)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "web",
+          "similarity": 0.655,
+          "confiance_faible": false,
+          "extrait": "Celaneo (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.654,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (mobile)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.653,
+          "confiance_faible": false,
+          "extrait": "Les-Tilleuls.coop (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.652,
+          "confiance_faible": false,
+          "extrait": "AMELA Technology (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (26 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 25 avis) :\nPoints forts : Respect constant des délais et des budgets; Réactivité exceptionnelle aux demandes et ajustements; Expertise technique profonde et diversifiée; Excellente qualité de code et de livrables\nPoints faibles : Compétences linguistiques orales à améliorer (anglais); Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "web",
+          "similarity": 0.651,
+          "confiance_faible": false,
+          "extrait": "Tymate (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.651,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.651,
+          "confiance_faible": false,
+          "extrait": "Tymate (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "NiceToMeetYou",
+          "service_type": "web",
+          "similarity": 0.65,
+          "confiance_faible": false,
+          "extrait": "NiceToMeetYou (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.65,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Dernier Cri",
+          "service_type": "web",
+          "similarity": 0.649,
+          "confiance_faible": false,
+          "extrait": "Dernier Cri (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "Quel est le budget minimum demandé par les agences de développement web à Lille ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.716,
+      "temps_reponse_sec": 11.05,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici une synthèse directe et exploitable des budgets minimums de projet demandés par vos concurrents sur le marché du développement web à Lille.\n\nLe ticket d’entrée se divise en 4 segments distincts :\n\n### 1. L'entrée de gamme \"Low Cost\" (1 000 $)\n*   **la revanche des sites** : $1,000+\n\n### 2. Le standard du marché lillois (5 000 € / 5 000 $ à 8 000 €)\n*C'est la tranche où se positionne la grande majorité de vos concurrents directs.*\n*   **Budget min. de 5 000 €+** : Lemon Interactive, Adveris\n*   **Budget min. de $5,000+** : SAS Webagencelille.com, Les-Tilleuls.coop, Neoweb, Redlab agency, Whatson Web, Wapiti Agency\n*   **Budget min. de 8 000 €+** : BASH\n\n### 3. Le segment Premium (25 000 $)\n*   **Atelier256** : $25,000+ (à noter que leur coût moyen de projet constaté se situe entre $200,000 et $999,999)\n\n### 4. Le segment Grands Comptes / Entreprise (50 000 $)\n*   **Les Fabricants** : $50,000+\n\n---\n\n### 💡 Argumentaire pour votre équipe commerciale :\n*   **Si votre budget de projet est inférieur à 5 000 €** : Vous vous positionnez en alternative très compétitive face à 10 des 12 concurrents répertoriés (seule *la revanche des sites* descend plus bas).\n*   **Si vous ciblez le standard du marché (projets entre 5 000 € et 15 000 €)** : Votre principal argument face à la masse de concurrents à $5,000+ devra reposer sur votre expertise technique ou votre accompagnement, car les prix d'appel sont très similaires.\n*   **Si vous visez des budgets plus importants (> 25 000 € / 50 000 €)** : Vos seuls concurrents directs sur cette grille tarifaire de départ sont *Atelier256* et *Les Fabricants*.",
+      "sources": [
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.779,
+          "confiance_faible": false,
+          "extrait": "SAS Webagencelille.com (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "BASH",
+          "service_type": "web",
+          "similarity": 0.729,
+          "confiance_faible": false,
+          "extrait": "BASH (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 8 000 €+\nFourchette de prix des projets réalisés : 8 000 EUR à 25 000 EUR\nBudget médian : 16 500 EUR\nTranche de projet la plus courante : < 10 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 1, basé sur 2 avis) :\nPoints forts : Expertise technique reconnue; Rigueur et agilité dans la gestion des projets; Écoute active des besoins clients; Suivi et accompagnement continu après la création\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.722,
+          "confiance_faible": false,
+          "extrait": "Les-Tilleuls.coop (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.72,
+          "confiance_faible": false,
+          "extrait": "Lemon Interactive (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 10 000 EUR à 100 000 EUR\nBudget médian : 40 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.48/5 (9 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 9 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Communication fluide et constructive; Expertise technique en SEO, SEA et marketing digital; Qualité professionnelle des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.711,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.708,
+          "confiance_faible": false,
+          "extrait": "la revanche des sites (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Redlab agency",
+          "service_type": "web",
+          "similarity": 0.706,
+          "confiance_faible": false,
+          "extrait": "Redlab agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (36 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.97, basé sur 37 avis) :\nPoints forts : Excellence globale de la qualité du code et absence de bugs; Réactivité exceptionnelle aux demandes et changements; Communication transparente et proactive tout au long des projets; Respect rigoureux des délais et des jalons\nPoints faibles : Barrière linguistique occasionnelle mentionnée par un client; Documentation structurée pourrait être plus détaillée dans certains cas; Pas de travail les week-ends (mentionné une seule fois, perçu négativement par un client); Transition design-développement peut être sujette à des ajustements mineurs sur qualité/performance"
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.706,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "web",
+          "similarity": 0.705,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (web)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "web",
+          "similarity": 0.704,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "web",
+          "similarity": 0.703,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité; Communication proactive; Qualité des livrables; Collaboration efficace\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Wapiti Agency",
+          "service_type": "web",
+          "similarity": 0.702,
+          "confiance_faible": false,
+          "extrait": "Wapiti Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "Quelle est l'agence la mieux notée sur Clutch parmi nos concurrents mobile ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.786,
+      "temps_reponse_sec": 9.7,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici la réponse directe et exploitable pour votre équipe commerciale, basée uniquement sur les données Clutch fournies :\n\nL'agence la mieux notée parmi vos concurrents sur le segment mobile est **Build Me App**.\n\n### **1. Le Leader : Build Me App**\n* **Note :** **5/5** (sur 17 avis)\n* **Budget minimum :** $10,000+\n* **Taux horaire :** $25 - $49 / hr (très compétitif)\n* **Arguments pour vous positionner face à eux :**\n  * *Leurs points forts reconnus :* Réactivité et disponibilité exceptionnelles, respect systématique des délais, communication transparente.\n  * *Leurs faiblesses à exploiter :* Ils ont rencontré des difficultés initiales sur la stratégie marketing digitale (nécessitant des ajustements). Vous pouvez mettre en avant votre expertise globale et sans friction dès le démarrage du projet.\n\n---\n\n### **2. Le challenger à surveiller : Altar.io**\nBien que sa note soit légèrement inférieure, cette agence représente un concurrent de poids par son volume d'avis.\n* **Note :** **4.9/5** (sur 28 avis)\n* **Budget minimum :** $25,000+\n* **Taux horaire :** $50 - $99 / hr\n* **Arguments pour vous positionner face à eux :**\n  * *Leurs faiblesses à exploiter :* Les clients ont relevé un manque de visibilité sur l'avancement du projet (mises à jour de statut parfois insuffisantes), des estimations de temps parfois inexactes, et un manque d'accessibilité documentaire en temps réel. **Misez sur votre méthodologie de suivi de projet agile, transparente et vos outils de co-pilotage en temps réel.**\n\n*(Note : Les autres concurrents analysés ont soit une note inférieure comme Atelier256 (4.5/5), soit aucune donnée d'évaluation disponible sur Clutch).*",
+      "sources": [
+        {
+          "nom": "User Agency",
+          "service_type": "mobile",
+          "similarity": 0.795,
+          "confiance_faible": false,
+          "extrait": "User Agency (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.794,
+          "confiance_faible": false,
+          "extrait": "Niji (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Dernier Cri",
+          "service_type": "mobile",
+          "similarity": 0.794,
+          "confiance_faible": false,
+          "extrait": "Dernier Cri (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.793,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.79,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (mobile)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.789,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité exceptionnelles; Communication proactive avec recherche active de feedback; Qualité des livrables avec résultats mesurables; Excellente collaboration et intégration d'équipe\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.782,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.782,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "mobile",
+          "similarity": 0.78,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Nutshel Lab",
+          "service_type": "mobile",
+          "similarity": 0.78,
+          "confiance_faible": false,
+          "extrait": "Nutshel Lab (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "UKHÖM I Creative Studio",
+          "service_type": "mobile",
+          "similarity": 0.779,
+          "confiance_faible": false,
+          "extrait": "UKHÖM I Creative Studio (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.778,
+          "confiance_faible": false,
+          "extrait": "Altar.io (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 30 avis) :\nPoints forts : Qualité systématiquement supérieure aux attentes; Communications proactives et régulières; Respect constants des délais et budgets; Équipe hautement réactive et collaborative\nPoints faibles : Visibilité de projet et mises à jour de statut parfois insuffisantes; Estimations de temps parfois inexactes; Accessibilité documentaire en temps réel durant sessions; Coût potentiellement plus élevé que certains concurrents"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "Compare les tarifs entre le développement web et le développement mobile chez nos concurrents.",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.713,
+      "temps_reponse_sec": 16.95,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Bonjour à l'équipe commerciale,\n\nVoici une analyse comparative directe des tarifs (taux horaires et budgets minimums) pratiqués par nos concurrents basés à Lille et ses environs pour les prestations de développement web et mobile. \n\n*Note : Les données fournies ne contiennent pas le coût moyen réel des projets (indiqué comme non disponible pour tous les concurrents). La comparaison se base donc exclusivement sur les budgets minimums requis et les fourchettes de taux horaires.*\n\n---\n\n### 1. Le constat majeur : Une stricte égalité des tarifs Web vs Mobile chez les acteurs mixtes\nPour l'ensemble des concurrents lillois pour lesquels nous disposons de données sur les deux types de prestations, **les tarifs et les budgets minimums sont rigoureusement identiques**, qu'il s'agisse de développement web ou mobile :\n\n*   **Web Maniac** (Positionnement Haut de gamme / Taux horaire élevé) :\n    *   *Web & Mobile :* Même budget minimum ($5 000+) et même taux horaire (**$150 - $199 / hr**).\n*   **Whatson Web** (Positionnement Standard) :\n    *   *Web & Mobile :* Même budget minimum ($5 000+) et même taux horaire (**$100 - $149 / hr**).\n*   **Contraste Europe** (Positionnement Grands Comptes / Entreprise) :\n    *   *Web & Mobile :* Même budget d'entrée très élevé (**$75 000+**) et même taux horaire basé sur le volume (**$50 - $99 / hr**).\n\n---\n\n### 2. Comparaison globale des segments de marché (Web vs Mobile)\nSi l'on observe l'ensemble des acteurs (y compris ceux pour lesquels nous n'avons qu'un seul type de prestation), les structures tarifaires du web et du mobile restent parfaitement alignées sur trois segments :\n\n#### Segment « Low-Cost » ($25 - $49 / hr)\n*   **En Web :** *SAS Webagencelille.com* (Budget min : $5 000+ / Taux : $25 - $49 / hr).\n*   **En Mobile :** *Niji* (Budget min : $5 000+ / Taux : $25 - $49 / hr).\n*   *Analyse :* Le ticket d'entrée à bas coût est le même pour les deux technologies.\n\n#### Segment « Standard / Cœur de marché » ($100 - $149 / hr)\nLe marché lillois est très dense sur ce positionnement à $5 000+ de budget minimum.\n*   **En Web :** *Neoweb*, *ikomobi* et *DA VINCI COM* s'alignent tous sur la tranche **$100 - $149 / hr**.\n*   **En Mobile :** *Tymate* s'aligne également sur cette même tranche de **$100 - $149 / hr**.\n\n---\n\n### Argumentaire clé pour vos rendez-vous commerciaux :\n1.  **Pas de surcoût technologique visible sur les taux horaires :** Nos concurrents lillois ne facturent pas le développement mobile plus cher de l'heure que le développement web. Les grilles tarifaires sont standardisées au sein des agences.\n2.  **Contraste Europe est un cas à part :** Ils se positionnent sur des projets d'envergure (ticket d'entrée à $75 000) mais avec un taux horaire affiché bas ($50 - $99 / hr), ce qui indique une recherche de volume/grands comptes, tant en web qu'en mobile.\n3.  **Différenciation hors-tarif (Exemple d'ikomobi) :** Sur le segment standard en web, notre concurrent *ikomobi* ($100 - $149 / hr) capitalise sur d'excellents avis clients (score de 0.98/1) axés sur l'expertise technique, la qualité UX et la flexibilité. Si vous vous alignez sur ces tarifs, votre discours doit porter sur la valeur et la relation client pour les concurrencer.",
+      "sources": [
+        {
+          "nom": "Web Maniac",
+          "service_type": "mobile",
+          "similarity": 0.729,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.725,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "mobile",
+          "similarity": 0.723,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.719,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "web",
+          "similarity": 0.714,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.711,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (web)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "web",
+          "similarity": 0.711,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "ikomobi",
+          "service_type": "web",
+          "similarity": 0.707,
+          "confiance_faible": false,
+          "extrait": "ikomobi (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 8 avis) :\nPoints forts : Expertise technique et recommandations technologiques pertinentes; Qualité constante des livrables et attention à l'UX; Communication transparente et relations humaines basées sur la confiance; Réactivité et flexibilité face aux évolutions de projet\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.707,
+          "confiance_faible": false,
+          "extrait": "SAS Webagencelille.com (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.706,
+          "confiance_faible": false,
+          "extrait": "Niji (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.705,
+          "confiance_faible": false,
+          "extrait": "Tymate (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "DA VINCI COM",
+          "service_type": "web",
+          "similarity": 0.703,
+          "confiance_faible": false,
+          "extrait": "DA VINCI COM (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "Un prospect nous compare à Altar.io, que sais-tu sur leurs prix et leur réputation ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.699,
+      "temps_reponse_sec": 14.95,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Altar.io"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Voici une synthèse claire et directement exploitable pour vous positionner face à **Altar.io** (positionné sur le développement **mobile**) :\n\n### 1. Positionnement Prix\n* **Budget minimum de projet** : $25 000+\n* **Taux horaire** : $50 - $99 / hr\n* **Coût moyen de projet** : $10 000 - $49 999\n* **Axe d'attaque commercial** : Leurs tarifs sont perçus comme potentiellement plus élevés que la moyenne des concurrents.\n\n### 2. Réputation & Satisfaction Client\n* **Note globale** : 4.9/5 (basée sur 28 avis sur Clutch, avec un sentiment global très positif de 0.96 basé sur 30 avis).\n* **Points forts reconnus** : \n  * Une qualité de livrable qui dépasse systématiquement les attentes.\n  * Une équipe très collaborative, réactive et proactive dans sa communication.\n  * Un respect constant des budgets et des délais annoncés.\n\n### 3. Leurs points faibles (Vos arguments pour vous différencier)\nPour remporter le projet face à eux, insistez sur les points suivants lors de vos échanges avec le prospect :\n* **Manque de transparence et de visibilité** : Les clients d'Altar.io ont parfois regretté un manque de visibilité sur l'avancement du projet et des mises à jour de statut insuffisantes. *Mettez en avant vos rituels de suivi de projet et vos outils de pilotage transparents.*\n* **Estimations de planning perfectibles** : Leurs estimations de temps ont parfois été jugées inexactes. *Valorisez la précision de vos chiffrages et votre engagement sur le planning.*\n* **Partage d'information laborieux** : L'accessibilité aux documents en temps réel durant les sessions de travail est parfois jugée insuffisante chez eux. *Promettez un accès partagé et instantané à toute la documentation projet.*\n\n---\n\n**Note de conformité géographique** : *Conformément à nos critères, nos données concernent des concurrents du secteur lillois en développement web/mobile. Cependant, la localisation physique exacte de l'agence Altar.io n'est pas explicitement mentionnée dans la fiche de données fournie.*",
+      "sources": [
+        {
+          "nom": "Altar.io",
+          "service_type": "mobile",
+          "similarity": 0.774,
+          "confiance_faible": false,
+          "extrait": "Altar.io (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.96, basé sur 30 avis) :\nPoints forts : Qualité systématiquement supérieure aux attentes; Communications proactives et régulières; Respect constants des délais et budgets; Équipe hautement réactive et collaborative\nPoints faibles : Visibilité de projet et mises à jour de statut parfois insuffisantes; Estimations de temps parfois inexactes; Accessibilité documentaire en temps réel durant sessions; Coût potentiellement plus élevé que certains concurrents"
+        },
+        {
+          "nom": "Blaaaz",
+          "service_type": "web",
+          "similarity": 0.701,
+          "confiance_faible": false,
+          "extrait": "Blaaaz (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 1 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 50 000 EUR\nBudget médian : 20 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 1 avis) :\nPoints forts : Réactivité remarquable; Compréhension des enjeux métier; Attention au détail; Fiabilité et régularité\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Octelio Conseil",
+          "service_type": "web",
+          "similarity": 0.696,
+          "confiance_faible": false,
+          "extrait": "Octelio Conseil (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Scalo",
+          "service_type": "web",
+          "similarity": 0.693,
+          "confiance_faible": false,
+          "extrait": "Scalo (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $50,000 - $199,999\nNote : 4.7/5 (33 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.88, basé sur 33 avis) :\nPoints forts : Qualité des ressources et expertise technique variée; Réactivité et flexibilité face aux changements; Communication transparente et proactive; Respect des délais de livraison\nPoints faibles : Tarification perfectible (pourrait être plus compétitive); Quelques cas d'attrition chez les ressources fournies; Qualité variable du code dans certains projets; Certains développeurs manquent de compétences en communication interpersonnelle"
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.693,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (web)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.692,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.691,
+          "confiance_faible": false,
+          "extrait": "AMELA Technology (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (26 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 25 avis) :\nPoints forts : Respect constant des délais et des budgets; Réactivité exceptionnelle aux demandes et ajustements; Expertise technique profonde et diversifiée; Excellente qualité de code et de livrables\nPoints faibles : Compétences linguistiques orales à améliorer (anglais); Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.69,
+          "confiance_faible": false,
+          "extrait": "Hello Pomelo (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 50 000 €+\nFourchette de prix des projets réalisés : 50 000 €+ à None\nÉvaluation des tarifs par les clients : 4,9 / 5\nNote : 4.52/5 (16 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 10 avis) :\nPoints forts : Réactivité de l'équipe; Excellente communication et écoute client; Expertise technique et maîtrise agile; Qualité des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.69,
+          "confiance_faible": false,
+          "extrait": "Les-Tilleuls.coop (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "web",
+          "similarity": 0.69,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité; Communication proactive; Qualité des livrables; Collaboration efficace\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.689,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité exceptionnelles; Communication proactive avec recherche active de feedback; Qualité des livrables avec résultats mesurables; Excellente collaboration et intégration d'équipe\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "web",
+          "similarity": 0.688,
+          "confiance_faible": false,
+          "extrait": "Celaneo (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Quels arguments puis-je utiliser face à un concurrent qui a des avis négatifs sur la communication ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.618,
+      "temps_reponse_sec": 19.0,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Voici une fiche d'arguments clés, directement utilisables par votre équipe commerciale, pour vous positionner face aux concurrents de la région de Lille présentant des faiblesses avérées en communication et suivi client.\n\n---\n\n### 1. Face à l'absence de suivi et un support client défaillant\n* **Concurrents visés :** **Inov Agency** (suivi défaillant, support inefficace), **Crystal'ID** (suivi absent après les premiers mois) et **AmphiBee** (support client insuffisant).\n* **Arguments commerciaux à utiliser :**\n  * **La pérennité de l'accompagnement :** *« Contrairement à d'autres agences locales qui délaissent le suivi après les premiers mois ou disposent d'un support client insuffisant, nous faisons de la maintenance et de l'accompagnement post-livraison un axe majeur. Vous ne serez pas livré à vous-même après le lancement. »*\n  * **La réactivité du support :** *« Notre équipe de support est structurée pour répondre rapidement et efficacement à vos demandes, évitant ainsi les lenteurs de service que l'on peut déplorer chez d'autres acteurs du marché lillois. »*\n\n### 2. Face au manque de clarté, de structure et de transparence\n* **Concurrents visés :** **Inov Agency** (manque de clarté/structure à l'intégration) et **Crystal'ID** (manque de transparence sur les contrats et frais).\n* **Arguments commerciaux à utiliser :**\n  * **Un onboarding client structuré :** *« Dès le démarrage de notre collaboration, nous suivons un processus d'intégration transparent et structuré. Vous savez exactement qui fait quoi, quand et comment, évitant le flou de démarrage que certains clients regrettent chez d'autres agences. »*\n  * **La transparence contractuelle :** *« Nos devis et conditions contractuelles sont totalement transparents. Vous restez propriétaire de votre site et aucun frais mensuel caché ne vous sera imposé en cours de route. »*\n\n### 3. Face aux barrières de communication (langue et canaux)\n* **Concurrent visé :** **AMELA Technology** (compétences orales en anglais à améliorer, manque de canaux de communication comme WhatsApp, Telegram, etc.).\n* **Arguments commerciaux à utiliser :**\n  * **La fluidité des échanges locaux :** *« Travailler avec nous, c'est l'assurance d'échanges fluides, sans barrière de la langue à l'oral. Notre équipe lilloise communique de manière claire et directe avec vous. »*\n  * **La flexibilité des canaux de communication :** *« Nous nous adaptons à vos outils du quotidien (plateformes de messagerie directe, appels, réunions physiques à Lille) pour que la communication soit la plus naturelle et réactive possible. »*\n\n---\n\n**Note pour l'équipe commerciale :** Les données d'avis clients proviennent de sources réelles (Clutch, La Fabrique du Net) et se limitent strictement aux agences de développement web et mobile de la métropole lilloise listées dans notre base de données.",
+      "sources": [
+        {
+          "nom": "Inov Agency",
+          "service_type": "web",
+          "similarity": 0.64,
+          "confiance_faible": false,
+          "extrait": "Inov Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.35, basé sur 6 avis) :\nPoints forts : Disponibilité et écoute du client; Réactivité face aux demandes; Capacité à travailler avec divers profils d'entreprises; Accueil chaleureux et bienveillant\nPoints faibles : Manque de clarté et de structure à l'intégration; Service lent et suivi défaillant; Support client inefficace; Tarification trompeuse et coûts abusifs"
+        },
+        {
+          "nom": "Crystal'ID",
+          "service_type": "web",
+          "similarity": 0.635,
+          "confiance_faible": false,
+          "extrait": "Crystal'ID (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.25, basé sur 16 avis) :\nPoints forts : Réactivité opérationnelle pour les modifications de site; Expertise en référencement Google (pour certains clients); Design attractif et personnalisé; Résultats concrets mesurables pour quelques clients\nPoints faibles : Tarification très élevée (270-350€/mois) sans propriété du site; Manque de transparence sur les conditions contractuelles et les frais; Référencement décevant ou inefficace pour la majorité; Suivi absent après les premiers mois"
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.621,
+          "confiance_faible": false,
+          "extrait": "Lemon Interactive (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 10 000 EUR à 100 000 EUR\nBudget médian : 40 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.48/5 (9 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 9 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Communication fluide et constructive; Expertise technique en SEO, SEA et marketing digital; Qualité professionnelle des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.621,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.621,
+          "confiance_faible": false,
+          "extrait": "SAS Webagencelille.com (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "NiceToMeetYou",
+          "service_type": "web",
+          "similarity": 0.615,
+          "confiance_faible": false,
+          "extrait": "NiceToMeetYou (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Denkimedia",
+          "service_type": "web",
+          "similarity": 0.614,
+          "confiance_faible": false,
+          "extrait": "Denkimedia (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "AmphiBee",
+          "service_type": "web",
+          "similarity": 0.612,
+          "confiance_faible": false,
+          "extrait": "AmphiBee (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : positif, score 0.7, basé sur 1 avis) :\nPoints forts : Innovation et modernité; Facilité d'utilisation; Adapté aux utilisateurs technophiles\nPoints faibles : Support client insuffisant; Manque de visibilité; Absence d'avis établis/reconnaissance"
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.609,
+          "confiance_faible": false,
+          "extrait": "AMELA Technology (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (26 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 25 avis) :\nPoints forts : Respect constant des délais et des budgets; Réactivité exceptionnelle aux demandes et ajustements; Expertise technique profonde et diversifiée; Excellente qualité de code et de livrables\nPoints faibles : Compétences linguistiques orales à améliorer (anglais); Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "web",
+          "similarity": 0.608,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (web)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.608,
+          "confiance_faible": false,
+          "extrait": "la revanche des sites (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.607,
+          "confiance_faible": false,
+          "extrait": "Hello Pomelo (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 50 000 €+\nFourchette de prix des projets réalisés : 50 000 €+ à None\nÉvaluation des tarifs par les clients : 4,9 / 5\nNote : 4.52/5 (16 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 10 avis) :\nPoints forts : Réactivité de l'équipe; Excellente communication et écoute client; Expertise technique et maîtrise agile; Qualité des livrables\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "Quel est le taux horaire pratiqué par SensioLabs ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.699,
+      "temps_reponse_sec": 10.37,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "SensioLabs"
+      ],
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0,
+      "reponse": "Bonjour,\n\nLes données fournies concernant les concurrents de la région lilloise ne contiennent aucune information sur l'agence **SensioLabs**. \n\nJe ne suis donc pas en mesure de vous indiquer le taux horaire pratiqué par ce concurrent sur la base de ces documents.",
+      "sources": [
+        {
+          "nom": "Les-Tilleuls.coop",
+          "service_type": "web",
+          "similarity": 0.724,
+          "confiance_faible": false,
+          "extrait": "Les-Tilleuls.coop (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Redlab agency",
+          "service_type": "web",
+          "similarity": 0.712,
+          "confiance_faible": false,
+          "extrait": "Redlab agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (36 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.97, basé sur 37 avis) :\nPoints forts : Excellence globale de la qualité du code et absence de bugs; Réactivité exceptionnelle aux demandes et changements; Communication transparente et proactive tout au long des projets; Respect rigoureux des délais et des jalons\nPoints faibles : Barrière linguistique occasionnelle mentionnée par un client; Documentation structurée pourrait être plus détaillée dans certains cas; Pas de travail les week-ends (mentionné une seule fois, perçu négativement par un client); Transition design-développement peut être sujette à des ajustements mineurs sur qualité/performance"
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.704,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.7,
+          "confiance_faible": false,
+          "extrait": "Hello Pomelo (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 50 000 €+\nFourchette de prix des projets réalisés : 50 000 €+ à None\nÉvaluation des tarifs par les clients : 4,9 / 5\nNote : 4.52/5 (16 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 10 avis) :\nPoints forts : Réactivité de l'équipe; Excellente communication et écoute client; Expertise technique et maîtrise agile; Qualité des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Octelio Conseil",
+          "service_type": "web",
+          "similarity": 0.7,
+          "confiance_faible": false,
+          "extrait": "Octelio Conseil (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.699,
+          "confiance_faible": false,
+          "extrait": "Lemon Interactive (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 10 000 EUR à 100 000 EUR\nBudget médian : 40 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.48/5 (9 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 9 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Communication fluide et constructive; Expertise technique en SEO, SEA et marketing digital; Qualité professionnelle des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "BASH",
+          "service_type": "web",
+          "similarity": 0.695,
+          "confiance_faible": false,
+          "extrait": "BASH (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 8 000 €+\nFourchette de prix des projets réalisés : 8 000 EUR à 25 000 EUR\nBudget médian : 16 500 EUR\nTranche de projet la plus courante : < 10 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 1, basé sur 2 avis) :\nPoints forts : Expertise technique reconnue; Rigueur et agilité dans la gestion des projets; Écoute active des besoins clients; Suivi et accompagnement continu après la création\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "SLASH CONSULTING",
+          "service_type": "web",
+          "similarity": 0.695,
+          "confiance_faible": false,
+          "extrait": "SLASH CONSULTING (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "ATELIER 33",
+          "service_type": "web",
+          "similarity": 0.693,
+          "confiance_faible": false,
+          "extrait": "ATELIER 33 (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Blaaaz",
+          "service_type": "web",
+          "similarity": 0.692,
+          "confiance_faible": false,
+          "extrait": "Blaaaz (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 1 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 50 000 EUR\nBudget médian : 20 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 1 avis) :\nPoints forts : Réactivité remarquable; Compréhension des enjeux métier; Attention au détail; Fiabilité et régularité\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "web",
+          "similarity": 0.691,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité; Communication proactive; Qualité des livrables; Collaboration efficace\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.688,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité exceptionnelles; Communication proactive avec recherche active de feedback; Qualité des livrables avec résultats mesurables; Excellente collaboration et intégration d'équipe\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "Que disent les avis clients à propos de Ideine ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.641,
+      "temps_reponse_sec": 10.44,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Ideine"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Voici les informations issues des retours clients concernant votre concurrent **Ideine** à Lille, à utiliser pour votre positionnement commercial :\n\n### 1. Ideine (Prestations Mobile)\nLes retours clients sont **très positifs** (score de sentiment de 0.95/1), bien que basés sur un volume faible (**2 avis** sur Clutch, note de **4.18/5**).\n\n*   **Arguments forts du concurrent (à contrer ou égaler) :**\n    *   **Réactivité et disponibilité :** Très forte présence et réactivité auprès du client.\n    *   **Accompagnement de bout en bout :** Les clients apprécient un suivi complet tout au long du projet.\n    *   **Fiabilité des livraisons :** Une cadence de livraison régulière est soulignée.\n    *   **Expertise technique :** Des compétences techniques solides et reconnues.\n*   **Points faibles :** Aucun point faible n'est signalé dans les avis clients.\n*   **Indicateur tarifaire associé :** Taux horaire élevé ($100 - $149 / hr) pour un budget de projet minimum de $5,000+.\n\n---\n\n### 2. Ideine (Prestations Web)\n*   **Avis clients :** **Aucune donnée d'avis clients** n'est disponible pour l'activité web d'Ideine dans les documents fournis. \n\n---\n\n**Note pour le commercial :** \nFace à Ideine (mobile), vous faites face à un acteur perçu comme très professionnel, réactif et expert, mais dont la réputation en ligne repose sur un très faible échantillon d'avis (seulement 2). Si vous disposez de plus de références clients ou d'une tarification plus compétitive que leur tranche de 100$-149$/heure, ce sont des arguments clés à avancer.",
+      "sources": [
+        {
+          "nom": "Ideine",
+          "service_type": "mobile",
+          "similarity": 0.79,
+          "confiance_faible": false,
+          "extrait": "Ideine (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 2 avis) :\nPoints forts : Très grande réactivité et disponibilité; Accompagnement complet du projet; Cadence de livraison régulière; Expertise technique avérée\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Ideine",
+          "service_type": "web",
+          "similarity": 0.75,
+          "confiance_faible": false,
+          "extrait": "Ideine (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Adveris",
+          "service_type": "web",
+          "similarity": 0.635,
+          "confiance_faible": false,
+          "extrait": "Adveris (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 200 000 EUR\nBudget médian : 100 000 EUR\nTranche de projet la plus courante : 50 000€ - 200 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.3/5 (4 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 3 avis) :\nPoints forts : Qualité exceptionnelle et professionnalisme; Équipe réactive et efficace; Excellente écoute et suivi client; Capacité à s'adapter à des contraintes de délais\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Lemon Interactive",
+          "service_type": "web",
+          "similarity": 0.623,
+          "confiance_faible": false,
+          "extrait": "Lemon Interactive (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 10 000 EUR à 100 000 EUR\nBudget médian : 40 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.48/5 (9 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 9 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Communication fluide et constructive; Expertise technique en SEO, SEA et marketing digital; Qualité professionnelle des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Hello Pomelo",
+          "service_type": "web",
+          "similarity": 0.622,
+          "confiance_faible": false,
+          "extrait": "Hello Pomelo (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 50 000 €+\nFourchette de prix des projets réalisés : 50 000 €+ à None\nÉvaluation des tarifs par les clients : 4,9 / 5\nNote : 4.52/5 (16 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 10 avis) :\nPoints forts : Réactivité de l'équipe; Excellente communication et écoute client; Expertise technique et maîtrise agile; Qualité des livrables\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.615,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Crystal'ID",
+          "service_type": "web",
+          "similarity": 0.615,
+          "confiance_faible": false,
+          "extrait": "Crystal'ID (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.25, basé sur 16 avis) :\nPoints forts : Réactivité opérationnelle pour les modifications de site; Expertise en référencement Google (pour certains clients); Design attractif et personnalisé; Résultats concrets mesurables pour quelques clients\nPoints faibles : Tarification très élevée (270-350€/mois) sans propriété du site; Manque de transparence sur les conditions contractuelles et les frais; Référencement décevant ou inefficace pour la majorité; Suivi absent après les premiers mois"
+        },
+        {
+          "nom": "Blaaaz",
+          "service_type": "web",
+          "similarity": 0.614,
+          "confiance_faible": false,
+          "extrait": "Blaaaz (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 1 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 50 000 EUR\nBudget médian : 20 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 1 avis) :\nPoints forts : Réactivité remarquable; Compréhension des enjeux métier; Attention au détail; Fiabilité et régularité\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Inov Agency",
+          "service_type": "web",
+          "similarity": 0.613,
+          "confiance_faible": false,
+          "extrait": "Inov Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\n\nAnalyse des avis clients (sentiment global : negatif, score 0.35, basé sur 6 avis) :\nPoints forts : Disponibilité et écoute du client; Réactivité face aux demandes; Capacité à travailler avec divers profils d'entreprises; Accueil chaleureux et bienveillant\nPoints faibles : Manque de clarté et de structure à l'intégration; Service lent et suivi défaillant; Support client inefficace; Tarification trompeuse et coûts abusifs"
+        },
+        {
+          "nom": "Pragmea",
+          "service_type": "web",
+          "similarity": 0.61,
+          "confiance_faible": false,
+          "extrait": "Pragmea (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 5 000 €+\nFourchette de prix des projets réalisés : 12 000 EUR à 200 000 EUR\nBudget médian : 30 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 2 avis) :\nPoints forts : Expertise technique solide; Équipe coopérative et agréable; Dépassement des attentes; Bonne gestion des contraintes techniques\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Kode Creators",
+          "service_type": "mobile",
+          "similarity": 0.607,
+          "confiance_faible": false,
+          "extrait": "Kode Creators (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (19 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 20 avis) :\nPoints forts : Expertise technique multidisciplinaire en iOS, Android, Flutter, Laravel, MERN; Réactivité exceptionnelle et disponibilité constante de l'équipe; Qualité de code et architecture robuste avec documentation complète; Respect systématique des délais et des jalons de projet\nPoints faibles : Fourniture potentiellement moins fréquente de mises à jour proactives pendant certaines phases"
+        },
+        {
+          "nom": "Meant4.com",
+          "service_type": "web",
+          "similarity": 0.603,
+          "confiance_faible": false,
+          "extrait": "Meant4.com (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nNote : 5/5 (5 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 5 avis) :\nPoints forts : Forte réactivité et agilité; Respect systématique des délais; Expertise technique solide; Approche centrée client\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "Quel est le budget minimum de projet demandé par Build Me App ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.693,
+      "temps_reponse_sec": 6.24,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Build Me App"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "Le budget minimum de projet demandé par **Build Me App** (concurrent sur le segment mobile) est de **10 000 $ et plus** ($10,000+). \n\n**Infos complémentaires utiles pour vos rdv :**\n* **Coût moyen de projet :** Entre 10 000 $ et 49 999 $\n* **Taux horaire pratiqué :** 25 $ - 49 $ / h",
+      "sources": [
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.792,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "mobile",
+          "similarity": 0.701,
+          "confiance_faible": false,
+          "extrait": "Tymate (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "mobile",
+          "similarity": 0.687,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Tymate",
+          "service_type": "web",
+          "similarity": 0.686,
+          "confiance_faible": false,
+          "extrait": "Tymate (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "NiceToMeetYou",
+          "service_type": "web",
+          "similarity": 0.686,
+          "confiance_faible": false,
+          "extrait": "NiceToMeetYou (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Meant4.com",
+          "service_type": "web",
+          "similarity": 0.686,
+          "confiance_faible": false,
+          "extrait": "Meant4.com (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nNote : 5/5 (5 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 5 avis) :\nPoints forts : Forte réactivité et agilité; Respect systématique des délais; Expertise technique solide; Approche centrée client\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Memory Squared",
+          "service_type": "mobile",
+          "similarity": 0.686,
+          "confiance_faible": false,
+          "extrait": "Memory Squared (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $30,000 to $112,000\nNote : 5/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 30 avis) :\nPoints forts : Communication exceptionnelle et proactive; Respect rigoureux des délais et des budgets; Qualité de livrable supérieure aux attentes; Expertise technique et architectural solide\nPoints faibles : Souhaitable d'avoir davantage de mise à jour hebdomadaire proactive (signalé dans un avis)"
+        },
+        {
+          "nom": "Niji",
+          "service_type": "mobile",
+          "similarity": 0.683,
+          "confiance_faible": false,
+          "extrait": "Niji (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "UKHÖM I Creative Studio",
+          "service_type": "mobile",
+          "similarity": 0.68,
+          "confiance_faible": false,
+          "extrait": "UKHÖM I Creative Studio (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "mobile",
+          "similarity": 0.68,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (mobile)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Contraste Europe",
+          "service_type": "mobile",
+          "similarity": 0.677,
+          "confiance_faible": false,
+          "extrait": "Contraste Europe (mobile)\nSource des données : Clutch\nBudget minimum de projet : $75,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Blaaaz",
+          "service_type": "web",
+          "similarity": 0.677,
+          "confiance_faible": false,
+          "extrait": "Blaaaz (web)\nSource des données : La Fabrique du Net\nBudget minimum de projet : 1 000 €+\nFourchette de prix des projets réalisés : 5 000 EUR à 50 000 EUR\nBudget médian : 20 000 EUR\nTranche de projet la plus courante : 10 000€ - 50 000€\nÉvaluation des tarifs par les clients : 5 / 5\nNote : 4.18/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 1 avis) :\nPoints forts : Réactivité remarquable; Compréhension des enjeux métier; Attention au détail; Fiabilité et régularité\nPoints faibles : aucun signalé."
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "Quelle est la note Clutch de Kode Creators ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.634,
+      "temps_reponse_sec": 6.81,
+      "comportement_correct": true,
+      "concurrent_attendu": [
+        "Kode Creators"
+      ],
+      "hit_at_k": true,
+      "reciprocal_rank": 1.0,
+      "reponse": "La note Clutch de **Kode Creators** est de **5/5** (basée sur 19 avis).\n\n**💡 Note rapide pour vos pitchs :** Bien qu'ils affichent une note maximale avec une forte expertise technique (iOS, Android, Flutter, Laravel, MERN) et des tarifs très bas (taux horaire < 25 $/h), leurs clients ont parfois signalé un manque de proactivité dans les mises à jour durant certaines phases du projet. Un point à valoriser si vous misez sur un accompagnement de proximité et transparent à Lille !",
+      "sources": [
+        {
+          "nom": "Kode Creators",
+          "service_type": "mobile",
+          "similarity": 0.731,
+          "confiance_faible": false,
+          "extrait": "Kode Creators (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (19 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 20 avis) :\nPoints forts : Expertise technique multidisciplinaire en iOS, Android, Flutter, Laravel, MERN; Réactivité exceptionnelle et disponibilité constante de l'équipe; Qualité de code et architecture robuste avec documentation complète; Respect systématique des délais et des jalons de projet\nPoints faibles : Fourniture potentiellement moins fréquente de mises à jour proactives pendant certaines phases"
+        },
+        {
+          "nom": "Kodo - Odoo Integrator",
+          "service_type": "web",
+          "similarity": 0.643,
+          "confiance_faible": false,
+          "extrait": "Kodo - Odoo Integrator (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "mobile",
+          "similarity": 0.63,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (mobile)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité exceptionnelles; Communication proactive avec recherche active de feedback; Qualité des livrables avec résultats mesurables; Excellente collaboration et intégration d'équipe\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "AMELA Technology",
+          "service_type": "web",
+          "similarity": 0.627,
+          "confiance_faible": false,
+          "extrait": "AMELA Technology (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : < $25 / hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 4.9/5 (26 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 25 avis) :\nPoints forts : Respect constant des délais et des budgets; Réactivité exceptionnelle aux demandes et ajustements; Expertise technique profonde et diversifiée; Excellente qualité de code et de livrables\nPoints faibles : Compétences linguistiques orales à améliorer (anglais); Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+        },
+        {
+          "nom": "Memory Squared",
+          "service_type": "mobile",
+          "similarity": 0.625,
+          "confiance_faible": false,
+          "extrait": "Memory Squared (mobile)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $30,000 to $112,000\nNote : 5/5 (28 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 30 avis) :\nPoints forts : Communication exceptionnelle et proactive; Respect rigoureux des délais et des budgets; Qualité de livrable supérieure aux attentes; Expertise technique et architectural solide\nPoints faibles : Souhaitable d'avoir davantage de mise à jour hebdomadaire proactive (signalé dans un avis)"
+        },
+        {
+          "nom": "Redlab agency",
+          "service_type": "web",
+          "similarity": 0.624,
+          "confiance_faible": false,
+          "extrait": "Redlab agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (36 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.97, basé sur 37 avis) :\nPoints forts : Excellence globale de la qualité du code et absence de bugs; Réactivité exceptionnelle aux demandes et changements; Communication transparente et proactive tout au long des projets; Respect rigoureux des délais et des jalons\nPoints faibles : Barrière linguistique occasionnelle mentionnée par un client; Documentation structurée pourrait être plus détaillée dans certains cas; Pas de travail les week-ends (mentionné une seule fois, perçu négativement par un client); Transition design-développement peut être sujette à des ajustements mineurs sur qualité/performance"
+        },
+        {
+          "nom": "Les Fabricants",
+          "service_type": "web",
+          "similarity": 0.623,
+          "confiance_faible": false,
+          "extrait": "Les Fabricants (web)\nSource des données : Clutch\nBudget minimum de projet : $50,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Meant4.com",
+          "service_type": "web",
+          "similarity": 0.623,
+          "confiance_faible": false,
+          "extrait": "Meant4.com (web)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nNote : 5/5 (5 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 5 avis) :\nPoints forts : Forte réactivité et agilité; Respect systématique des délais; Expertise technique solide; Approche centrée client\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Build Me App",
+          "service_type": "mobile",
+          "similarity": 0.623,
+          "confiance_faible": false,
+          "extrait": "Build Me App (mobile)\nSource des données : Clutch\nBudget minimum de projet : $10,000+\nTaux horaire : $25 - $49 /hr\nCoût moyen de projet : $10,000 - $49,999\nNote : 5/5 (17 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.98, basé sur 18 avis) :\nPoints forts : Réactivité et disponibilité exceptionnelles; Respect systématique des délais; Communication transparente et proactive; Qualité des livrables dépassant les attentes\nPoints faibles : Stratégie marketing digitale nécessitant initialement des ajustements (corrigée par la suite)"
+        },
+        {
+          "nom": "Glush",
+          "service_type": "web",
+          "similarity": 0.621,
+          "confiance_faible": false,
+          "extrait": "Glush (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : < $10,000\nNote : 5/5 (3 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.95, basé sur 3 avis) :\nPoints forts : Réactivité et disponibilité constantes; Respect systématique des échéances; Créativité et richesse des propositions; Compréhension rapide de l'identité de marque\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "Atelier256",
+          "service_type": "web",
+          "similarity": 0.621,
+          "confiance_faible": false,
+          "extrait": "Atelier256 (web)\nSource des données : Clutch\nBudget minimum de projet : $25,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : $200,000 - $999,999\nNote : 4.5/5 (2 avis)\n\nAnalyse des avis clients (sentiment global : positif, score 0.9, basé sur 2 avis) :\nPoints forts : Réactivité et flexibilité; Communication proactive; Qualité des livrables; Collaboration efficace\nPoints faibles : aucun signalé."
+        },
+        {
+          "nom": "ATELIER 33",
+          "service_type": "web",
+          "similarity": 0.615,
+          "confiance_faible": false,
+          "extrait": "ATELIER 33 (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Quelle est la météo à Lille aujourd'hui ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.97,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q12",
+      "question": "Peux-tu me donner la recette d'une quiche lorraine ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.81,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q13",
+      "question": "Quel est le cours actuel du bitcoin ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.79,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Je n'ai pas de données fiables sur ce point dans notre base de concurrents actuelle. Essaie de reformuler la question, ou il faudra peut-être élargir la collecte de données pour couvrir ce cas.",
+      "sources": []
+    },
+    {
+      "id": "q14",
+      "question": "Quel est le prix d'une application mobile chez un concurrent basé à Tokyo ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "a_trouve_des_sources": false,
+      "nb_sources": 0,
+      "similarite_moyenne": null,
+      "temps_reponse_sec": 0.0,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Notre base de données couvre uniquement des concurrents situés à Lille et ses environs. La question porte sur une zone géographique qui ne fait pas partie de notre périmètre actuel — reformule ta question sur une agence lilloise, ou il faudra élargir la collecte de données pour couvrir cette zone.",
+      "sources": []
+    },
+    {
+      "id": "q15",
+      "question": "Quels concurrents proposent aussi des services de référencement SEO ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "a_trouve_des_sources": true,
+      "nb_sources": 12,
+      "similarite_moyenne": 0.678,
+      "temps_reponse_sec": 9.02,
+      "comportement_correct": true,
+      "concurrent_attendu": null,
+      "hit_at_k": null,
+      "reciprocal_rank": null,
+      "reponse": "Bonjour l'équipe commerciale,\n\nD'après les données fournies, il est **impossible de déterminer précisément quels concurrents proposent des services de référencement SEO**. \n\n**Pourquoi ?**\nLes données extraites de Clutch pour ces concurrents de la région lilloise se limitent à la catégorie globale « (web) » et à des informations financières (budgets minimums, taux horaires). Elles ne contiennent **aucune description détaillée des prestations spécifiques** (comme le SEO/référencement naturel, la maintenance ou le marketing digital).\n\nBien que certains noms de concurrents évoquent historiquement cette expertise (comme *la revanche des sites*), les fiches fournies ne permettent pas de le confirmer de manière factuelle. Pour répondre précisément à cette question, il conviendra de compléter ces données par une analyse directe de leurs sites web respectifs.",
+      "sources": [
+        {
+          "nom": "SAS Webagencelille.com",
+          "service_type": "web",
+          "similarity": 0.688,
+          "confiance_faible": false,
+          "extrait": "SAS Webagencelille.com (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Neoweb",
+          "service_type": "web",
+          "similarity": 0.687,
+          "confiance_faible": false,
+          "extrait": "Neoweb (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "ouiflow.io",
+          "service_type": "web",
+          "similarity": 0.687,
+          "confiance_faible": false,
+          "extrait": "ouiflow.io (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Octelio Conseil",
+          "service_type": "web",
+          "similarity": 0.68,
+          "confiance_faible": false,
+          "extrait": "Octelio Conseil (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Whatson Web",
+          "service_type": "web",
+          "similarity": 0.679,
+          "confiance_faible": false,
+          "extrait": "Whatson Web (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Celaneo",
+          "service_type": "web",
+          "similarity": 0.678,
+          "confiance_faible": false,
+          "extrait": "Celaneo (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $50 - $99 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "NiceToMeetYou",
+          "service_type": "web",
+          "similarity": 0.677,
+          "confiance_faible": false,
+          "extrait": "NiceToMeetYou (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "la revanche des sites",
+          "service_type": "web",
+          "similarity": 0.675,
+          "confiance_faible": false,
+          "extrait": "la revanche des sites (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Web Maniac",
+          "service_type": "web",
+          "similarity": 0.673,
+          "confiance_faible": false,
+          "extrait": "Web Maniac (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $150 - $199 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Archand",
+          "service_type": "web",
+          "similarity": 0.672,
+          "confiance_faible": false,
+          "extrait": "Archand (web)\nSource des données : Clutch\nBudget minimum de projet : $1,000+\nTaux horaire : $25 - $49 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "Wapiti Agency",
+          "service_type": "web",
+          "similarity": 0.672,
+          "confiance_faible": false,
+          "extrait": "Wapiti Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        },
+        {
+          "nom": "User Agency",
+          "service_type": "web",
+          "similarity": 0.67,
+          "confiance_faible": false,
+          "extrait": "User Agency (web)\nSource des données : Clutch\nBudget minimum de projet : $5,000+\nTaux horaire : $100 - $149 / hr\nCoût moyen de projet : No content available\nAucune analyse d'avis clients disponible pour ce concurrent."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.88,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les ressources fournies sont de haut calibre, avec une excellente intégration technique et des livrables stables. Les clients soulignent la qualité constante du code, des architectures robustes, et la capacité à fournir immédiatement de la valeur."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité face aux demandes urgentes, aux changements de projet et aux problèmes émergents. Les remplaçants sont trouvés rapidement en cas de besoin, et les délais de réponse aux questions sont courts."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est fluide, transparente et proactive, avec des réunions quotidiennes, des contacts dédiés, et une disponibilité constante via email, Teams, ou Slack. Les clients apprécient la clarté des échanges."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le personnel possède une expertise large couvrant de nombreuses technologies (Java, Python, PHP, .NET, DevOps, cloud, etc.). Les développeurs s'adaptent rapidement aux environnements techniques des clients et proposent des améliorations."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les délais de livraison sont généralement respectés ou très proches des estimations. Les projets progressent selon les calendriers convenus, même face à des échéances serrées ou des défis inattendus."
+      },
+      {
+        "theme": "prix",
+        "polarite": "neutre",
+        "frequence": "recurrent",
+        "resume": "Les tarifs sont perçus comme raisonnables et compétitifs pour la qualité fournie. Cependant, certains clients mentionnent que les prix pourraient être plus bas, suggérant une légère marge de négociation."
+      }
+    ],
+    "points_forts": [
+      "Qualité des ressources et expertise technique variée",
+      "Réactivité et flexibilité face aux changements",
+      "Communication transparente et proactive",
+      "Respect des délais de livraison",
+      "Intégration rapide et transparence des coûts",
+      "Approche partenariale et culture client",
+      "Capacité à scaler rapidement les équipes",
+      "Gestion proactive des risques et planification"
+    ],
+    "points_faibles": [
+      "Tarification perfectible (pourrait être plus compétitive)",
+      "Quelques cas d'attrition chez les ressources fournies",
+      "Qualité variable du code dans certains projets",
+      "Certains développeurs manquent de compétences en communication interpersonnelle",
+      "Estimation des projets pouvant varier de 20-30% dans les cas complexes",
+      "Architecture logicielle parfois insatisfaisante selon les exigences client"
+    ],
+    "autres_points": [
+      "Nombreuses références long terme (certains clients depuis 2015-2016) indiquant une fidélité établie",
+      "Approche fortement consultative avec des suggestions d'amélioration technologique",
+      "Excellente réputation sur le marché polonais",
+      "Équipe capable de gérer des projets critiques pour les clients (systèmes de paiement, données sensibles, etc.)",
+      "Culture d'entreprise appréciée par les clients (souci du bien-être des équipes, flexibilité)"
+    ],
+    "concurrent": "Scalo",
+    "service_type": "web",
+    "nb_avis_analyses": 33
+  }
+]

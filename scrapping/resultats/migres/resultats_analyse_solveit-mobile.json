@@ -1,0 +1,74 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Respect systématique des délais convenus, livraisons souvent anticipées et gestion efficace des changements de priorités en cours de projet."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Communication exceptionnelle via réunions virtuelles, email et outils collaboratifs, avec disponibilité constante et transparence sur l'état du projet."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Réactivité remarquable face aux demandes, questions et changements, avec résolution rapide des problèmes et proactivité dans l'anticipation des défis."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Livraables de haute qualité, approche consciencieuse du code et de l'architecture, avec documentation détaillée et tests rigoureux."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Expertise approfondie couvrant les technologies mobiles, web, cloud et intelligence artificielle, avec capacité à proposer des solutions innovantes et adaptées."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Tarification compétitive et transparente offrant un excellent rapport qualité-prix, permettant à de nombreux clients de rester dans les enveloppes budgétaires convenues."
+      }
+    ],
+    "points_forts": [
+      "Gestion de projet exceptionnelle et structurée",
+      "Réactivité et disponibilité exceptionnelles",
+      "Expertise technique solide et variée",
+      "Qualité de code et architecture robuste",
+      "Communication claire et transparente",
+      "Respect des délais et livraison anticipée",
+      "Rapport qualité-prix excellent",
+      "Flexibilité et adaptation face aux changements",
+      "Pensée stratégique et propositions de solutions innovantes",
+      "Environnement culturel et valeurs alignées avec les clients",
+      "Documentação complète et spécifications détaillées",
+      "Travail proactif et anticipation des problèmes"
+    ],
+    "points_faibles": [
+      "Nécessité de formation interne sur certaines technologies spécifiques",
+      "Processus d'intégration initial pouvant être optimisé",
+      "Besoin d'amélioration occasionnel sur la planification des réunions"
+    ],
+    "autres_points": [
+      "Équipe jeune et dynamique avec forte culture d'entreprise",
+      "Disponibilité hors des horaires réguliers pour respecter les délais critiques",
+      "Approche consultative et avis d'experts fournis gratuitement",
+      "Capacité à gérer des projets complexes multi-technologiques",
+      "Excellente intégration en tant qu'extension de l'équipe client",
+      "Résultats mesurables : lancements accélérés, réductions de coûts, amélioration des métriques de performance"
+    ],
+    "concurrent": "SolveIt",
+    "service_type": "mobile",
+    "nb_avis_analyses": 53
+  }
+]

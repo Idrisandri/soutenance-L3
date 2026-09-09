@@ -1,0 +1,83 @@
+3 points importants dans le code document_builder.py
+
+_parse_json_field — tes colonnes points_forts, points_faibles, themes sont stockées comme du texte JSON dans Supabase (tu l'as vu dans ton fichier uploadé : "points_forts":"[\"Réactivité...\"]") — cette fonction les reconvertit en vraies listes Python avant de les afficher proprement.
+Gère les cas manquants — si un concurrent n'a pas encore d'analyse de sentiment (avis = None), ou si cout_moyen_projet vaut "No content available", le texte reste propre sans afficher du bruit inutile.
+build_document() — c'est LA fonction que le prochain script (embed_new_entries.py) va appeler pour chaque concurrent avant de l'embedder.
+
+Voici le récap complet du pipeline RAG qu'on a construit, et pourquoi c'est embed_new_entries.py le fichier qu'on lance.
+
+La structure du projet (rag-service/)
+
+rag-service/
+├── src/
+│   ├── config.py            → charge le .env, centralise les noms de modèles
+│   ├── database.py          → connexion Supabase, jointure etat_marche + avis_analyse
+│   ├── document_builder.py  → transforme une ligne (prix+avis) en texte lisible
+│   ├── embeddings.py        → appelle Gemini pour transformer un texte en vecteur
+│   └── llm_client.py        → génère la réponse finale (Gemini en dev, Claude à la soutenance)
+├── scripts/
+│   └── embed_new_entries.py → le script qu'on exécute
+├── .env                     → tes clés API
+└── requirements.txt
+
+Pourquoi embed_new_entries.py est LE fichier à lancer
+
+C'est le chef d'orchestre — il ne contient aucune logique lui-même, il appelle juste les autres modules dans le bon ordre :
+
+1. database.fetch_joined_data(only_missing_embedding=True)
+   → récupère les concurrents qui n'ont PAS encore d'embedding
+
+2. Pour chaque concurrent :
+   a. document_builder.build_document(ligne)
+      → transforme prix + avis en texte lisible
+   
+   b. embeddings.embed_text(texte)
+      → envoie ce texte à Gemini, reçoit un vecteur de 768 nombres
+   
+   c. database.update_embedding(competitor_id, vecteur)
+      → écrit ce vecteur dans la colonne embedding de Supabase
+
+Ce que ça donne concrètement
+
+Avant : etat_marche.embedding = null pour tous tes concurrents (juste du texte et des chiffres, pas cherchable sémantiquement).
+
+Après avoir lancé le script : chaque ligne a son embedding rempli — donc cherchable par similarité (le futur search.py va comparer "l'embedding de la question de l'utilisateur" avec ces vecteurs pour trouver les concurrents les plus pertinents).
+
+Pourquoi c'est un script à part, pas dans le flux principal
+
+Parce que l'embedding est une opération coûteuse et pas nécessaire à chaque question — on l'embedde une fois, on le garde en base, et le RAG (au moment où Sonia pose une question) ne fait que lire ces embeddings déjà calculés, jamais en recalculer à la volée. C'est pour ça qu'on relance ce script seulement quand il y a du nouveau (nouveaux concurrents, nouvelle analyse de sentiment) — le only_missing_embedding=True garantit qu'on ne retraite jamais ce qui est déjà fait.
+
+Explication choix LLM 
+"Claude a été utilisé pour la tâche nécessitant le plus de nuance (comprendre et classifier des avis clients en langage naturel), tandis que Gemini a été utilisé pour les tâches à fort volume et faible coût (embeddings, développement itératif)." Ça montre que t'as réfléchi à quel outil convient à quelle tâche, pas juste "j'ai pris ce qui était gratuit partout".
+
+
+
+1. "Pourquoi un LLM plutôt qu'un modèle NLP classique (type CamemBERT fine-tuné) pour le sentiment ?"
+
+Réponse à donner, en 3 arguments :
+
+Pas de données labellisées. Un modèle NLP supervisé classique a besoin d'un dataset annoté (des centaines d'avis étiquetés "positif/négatif" à la main) pour être entraîné. Je n'avais ni le temps ni les données pour ça sur 3 mois de stage. Le LLM permet du zero-shot : il classe sans avoir besoin d'exemples annotés au préalable.
+La tâche n'est pas une simple classification, c'est de l'extraction structurée. Je ne voulais pas juste "positif/négatif" — je voulais des thèmes (délais, communication, qualité...), des résumés, des points forts/faibles. Un CamemBERT fine-tuné fait bien de la classification simple, mais pas ce genre d'extraction multi-critère avec génération de texte. C'est exactement le point fort des LLM par rapport aux modèles NLP classiques.
+Contrainte de temps du stage. Entraîner un modèle demande une infrastructure et du temps de préparation de données que je n'avais pas en parallèle du reste du pipeline (scraping, RAG, etc.).
+
+Le point à ne pas cacher, à dire toi-même avant qu'on te le demande — ça fait très bonne impression en soutenance : "J'ai conscience que cette approche a une limite : contrairement à un modèle entraîné, je n'ai pas de métrique de précision formelle sur mes classifications de sentiment, seulement une vérification manuelle sur un échantillon. Une piste d'amélioration serait de constituer un petit jeu de données annoté à la main pour évaluer la fiabilité du LLM sur cette tâche." — ça montre du recul critique, ce que les jurys apprécient particulièrement.
+
+2. "Le mémoire est-il quand même de bon niveau sans avoir entraîné de modèle from scratch ?"
+
+Oui, et voici pourquoi tu peux le dire avec confiance :
+
+Ton projet couvre en fait tout le pipeline data science, pas juste le modèle :
+
+Data engineering / ETL : extraction (scraping), transformation (parsing des prix en min/max, structuration JSON), chargement (Supabase) — c'est un vrai pipeline ETL, une compétence centrale en data.
+Traitement NLP appliqué : extraction structurée par LLM (sentiment, thèmes).
+Représentation vectorielle : embeddings, indexation (ivfflat), recherche par similarité cosinus — même sans entraîner le modèle d'embedding toi-même, comprendre pourquoi et comment l'utiliser (dimension, seuil de confiance, indexation) est une vraie compétence data science.
+Architecture IA (RAG) : orchestration retrieval + generation, un pattern reconnu et à la pointe actuellement.
+Choix méthodologiques justifiés : pourquoi pas de chunking, pourquoi pas de recherche hybride, pourquoi un seuil de confiance — ce sont des décisions d'architecture réfléchies, pas des raccourcis.
+
+L'argument clé à donner si on te pousse sur "pas de training"
+
+"Utiliser des modèles pré-entraînés via API (transfer learning) est aujourd'hui la pratique standard en industrie — peu d'entreprises entraînent leurs propres LLM from scratch. La valeur du projet n'est pas dans l'entraînement d'un modèle, mais dans la conception du pipeline data (collecte, structuration, stockage), l'architecture d'orchestration (RAG), et les choix techniques justifiés à chaque étape."
+
+
+Lancement test rag
+python scripts/test_rag.py "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget et est-ce qu'il a de bons avis sur le respect des délais ?"

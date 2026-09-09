@@ -1,0 +1,80 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.92,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Livrables de très haute qualité, solutions fonctionnelles et fiables, dépassement des attentes clients sur les designs et développements"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Équipe très disponible et réactive, résolution rapide des problèmes et des bugs, support excellent au jour le jour"
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Respect systématique des délais, livraisons souvent en avance ou dans les temps, gestion de projet efficace"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Communication constante et claire via multiples canaux, points de contact réguliers, transparence sur les étapes et les problèmes"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Équipe hautement compétente et bien formée, maîtrise technique reconnue, proactivité dans les suggestions d'améliorations"
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Tarification juste et compétitive, bon rapport qualité-prix, termes flexibles, transparent sur les coûts"
+      },
+      {
+        "theme": "delais",
+        "polarite": "negatif",
+        "frequence": "ponctuel",
+        "resume": "Quelques retards mineurs sur certains jalons, principalement dus à demandes supplémentaires ou facteurs externes"
+      }
+    ],
+    "points_forts": [
+      "Expertise technique et compétence reconnue",
+      "Qualité constante des livérables",
+      "Réactivité et disponibilité exceptionnelles",
+      "Respect des délais et organisation de projet",
+      "Communication transparente et régulière",
+      "Approche consultative et pédagogique",
+      "Proactivité dans les suggestions d'améliorations",
+      "Profil personnel easygoing et service-oriented",
+      "Tarification compétitive et honnête",
+      "Responsabilité et engagement envers le client"
+    ],
+    "points_faibles": [
+      "Quelques retards occasionnels sur certains jalons",
+      "Compétences linguistiques limitées en allemand pour un client",
+      "Manque d'anticipation sur les délais (pas assez de marge)",
+      "Suggestions proactives d'améliorations pas toujours proposées spontanément",
+      "Erreurs simples dues à des problèmes de processus (résolues)"
+    ],
+    "autres_points": [
+      "Équipe passionnée et investie dans la réussite des clients",
+      "Excellentes compétences en gestion de projets multi-fuseaux horaires",
+      "Capacité à intégrer rapidement des concepts complexes",
+      "Approche consultative au-delà du simple exécution",
+      "Fort taux de recommandation et fidélisation client sur longue durée",
+      "Équipe composée typiquement de 2 à 12 personnes selon la taille du projet"
+    ],
+    "concurrent": "TRIARE, LLC",
+    "service_type": "web",
+    "nb_avis_analyses": 43
+  }
+]

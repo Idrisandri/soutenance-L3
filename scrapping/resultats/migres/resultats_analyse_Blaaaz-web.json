@@ -1,0 +1,92 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe se montre très réactive dans ses interventions auprès du client."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les rendus livrés sont de haute qualité et apportent un gain de temps significatif en interne."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'agence démontre une expertise créative remarquable, particulièrement dans la conception de concepts et d'illustrations."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe comprend avec précision les besoins du client et y répond de manière appropriée."
+      }
+    ],
+    "points_forts": [
+      "Équipe sympathique et agréable",
+      "Réactivité constante",
+      "Qualité des rendus livrés",
+      "Compréhension fine des besoins clients",
+      "Créativité exceptionnelle",
+      "Suivi personnalisé et durable"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Relation client stable et de long terme",
+      "Collaboration appréciée au niveau individuel avec les members de l'équipe"
+    ],
+    "concurrent": "Blaaaz",
+    "service_type": "marketing",
+    "nb_avis_analyses": 1
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe démontre une grande capacité de réaction et de disponibilité face aux besoins du client."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les compétences en développement web et optimisations techniques sont exercées avec sérieux et créativité."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe démontre une compréhension approfondie des enjeux métier et une attention particulière aux détails."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Le partenariat durable de plus de trois ans témoigne de la fiabilité et de la qualité constante des prestations."
+      }
+    ],
+    "points_forts": [
+      "Réactivité remarquable",
+      "Compréhension des enjeux métier",
+      "Attention au détail",
+      "Fiabilité et régularité",
+      "Partenaire de confiance durable"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Recommandation sans hésitation pour les entreprises cherchant une agence fiable et compétente"
+    ],
+    "concurrent": "Blaaaz",
+    "service_type": "web",
+    "nb_avis_analyses": 1
+  }
+]

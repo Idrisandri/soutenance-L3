@@ -1,0 +1,59 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une expertise solide dans le développement web, capable de gérer des projets complexes et d'apporter des conseils pertinents sur les meilleures pratiques."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Écoute active et compréhension approfondie des besoins clients, avec une capacité à transformer les aspirations en solutions concrètes."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les réalisations se distinguent par leur qualité fonctionnelle et esthétique, offrant des sites fluides, intuitifs et élégants qui dépassent les attentes."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Capacité à analyser rapidement les enjeux du projet et à proposer des solutions adaptées sans délai."
+      },
+      {
+        "theme": "delais",
+        "polarite": "negatif",
+        "frequence": "ponctuel",
+        "resume": "Quelques retards ponctuels signalés sur certaines livraisons, sans remettre en cause la satisfaction globale."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique avérée",
+      "Écoute et compréhension des besoins",
+      "Qualité des réalisations",
+      "Professionnalisme remarquable",
+      "Capacité de conseil et d'accompagnement",
+      "Design créatif et fonctionnel",
+      "Formation client à l'administration du site"
+    ],
+    "points_faibles": [
+      "Délais parfois légèrement rallongés sur les projets complexes",
+      "Tarification perçue comme un peu élevée par certains clients"
+    ],
+    "autres_points": [
+      "Approche personnalisée adaptée à chaque univers métier",
+      "Accompagnement complet du projet",
+      "Facilité d'évolution future des sites livrés"
+    ],
+    "concurrent": "Agence Spritz",
+    "service_type": "web",
+    "nb_avis_analyses": 4
+  }
+]

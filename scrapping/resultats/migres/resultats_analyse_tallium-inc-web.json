@@ -1,0 +1,76 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.96,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Qualité exceptionnelle des livrables et du travail fourni, régulièrement mise en avant par les clients à travers plusieurs projets."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Communication transparente et proactive, avec des mises à jour régulières et une disponibilité constante via plusieurs canaux."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Respect systématique des délais convenus, avec souvent une livraison en avance ou plus rapide que prévu."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Réactivité remarquable et disponibilité constante de la part de l'équipe pour répondre aux demandes et préoccupations."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Maîtrise technique approfondie et compétences élevées en développement, design, et architecture, adaptées à différents domaines métier."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Tarification compétitive et très favorable au regard de la qualité livrée, souvent inférieure aux propositions d'autres agences."
+      }
+    ],
+    "points_forts": [
+      "Qualité exceptionnelle des livrables",
+      "Communication transparente et proactive",
+      "Respect régulier et fiable des délais",
+      "Réactivité et disponibilité constante",
+      "Expertise technique profonde multi-domaines",
+      "Tarification compétitive et excellent rapport qualité-prix",
+      "Flexibilité et adaptation rapide aux évolutions de besoin",
+      "Gestion de projet rigoureuse et bien organisée",
+      "Aptitude à comprendre les besoins métier des clients",
+      "Proactivité et prise d'initiatives pour trouver des solutions",
+      "Équipes engagées et éthique professionnelle élevée",
+      "Capacités en UX/UI design remarquables",
+      "Aptitude à gérer des projets complexes et d'envergure"
+    ],
+    "points_faibles": [
+      "Quelques erreurs de communication occasionnelles liées au contexte de travail à distance",
+      "Choix technologiques non approuvés ayant eu des implications budgétaires dans un cas",
+      "Absence de présence physique locale pour certains clients préférant des rencontres en personne"
+    ],
+    "autres_points": [
+      "Capacité à gérer efficacement des équipes distribuées sur plusieurs pays",
+      "Méthodologie Agile bien maîtrisée avec sprints structurés et rituels de suivi",
+      "Utilisation efficace de multiples outils collaboratifs (Slack, Jira, Google Meet, Figma)",
+      "Volonté d'aller au-delà du périmètre initial pour satisfaire les clients",
+      "Récupération proactive et rédemption en cas d'insatisfaction initiale",
+      "Engagement envers la satisfaction client même après la livraison initiale",
+      "Prise en compte des valeurs et des objectifs spécifiques des clients"
+    ],
+    "concurrent": "Tallium Inc.",
+    "service_type": "web",
+    "nb_avis_analyses": 40
+  }
+]

@@ -1,0 +1,1946 @@
+[
+  {
+    "nom": "Goji Labs",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 5,
+    "nombre_avis": 87,
+    "localisation": {
+      "ville": "Los Angeles",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Mercury Development",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 34,
+    "localisation": {
+      "ville": "Aventura",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Kingsmen Digital Ventures",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 14,
+    "localisation": {
+      "ville": "Irvine",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Utility",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.8,
+    "nombre_avis": 26,
+    "localisation": {
+      "ville": "New York City",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "AppMakers USA",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 101,
+    "localisation": {
+      "ville": "Los Angeles",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "ChopDawg.com",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.8,
+    "nombre_avis": 112,
+    "localisation": {
+      "ville": "Philadelphia",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Empat",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 5,
+    "nombre_avis": 148,
+    "localisation": {
+      "ville": "San Francisco",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Konstant Infosolutions",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 173,
+    "localisation": {
+      "ville": "Jaipur",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Tapptitude",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 71,
+    "localisation": {
+      "ville": "Cluj-Napoca",
+      "pays": "Romania"
+    }
+  },
+  {
+    "nom": "WOLFPACK DIGITAL",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 76,
+    "localisation": {
+      "ville": "Cluj-Napoca",
+      "pays": "Romania"
+    }
+  },
+  {
+    "nom": "3 SIDED CUBE",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "Less than $10,000",
+    "note": 4.9,
+    "nombre_avis": 49,
+    "localisation": {
+      "ville": "Bournemouth",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "TELUS Digital",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 36,
+    "localisation": {
+      "ville": "Charlottesville",
+      "pays": "USA"
+    }
+  },
+  {
+    "nom": "Dedicated Developers",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 5,
+    "nombre_avis": 56,
+    "localisation": {
+      "ville": "Atlanta",
+      "pays": "USA"
+    }
+  },
+  {
+    "nom": "Somnio Software",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 46,
+    "localisation": {
+      "ville": "Montevideo",
+      "pays": "Uruguay"
+    }
+  },
+  {
+    "nom": "Droids On Roids",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$75,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 78,
+    "localisation": {
+      "ville": "Wrocław",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "TRIARE, LLC",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "Unknown avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 39,
+    "localisation": {
+      "ville": "Cherkasy",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Infowind Technologies IT Pvt Ltd",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 72,
+    "localisation": {
+      "ville": "Indore",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Blue Whale Apps",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 24,
+    "localisation": {
+      "ville": "Herndon",
+      "pays": "VA"
+    }
+  },
+  {
+    "nom": "Analogue IT Solutions",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "Less than $10,000",
+    "note": 5,
+    "nombre_avis": 3,
+    "localisation": {
+      "ville": "Hyderabad",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Findigo",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 11,
+    "localisation": {
+      "ville": "No content available",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "Calibrate Software",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 39,
+    "localisation": {
+      "ville": "Chicago",
+      "pays": "IL"
+    }
+  },
+  {
+    "nom": "Darly Solutions",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 33,
+    "localisation": {
+      "ville": "McKinney",
+      "pays": "TX"
+    }
+  },
+  {
+    "nom": "SolveIt",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 51,
+    "localisation": {
+      "ville": "Warszawa",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "EB Pearls",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 60,
+    "localisation": {
+      "ville": "Surry Hills",
+      "pays": "Australia"
+    }
+  },
+  {
+    "nom": "NERDZ LAB",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 52,
+    "localisation": {
+      "ville": "L'viv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Kevych Solutions",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 24,
+    "localisation": {
+      "ville": "L'viv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Phenomenon Studio",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 51,
+    "localisation": {
+      "ville": "Dover",
+      "pays": "DE"
+    }
+  },
+  {
+    "nom": "Mind Studios",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 34,
+    "localisation": {
+      "ville": "Dnipro",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Pixel Appy",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 18,
+    "localisation": {
+      "ville": "Austin",
+      "pays": "TX"
+    }
+  },
+  {
+    "nom": "Futured",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 43,
+    "localisation": {
+      "ville": "Brno",
+      "pays": "Czech Republic"
+    }
+  },
+  {
+    "nom": "Promatics Technologies",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 79,
+    "localisation": {
+      "ville": "Gurugram",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "HotShots Labs | IOS & Android | Flutter mobile app development",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 15,
+    "localisation": {
+      "ville": "Kyiv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Camber-The App Agency",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 21,
+    "localisation": {
+      "ville": "Raleigh, NC",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "Euvic",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 22,
+    "localisation": {
+      "ville": "Gliwice",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Lizard Global",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "Unknown avg. project cost",
+    "note": 5,
+    "nombre_avis": 70,
+    "localisation": {
+      "ville": "Amsterdam",
+      "pays": "Netherlands"
+    }
+  },
+  {
+    "nom": "Simpalm",
+    "taux_horaire": "Undisclosed",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 64,
+    "localisation": {
+      "ville": "Rockville, MD",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Mass Software Solutions Private Limited",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 25,
+    "localisation": {
+      "ville": "Kolkata",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Neon Apps",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 11,
+    "localisation": {
+      "ville": "İstanbul",
+      "pays": "Türkiye"
+    }
+  },
+  {
+    "nom": "Intermedia IT",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 36,
+    "localisation": {
+      "ville": "Tandil",
+      "pays": "Argentina"
+    }
+  },
+  {
+    "nom": "Cultivate Brands",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 26,
+    "localisation": {
+      "ville": "Chicago, IL",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Arch",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.7,
+    "nombre_avis": 30,
+    "localisation": {
+      "ville": "Gateshead",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "Matrix Media Solutions (P) Ltd.",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 46,
+    "localisation": {
+      "ville": "Kolkata",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Designli",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 82,
+    "localisation": {
+      "ville": "Greenville",
+      "pays": "SC"
+    }
+  },
+  {
+    "nom": "Kode Creators",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "Less than $10,000",
+    "note": 5,
+    "nombre_avis": 19,
+    "localisation": {
+      "ville": "Vadodara",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "PixelForce",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 9,
+    "localisation": {
+      "ville": "Kent Town",
+      "pays": "Australia"
+    }
+  },
+  {
+    "nom": "Atomic Object",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 52,
+    "localisation": {
+      "ville": "Grand Rapids",
+      "pays": "MI"
+    }
+  },
+  {
+    "nom": "You are launched",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 59,
+    "localisation": {
+      "ville": "Limassol",
+      "pays": "Cyprus"
+    }
+  },
+  {
+    "nom": "Memory Squared",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 28,
+    "localisation": {
+      "ville": "Kraków",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "TechnoYuga",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 64,
+    "localisation": {
+      "ville": "New Delhi",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Emizen Tech",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 149,
+    "localisation": {
+      "ville": "Dallas",
+      "pays": "TX"
+    }
+  },
+  {
+    "nom": "JPLoft",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 96,
+    "localisation": {
+      "ville": "Denver",
+      "pays": "CO"
+    }
+  },
+  {
+    "nom": "LeanCode",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 40,
+    "localisation": {
+      "ville": "Warszawa",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Suffescom Solutions Inc",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 121,
+    "localisation": {
+      "ville": "New York",
+      "pays": "NY"
+    }
+  },
+  {
+    "nom": "Synergy Labs",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 45,
+    "localisation": {
+      "ville": "Hollywood",
+      "pays": "FL"
+    }
+  },
+  {
+    "nom": "MindSea",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 42,
+    "localisation": {
+      "ville": "Halifax",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Phaedra Solutions",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 28,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "mobitouch",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 59,
+    "localisation": {
+      "ville": "Rzeszów",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Hyperlink InfoSystem",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "1,000 - 9,999",
+    "note": 38.8,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Jersey City, NJ",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "GeekyAnts",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "250 - 999",
+    "note": 39.9,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Bengaluru",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Quytech",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "250 - 999",
+    "note": 39.7,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Gurugram",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Inventco Software",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 38.3,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Jaipur",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "STRV",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$100,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 38.2,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Prague",
+      "pays": "Czech Republic"
+    }
+  },
+  {
+    "nom": "Ackee",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 38.2,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Karlín",
+      "pays": "Czech Republic"
+    }
+  },
+  {
+    "nom": "Lampa Software",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 38.2,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Vinnytsia",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Trango Tech",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "Undisclosed",
+    "cout_moyen_projet": "250 - 999",
+    "note": 38.1,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "Cogniteq",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 45,
+    "localisation": {
+      "ville": "Ząbki",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "itCraft",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 71,
+    "localisation": {
+      "ville": "Warszawa",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Techgropse",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 93,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "The Distance App Developers",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 40,
+    "localisation": {
+      "ville": "York",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "TekRevol",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 83,
+    "localisation": {
+      "ville": "Houston",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Build Me App",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 17,
+    "localisation": {
+      "ville": "Toronto",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Nareia",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 12,
+    "localisation": {
+      "ville": "Montevideo",
+      "pays": "Uruguay"
+    }
+  },
+  {
+    "nom": "Techugo",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.7,
+    "nombre_avis": 98,
+    "localisation": {
+      "ville": "Noida",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Bolder Apps",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 5,
+    "nombre_avis": 5,
+    "localisation": {
+      "ville": "Miami",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "PowerGate Software",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 40,
+    "localisation": {
+      "ville": "Hanoi",
+      "pays": "Vietnam"
+    }
+  },
+  {
+    "nom": "Ewaantech",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "Unknown avg. project cost",
+    "note": 5,
+    "nombre_avis": 7,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "Appello Software",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 33,
+    "localisation": {
+      "ville": "Sydney",
+      "pays": "Australia"
+    }
+  },
+  {
+    "nom": "VLink",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$200,000 to $999,999",
+    "note": 4.2,
+    "nombre_avis": 7,
+    "localisation": {
+      "ville": "South Windsor, CT",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "Mood Up",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 25,
+    "localisation": {
+      "ville": "Poznań",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Appetiser",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 27,
+    "localisation": {
+      "ville": "Richmond",
+      "pays": "Australia"
+    }
+  },
+  {
+    "nom": "Tech Exactly",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 30,
+    "localisation": {
+      "ville": "Kolkata",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Octal IT Solution",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.6,
+    "nombre_avis": 131,
+    "localisation": {
+      "ville": "Jaipur",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Lickability",
+    "taux_horaire": "$200 - $300 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 25,
+    "localisation": {
+      "ville": "New York, NY",
+      "pays": "No content available"
+    }
+  },
+  {
+    "nom": "Enozom Software",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 34,
+    "localisation": {
+      "ville": "Alexandria",
+      "pays": "Egypt"
+    }
+  },
+  {
+    "nom": "Wve Labs",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 31,
+    "localisation": {
+      "ville": "Costa Mesa",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Helpful Insight Private Limited",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 115,
+    "localisation": {
+      "ville": "New York",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Stakk",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 30,
+    "localisation": {
+      "ville": "London",
+      "pays": "United Kingdom"
+    }
+  },
+  {
+    "nom": "Brightec",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 to $199,999",
+    "note": 4.9,
+    "nombre_avis": 24,
+    "localisation": {
+      "ville": "Shoreham",
+      "pays": "United Kingdom"
+    }
+  },
+  {
+    "nom": "Emirates Graphic",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 32,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "Techne HQ",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 19,
+    "localisation": {
+      "ville": "Cremorne",
+      "pays": "Australia"
+    }
+  },
+  {
+    "nom": "Arbisoft",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 35,
+    "localisation": {
+      "ville": "Plano",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "AppIt Ventures",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 39,
+    "localisation": {
+      "ville": "Denver",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "nomtek",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 43,
+    "localisation": {
+      "ville": "Wrocław",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "IIH Global",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "Less than $10,000",
+    "note": 4.8,
+    "nombre_avis": 79,
+    "localisation": {
+      "ville": "Hertfordshire",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "Etnetera Flow",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "Less than $10,000",
+    "note": 5,
+    "nombre_avis": 12,
+    "localisation": {
+      "ville": "Prague",
+      "pays": "Czech Republic"
+    }
+  },
+  {
+    "nom": "Apzumi",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 49,
+    "localisation": {
+      "ville": "Poznań",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Orangesoft",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 42,
+    "localisation": {
+      "ville": "Warszawa",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Infinum",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.8,
+    "nombre_avis": 58,
+    "localisation": {
+      "ville": "New York",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Geniusee",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 71,
+    "localisation": {
+      "ville": "Warszawa",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "BairesDev",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 63,
+    "localisation": {
+      "ville": "San Francisco, CA",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Steamclock Software",
+    "taux_horaire": "$200 - $300 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 10,
+    "localisation": {
+      "ville": "Vancouver",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "iTechnolabs Inc",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "Markham",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Olearis",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 33,
+    "localisation": {
+      "ville": "Kyiv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Blink22",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 38,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "TrianglZ",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 27,
+    "localisation": {
+      "ville": "Alexandria",
+      "pays": "Egypt"
+    }
+  },
+  {
+    "nom": "AppVerticals",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 27,
+    "localisation": {
+      "ville": "Dallas, TX",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Dev Technosys",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 204,
+    "localisation": {
+      "ville": "Jaipur",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Apptunix",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.5,
+    "nombre_avis": 94,
+    "localisation": {
+      "ville": "Sahibzada Ajit Singh Nagar",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "TouchZen Media",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 22,
+    "localisation": {
+      "ville": "Irvine, CA",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Agency Partner Interactive LLC",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 86,
+    "localisation": {
+      "ville": "Plano, TX",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Sigma Software Group",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$1,000,000 to $9,999,999",
+    "note": 4.8,
+    "nombre_avis": 37,
+    "localisation": {
+      "ville": "L'viv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Dotsquares",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.7,
+    "nombre_avis": 100,
+    "localisation": {
+      "ville": "London",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "Extrovert Information Technology (EitBiz)",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.8,
+    "nombre_avis": 34,
+    "localisation": {
+      "ville": "Fort Wayne",
+      "pays": "IN"
+    }
+  },
+  {
+    "nom": "Fleye",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 15,
+    "localisation": {
+      "ville": "Porto Alegre",
+      "pays": "Brazil"
+    }
+  },
+  {
+    "nom": "Kindgeek",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 63,
+    "localisation": {
+      "ville": "L'viv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "DianApps",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 4.8,
+    "nombre_avis": 84,
+    "localisation": {
+      "ville": "Gurugram",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Sidekick Interactive",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 30,
+    "localisation": {
+      "ville": "Montréal",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Topflight Apps",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 43,
+    "localisation": {
+      "ville": "Irvine",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "RunProf LLC",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "Unknown avg. project cost",
+    "note": 5,
+    "nombre_avis": 21,
+    "localisation": {
+      "ville": "Alexandria",
+      "pays": "Egypt"
+    }
+  },
+  {
+    "nom": "Net-Craft.com Inc.",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 17,
+    "localisation": {
+      "ville": "Scottsdale",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Pagepro",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 4.9,
+    "nombre_avis": 32,
+    "localisation": {
+      "ville": "Białystok",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "COMPU-VISION S.A.R.L.",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "10 - 49",
+    "note": 4.8,
+    "nombre_avis": 84,
+    "localisation": {
+      "ville": "Batroun",
+      "pays": "Lebanon"
+    }
+  },
+  {
+    "nom": "Binary Studio",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "50 - 249",
+    "note": 4.9,
+    "nombre_avis": 57,
+    "localisation": {
+      "ville": "L'viv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Simform",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 86,
+    "localisation": {
+      "ville": "Orlando",
+      "pays": "FL"
+    }
+  },
+  {
+    "nom": "Pocket App",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 5,
+    "nombre_avis": 20,
+    "localisation": {
+      "ville": "London",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "Vention",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 102,
+    "localisation": {
+      "ville": "New York",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "AgileEngine",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 to $199,999; $200,000 to $999,999; $10,000 to $49,000; $1,000,000 to $9,999,999; Less than $10,000",
+    "note": 5,
+    "nombre_avis": 62,
+    "localisation": {
+      "ville": "Boca Raton",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Netguru",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.8,
+    "nombre_avis": 73,
+    "localisation": {
+      "ville": "Poznań",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Sembit",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 33,
+    "localisation": {
+      "ville": "Portland",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Atta Systems",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 36,
+    "localisation": {
+      "ville": "București",
+      "pays": "Romania"
+    }
+  },
+  {
+    "nom": "Plavno",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 55,
+    "localisation": {
+      "ville": "Alexandria",
+      "pays": "USA"
+    }
+  },
+  {
+    "nom": "Scalefocus",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$200,000 - $999,999",
+    "note": 4.9,
+    "nombre_avis": 39,
+    "localisation": {
+      "ville": "Sofia",
+      "pays": "Bulgaria"
+    }
+  },
+  {
+    "nom": "Snotor",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 35,
+    "localisation": {
+      "ville": "Rīga",
+      "pays": "Latvia"
+    }
+  },
+  {
+    "nom": "WebcentriQ",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 18,
+    "localisation": {
+      "ville": "San Diego",
+      "pays": "USA"
+    }
+  },
+  {
+    "nom": "Softermii",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 48,
+    "localisation": {
+      "ville": "Los Angeles",
+      "pays": "USA"
+    }
+  },
+  {
+    "nom": "Junkies Coder - Mobile App Development Company",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 31,
+    "localisation": {
+      "ville": "Ahmedabad",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Five Pack",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 19,
+    "localisation": {
+      "ville": "Frisco",
+      "pays": "TX"
+    }
+  },
+  {
+    "nom": "Cleveroad",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 81,
+    "localisation": {
+      "ville": "New York",
+      "pays": "NY"
+    }
+  },
+  {
+    "nom": "KeyToTech",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 17,
+    "localisation": {
+      "ville": "London",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "GoodRequest",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 4.8,
+    "nombre_avis": 26,
+    "localisation": {
+      "ville": "Žilina",
+      "pays": "Slovakia"
+    }
+  },
+  {
+    "nom": "Techstack company",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999 avg. project cost",
+    "note": 5,
+    "nombre_avis": 47,
+    "localisation": {
+      "ville": "Wrocław",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Dreamix",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 36,
+    "localisation": {
+      "ville": "Sofia",
+      "pays": "Bulgaria"
+    }
+  },
+  {
+    "nom": "Continuum Digital",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 10,
+    "localisation": {
+      "ville": "Toronto",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Aalpha Information Systems India Pvt. Ltd",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$1,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 218,
+    "localisation": {
+      "ville": "Bengaluru",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Bluelight",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 17,
+    "localisation": {
+      "ville": "Sacramento",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Fingent",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 66,
+    "localisation": {
+      "ville": "White Plains",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "COAX Software",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 19,
+    "localisation": {
+      "ville": "Ivano-Frankivs'k",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "Whimsy Games Group LTD",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 5,
+    "nombre_avis": 25,
+    "localisation": {
+      "ville": "Kyiv",
+      "pays": "Ukraine"
+    }
+  },
+  {
+    "nom": "CodeLeap",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 9,
+    "localisation": {
+      "ville": "London",
+      "pays": "England"
+    }
+  },
+  {
+    "nom": "Orases",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$75,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 74,
+    "localisation": {
+      "ville": "Frederick",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "Lumitech",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 53,
+    "localisation": {
+      "ville": "Dubai",
+      "pays": "United Arab Emirates"
+    }
+  },
+  {
+    "nom": "thoughtbot",
+    "taux_horaire": "$150 - $199 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$200,000 - $999,999 avg. project cost",
+    "note": 4.9,
+    "nombre_avis": 39,
+    "localisation": {
+      "ville": "New York",
+      "pays": "United States"
+    }
+  },
+  {
+    "nom": "JLabs",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000 avg. project cost",
+    "note": 5,
+    "nombre_avis": 9,
+    "localisation": {
+      "ville": "Quezon City",
+      "pays": "Philippines"
+    }
+  },
+  {
+    "nom": "TechWings",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "No content available",
+    "note": 4.9,
+    "nombre_avis": 58,
+    "localisation": {
+      "ville": "Kraków",
+      "pays": "Poland"
+    }
+  },
+  {
+    "nom": "Orthoplex Solutions",
+    "taux_horaire": "$100 - $149 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 15,
+    "localisation": {
+      "ville": "Toronto",
+      "pays": "Canada"
+    }
+  },
+  {
+    "nom": "Tridhya Tech Limited",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$5,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 104,
+    "localisation": {
+      "ville": "Ahmedabad",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "Beetroot AB",
+    "taux_horaire": "$25 - $49 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.8,
+    "nombre_avis": 37,
+    "localisation": {
+      "ville": "Stockholm",
+      "pays": "Sweden"
+    }
+  },
+  {
+    "nom": "InApps Technology",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$10,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 37,
+    "localisation": {
+      "ville": "Ho Chi Minh",
+      "pays": "Vietnam"
+    }
+  },
+  {
+    "nom": "Mindtech Apps",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 4.9,
+    "nombre_avis": 16,
+    "localisation": {
+      "ville": "Budapest",
+      "pays": "Hungary"
+    }
+  },
+  {
+    "nom": "Codepoint",
+    "taux_horaire": "$50 - $99 / hr",
+    "budget_minimum_projet": "$50,000+",
+    "cout_moyen_projet": "$10,000 - $49,000",
+    "note": 5,
+    "nombre_avis": 21,
+    "localisation": {
+      "ville": "Braga",
+      "pays": "Portugal"
+    }
+  },
+  {
+    "nom": "TatvaSoft",
+    "taux_horaire": "< $25 / hr",
+    "budget_minimum_projet": "$25,000+",
+    "cout_moyen_projet": "$50,000 - $199,999",
+    "note": 4.9,
+    "nombre_avis": 48,
+    "localisation": {
+      "ville": "Ahmedabad",
+      "pays": "India"
+    }
+  },
+  {
+    "nom": "TechAhead",
+    "taux_horaire": "No content available",
+    "budget_minimum_projet": "No content available",
+    "cout_moyen_projet": "No content available",
+    "note": 0,
+    "nombre_avis": 0,
+    "localisation": {
+      "ville": "No content available",
+      "pays": "No content available"
+    }
+  }
+]

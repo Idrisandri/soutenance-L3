@@ -1,0 +1,37 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe maîtrise les défis techniques et a transformé les prototypes en solutions conformes aux attentes"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Une collaboration fluide avec une équipe réactive, agréable et coopérative du début à la fin du projet"
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livrables sont de très bonne qualité, dépassant les expectations des clients"
+      }
+    ],
+    "points_forts": [
+      "Expertise technique solide",
+      "Équipe coopérative et agréable",
+      "Dépassement des attentes",
+      "Bonne gestion des contraintes techniques"
+    ],
+    "points_faibles": [],
+    "autres_points": [],
+    "concurrent": "Pragmea",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  }
+]

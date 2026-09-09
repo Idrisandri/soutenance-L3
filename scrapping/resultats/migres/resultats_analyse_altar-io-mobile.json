@@ -1,0 +1,73 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.96,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Livrables systématiquement décrits comme dépassant les attentes, de haute qualité et conformes ou supérieurs aux standards requis."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Communications régulières, mises à jour fréquentes, responsivité élevée et transparence constante tout au long des engagements."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Équipe réactive, réponses rapides aux questions, disponibilité et engagement soutenu sur tous les projets."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Livraisons systématiquement à temps, respect des délais et des calendriers malgré les évolutions de périmètre."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Rapport qualité-prix favorable, tarification équitable au regard de la qualité livrée, valeur exceptionnelle pour l'investissement."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Expertise technique reconnue dans plusieurs domaines (fintech, IA, données, produit), maîtrise des meilleures pratiques et stack technologiques modernes."
+      }
+    ],
+    "points_forts": [
+      "Qualité systématiquement supérieure aux attentes",
+      "Communications proactives et régulières",
+      "Respect constants des délais et budgets",
+      "Équipe hautement réactive et collaborative",
+      "Expertise technique pointue et reconnue",
+      "Approche holistique au-delà du simple développement",
+      "Implication personnelle et passion pour les projets",
+      "Gestion de projet structurée et efficace",
+      "Capacité à challenger et améliorer les idées clients",
+      "Flexibilité face aux changements de périmètre"
+    ],
+    "points_faibles": [
+      "Visibilité de projet et mises à jour de statut parfois insuffisantes",
+      "Estimations de temps parfois inexactes",
+      "Accessibilité documentaire en temps réel durant sessions",
+      "Coût potentiellement plus élevé que certains concurrents",
+      "Organisation de projet pouvant être améliorée pour tâches dépendantes"
+    ],
+    "autres_points": [
+      "Approche entrepreneuriale traitant les clients comme des co-fondateurs",
+      "Priorisation de la réussite client sur la rentabilité immédiate",
+      "Travail entièrement distancié sans impact sur la qualité",
+      "Services de recrutement et staffing offerts",
+      "Conseil en business et stratégie dépassant le scope initial"
+    ],
+    "concurrent": "Altar.io",
+    "service_type": "mobile",
+    "nb_avis_analyses": 30
+  }
+]

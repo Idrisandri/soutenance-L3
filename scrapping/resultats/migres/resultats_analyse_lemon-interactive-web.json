@@ -1,0 +1,58 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité et une disponibilité constante dans ses interactions avec les clients, avec une capacité à répondre rapidement aux demandes et enjeux."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les échanges sont décrits comme fluides, constructifs et à l'écoute, avec un suivi régulier et rigoureux qui maintient une transparence constante tout au long des projets."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe dispose d'une expertise reconnue en SEO, SEA, marketing digital et développement web, avec des professionnels passionnés partageant régulièrement conseils et analyses."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité des livrables et du service est systématiquement saluée, avec des résultats dépassant souvent les attentes et une approche très professionnelle."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'agence sait adapter ses propositions et plans de support au budget du client, offrant une flexibilité bienvenue dans la gestion des ressources."
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité exceptionnelles",
+      "Communication fluide et constructive",
+      "Expertise technique en SEO, SEA et marketing digital",
+      "Qualité professionnelle des livrables",
+      "Écoute réelle des besoins clients",
+      "Flexibilité et adaptabilité budgétaire",
+      "Proactivité avec propositions d'amélioration",
+      "Suivi rigoureux et fiable au quotidien"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Partenariat de long terme établi (plusieurs clients collaborent depuis 4 à 5 ans)",
+      "Ambiance conviviale et agréable au travail",
+      "Capacité à gérer des projets complexes et diversifiés",
+      "Approche pédagogue dans le partage des connaissances"
+    ],
+    "concurrent": "Lemon Interactive",
+    "service_type": "web",
+    "nb_avis_analyses": 9
+  }
+]

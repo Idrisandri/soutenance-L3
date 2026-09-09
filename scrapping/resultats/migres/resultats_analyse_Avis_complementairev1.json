@@ -1,0 +1,225 @@
+[
+  {
+    "sentiment_global": "negatif",
+    "score_sentiment": 0.25,
+    "themes": [
+      {
+        "theme": "prix",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Coûts mensuels élevés (270 à 350 euros) engageant sur plusieurs années, revenant à payer chaque année l'équivalent d'un nouveau site sans en acquérir la propriété."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Équipe très réactive lors des modifications de site, généralement effectuées dans la journée selon plusieurs clients satisfaits."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Service client fantôme et non réactif : délais de 2 mois sans réponse aux demandes de documents contractuels, appels promis non effectués, absence de suivi."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Travail réalisé avec soin, sites attractifs et à l'image du client, détail et engagement élevés dans l'exécution."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Référencement médiocre ou absent malgré les frais, résultats non concluants, interface mobile de très faible qualité."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Expertise reconnue en référencement avec apparitions en première position Google pour certains clients, résultats concrets mesurables."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Cahier des charges non respecté, référencement insuffisant, prestataires ne tenant pas compte des besoins du client dans les maquettes."
+      },
+      {
+        "theme": "communication",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Manque de transparence sur les conditions contractuelles (crédit tiers non mentionné, durée d'engagement de 4 ans dissimulée, mentions dans petites lignes), contrats incompréhensibles et trop longs."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Travail réalisé dans les délais convenus pour les clients satisfaits."
+      },
+      {
+        "theme": "delais",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Bon suivi seulement pendant les premiers mois, puis abandon progressif, manque de suivi régulier promis (appels trimestriels non honorés)."
+      }
+    ],
+    "points_forts": [
+      "Réactivité opérationnelle pour les modifications de site",
+      "Expertise en référencement Google (pour certains clients)",
+      "Design attractif et personnalisé",
+      "Résultats concrets mesurables pour quelques clients",
+      "Équipe sympathique et à l'écoute en phase initiale"
+    ],
+    "points_faibles": [
+      "Tarification très élevée (270-350€/mois) sans propriété du site",
+      "Manque de transparence sur les conditions contractuelles et les frais",
+      "Référencement décevant ou inefficace pour la majorité",
+      "Suivi absent après les premiers mois",
+      "Service client non réactif et injoignable",
+      "Cahier des charges non respecté",
+      "Contrats d'engagement sur 4 ans difficilement résiliables"
+    ],
+    "autres_points": [
+      "Partenariat avec organisme de crédit LOCAM générant des frais de rejet abusifs non remboursés",
+      "Propriété du site restant chez l'agence, créant une dépendance financière prolongée",
+      "Délai de rétractation imposant des frais substantiels (1000€)",
+      "Pratiques commerciales agressives (forcing à la signature en fin de réunion)",
+      "Contractualisation problématique et procédures d'anti-datation de documents",
+      "Absence de responsabilité assumée face aux réclamations, refuge derrière le contrat",
+      "Discours marketing prometteur non tenu en pratique"
+    ],
+    "concurrent": "Crystal'ID",
+    "service_type": "web",
+    "nb_avis_analyses": 16
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les équipes maîtrisent parfaitement les enjeux techniques des projets web et mobile, avec des recommandations technologiques pertinentes et une expertise déterminante pour la réussite des stratégies digitales."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livrables sont de qualité constante, qu'il s'agisse d'audits, d'applications ou de refontes, avec une attention particulière au respect des chartes graphiques et aux interactions utilisateur fluides et intuitives."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est transparente, les échanges sont constructifs et approfondis, particulièrement lors des ateliers de conception et de maquettage, favorisant une collaboration de confiance."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les équipes font preuve d'une grande réactivité face aux besoins des clients, même lorsqu'ils évoluent en cours de projet, et s'adaptent avec flexibilité aux changements."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les délais sont systématiquement respectés, qu'il s'agisse de la signature de contrats, du traitement des paiements ou de la livraison des livrables finaux."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Le rapport qualité-prix est jugé bon, avec des devis clairs et détaillés, et une gestion budgétaire optimisée alignée sur les besoins réels du projet."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique et recommandations technologiques pertinentes",
+      "Qualité constante des livrables et attention à l'UX",
+      "Communication transparente et relations humaines basées sur la confiance",
+      "Réactivité et flexibilité face aux évolutions de projet",
+      "Respect fiable des délais et des engagements",
+      "Implication personnelle de la direction dans les projets clés",
+      "Gestion de projet structurée et rigoureuse",
+      "Bon rapport qualité-prix avec devis clairs",
+      "Approche collaborative et partenaire, pas seulement prestataire",
+      "Sensibilité aux enjeux de responsabilité numérique et d'accessibilité"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "L'agence s'engage sur des projets d'impact social via le digital4good",
+      "Les clients évoluent souvent vers une relation de partenariat long terme au-delà du projet initial",
+      "L'organisation des équipes est orientée pour optimiser l'utilisation des ressources"
+    ],
+    "concurrent": "ikomobi",
+    "service_type": "web",
+    "nb_avis_analyses": 8
+  },
+  {
+    "sentiment_global": "negatif",
+    "score_sentiment": 0.35,
+    "themes": [
+      {
+        "theme": "communication",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Manque de clarté et d'explications lors de l'intégration, absence de structure dans l'accueil et informations insuffisantes communiquées en amont."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Service lent avec un suivi inexistant et un support client totalement inefficace dans la gestion des demandes."
+      },
+      {
+        "theme": "prix",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Tarification trompeuse via des formules de leasing, coûts exorbitants sur la durée, et engagement contractuel rigide sans flexibilité."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "negatif",
+        "frequence": "recurrent",
+        "resume": "Résultats insuffisants sur les prestations, notamment en référencement web, avec absence de résultat observable même après plusieurs années."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Disponibilité et réactivité de l'équipe face aux demandes des clients, capable de s'adapter à différents profils."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Accompagnement positif et suivi satisfaisant tout au long du projet réalisé."
+      }
+    ],
+    "points_forts": [
+      "Disponibilité et écoute du client",
+      "Réactivité face aux demandes",
+      "Capacité à travailler avec divers profils d'entreprises",
+      "Accueil chaleureux et bienveillant",
+      "Accompagnement satisfaisant sur certains projets"
+    ],
+    "points_faibles": [
+      "Manque de clarté et de structure à l'intégration",
+      "Service lent et suivi défaillant",
+      "Support client inefficace",
+      "Tarification trompeuse et coûts abusifs",
+      "Résultats décevants sur les prestations livrées",
+      "Contrats rigides sans flexibilité",
+      "Sentiment de traiter le client comme un simple numéro"
+    ],
+    "autres_points": [
+      "Engagement contractuel très long (48 mois) sans possibilité d'adaptation",
+      "Décalage entre les promesses commerciales et la réalité des résultats",
+      "Pratiques commerciales jugées trompeuses par les clients"
+    ],
+    "concurrent": "Inov Agency",
+    "service_type": "web",
+    "nb_avis_analyses": 6
+  }
+]

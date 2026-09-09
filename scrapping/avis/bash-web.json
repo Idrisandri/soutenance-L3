@@ -1,0 +1,16 @@
+[
+  {
+    "concurrent": "BASH",
+    "service_type": "web",
+    "titre": "Équipe professionnelle, leurs conseils et contenus sont pertinents et efficaces.",
+    "corps": "Équipe professionnelle, leurs conseils et contenus sont pertinents et efficaces. Ils ont conçu mon site et m'ont aidé à améliorer ma visibilité et retranscrire avec justesse mes envies et mes besoins sur le site. Depuis la création, je ne suis pas seul, j'apprécie leur suivi et leur accompagnement sur les évolutions de mes besoins (outils, ajustement des pages, configuration). Bref, un sans faute.",
+    "note": 5
+  },
+  {
+    "concurrent": "BASH",
+    "service_type": "web",
+    "titre": "Rigueur, agilité, force de proposition… La réussite de notre plateforme web tient beaucoup au talent et à l'efficacité de l'agence BASH !",
+    "corps": "Rigueur, agilité, force de proposition… La réussite de notre plateforme web tient beaucoup au talent et à l'efficacité de l'agence BASH ! C'est un vrai plaisir de travailler avec eux au quotidien !",
+    "note": 5
+  }
+]

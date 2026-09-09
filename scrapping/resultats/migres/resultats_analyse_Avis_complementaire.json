@@ -1,0 +1,192 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.7,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'outil se distingue par son caractère innovant et sa facilité d'utilisation, apprécié des utilisateurs à l'aise avec les nouvelles technologies."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "negatif",
+        "frequence": "ponctuel",
+        "resume": "Le support client est jugé insuffisant et peu réactif, ce qui peut décevoir les utilisateurs en quête d'une assistance disponible."
+      },
+      {
+        "theme": "communication",
+        "polarite": "negatif",
+        "frequence": "ponctuel",
+        "resume": "Un manque de visibilité et de clarté est régulièrement relevé par les utilisateurs."
+      }
+    ],
+    "points_forts": [
+      "Innovation et modernité",
+      "Facilité d'utilisation",
+      "Adapté aux utilisateurs technophiles"
+    ],
+    "points_faibles": [
+      "Support client insuffisant",
+      "Manque de visibilité",
+      "Absence d'avis établis/reconnaissance"
+    ],
+    "autres_points": [
+      "L'outil conviendrait davantage aux entreprises en quête d'innovation qu'à celles privilégiant une réputation établie"
+    ],
+    "concurrent": "AmphiBee",
+    "service_type": "web",
+    "nb_avis_analyses": 1
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.82,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Reconnaissance de l'expertise technique et de la compétence des équipes dans le développement web, avec capacité à proposer des solutions adaptées aux besoins spécifiques."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une réactivité appréciée dans la gestion et le suivi des projets."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Qualité de l'accompagnement et du professionnalisme reconnus par les clients."
+      },
+      {
+        "theme": "prix",
+        "polarite": "negatif",
+        "frequence": "ponctuel",
+        "resume": "Les tarifs pratiqués peuvent être considérés comme élevés, particulièrement pour les structures de petite taille."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Une proximité client effective et une gestion relationnelle de qualité dans la conduite des projets à long terme."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique reconnue et solutions sur mesure",
+      "Réactivité de l'équipe",
+      "Professionnalisme et sérieux",
+      "Proximité et accompagnement client",
+      "Gestion de projets web complexes et durables"
+    ],
+    "points_faibles": [
+      "Tarifs élevés pour les petites entreprises"
+    ],
+    "autres_points": [
+      "Changement de nom vers Dalt"
+    ],
+    "concurrent": "Silicon Salad",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une grande réactivité et disponibilité dans ses interactions avec les clients."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est professionnelle et à l'écoute des besoins et des souhaits exprimés par les clients."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité des prestations et des livrables est systématiquement saluée, avec une attention particulière aux détails et à la fluidité de l'expérience utilisateur."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les délais convenus sont respectés dans la réalisation des projets."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe fait preuve de professionnalisme, d'expertise technique et de capacité à proposer des solutions adaptées aux clients."
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité",
+      "Qualité de la réalisation et attention aux détails",
+      "Écoute du client et prise en compte des besoins",
+      "Professionnalisme et expertise technique",
+      "Respect des délais",
+      "Force de proposition"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Accompagnement complet de la conception à la livraison",
+      "Conseils avisés fournis au cours du projet"
+    ],
+    "concurrent": "Apresta",
+    "service_type": "web",
+    "nb_avis_analyses": 4
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe répond rapidement et de manière appropriée aux demandes des clients, ce qui est systématiquement apprécié."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'accueil personnalisé et l'écoute attentive des besoins du client sont des points clés du service offert."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une forte compétence dans le domaine du développement web et du design créatif."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité du travail fourni, notamment les sites web réalisés, répond aux attentes des clients et génère des résultats tangibles."
+      }
+    ],
+    "points_forts": [
+      "Équipe réactive et disponible",
+      "Excellente écoute et accueil personnalisé",
+      "Forte expertise technique et créativité",
+      "Qualité de la réalisation et professionnalisme",
+      "Capacité à générer des résultats mesurables",
+      "Fidélisation client à long terme"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Impact commercial positif : les clients rapportent une augmentation des demandes grâce aux sites développés",
+      "Approche holistique : gestion de contenu, design et développement intégrés"
+    ],
+    "concurrent": "Arexpo",
+    "service_type": "web",
+    "nb_avis_analyses": 8
+  }
+]

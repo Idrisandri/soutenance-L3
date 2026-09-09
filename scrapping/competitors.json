@@ -1,0 +1,571 @@
+[
+  {
+    "id": 1,
+    "nom": "Memory Squared",
+    "url_profil": "https://clutch.co/profile/memory-squared",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 2,
+    "nom": "SolveIt",
+    "url_profil": "https://clutch.co/profile/solveit",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 3,
+    "nom": "Build Me App",
+    "url_profil": "https://clutch.co/profile/build-me-app",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 4,
+    "nom": "Atelier256",
+    "url_profil": "https://clutch.co/profile/atelier256",
+    "ville": "Neuville-en-Ferrain",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 5,
+    "nom": "Niji",
+    "url_profil": "https://clutch.co/profile/niji",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 6,
+    "nom": "Kode Creators",
+    "url_profil": "https://clutch.co/profile/kode-creators",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 7,
+    "nom": "Altar.io",
+    "url_profil": "https://clutch.co/profile/altario",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 8,
+    "nom": "Web Maniac",
+    "url_profil": "https://clutch.co/profile/web-maniac",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 9,
+    "nom": "Dernier Cri",
+    "url_profil": "https://clutch.co/profile/dernier-cri",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 10,
+    "nom": "Contraste Europe",
+    "url_profil": "https://clutch.co/profile/contraste-europe",
+    "ville": "Marcq-en-Barœul",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 11,
+    "nom": "Les Fabricants",
+    "url_profil": "https://clutch.co/profile/les-fabricants",
+    "ville": "Villeneuve-d'Ascq",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 12,
+    "nom": "Nutshel Lab",
+    "url_profil": "https://clutch.co/profile/nutshell-lab",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 13,
+    "nom": "SLASH CONSULTING",
+    "url_profil": "https://clutch.co/profile/slash-consulting",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 14,
+    "nom": "SensioLabs",
+    "url_profil": "https://clutch.co/profile/sensiolabs",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 15,
+    "nom": "ATECNA",
+    "url_profil": "https://clutch.co/profile/atecna",
+    "ville": "Wasquhal",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 16,
+    "nom": "Celaneo",
+    "url_profil": "https://clutch.co/profile/celaneo",
+    "ville": "Valenciennes",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 17,
+    "nom": "Ideine",
+    "url_profil": "https://clutch.co/profile/ideine",
+    "ville": "Roubaix",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 18,
+    "nom": "User Agency",
+    "url_profil": "https://clutch.co/profile/user-agency",
+    "ville": "Marcq-en-Barœul",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 19,
+    "nom": "Whatson Web",
+    "url_profil": "https://clutch.co/profile/whatson-web",
+    "ville": "Saint-André-lez-Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 20,
+    "nom": "La mobilery",
+    "url_profil": "https://clutch.co/profile/la-mobilery",
+    "ville": "Tourcoing",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 21,
+    "nom": "Tymate",
+    "url_profil": "https://clutch.co/profile/tymate",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 22,
+    "nom": "Inov Agency",
+    "url_profil": "https://clutch.co/profile/inov-agncy",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 23,
+    "nom": "Tigre Blac",
+    "url_profil": "https://clutch.co/profile/tigre-blanc",
+    "ville": "Douai",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 24,
+    "nom": "UKHÖM I Creative Studio",
+    "url_profil": "https://clutch.co/profile/ukh-m-i-creative-studio",
+    "ville": "Lille",
+    "service_type": "mobile",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 25,
+    "nom": "Tallium Inc.",
+    "url_profil": "https://clutch.co/profile/tallium",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 26,
+    "nom": "TRIARE, LLC",
+    "url_profil": "https://clutch.co/profile/triare",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 27,
+    "nom": "Meant4.com",
+    "url_profil": "https://clutch.co/profile/meant4com",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 28,
+    "nom": "Scalo",
+    "url_profil": "https://clutch.co/profile/scalo",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 29,
+    "nom": "Glush",
+    "url_profil": "https://clutch.co/profile/glush",
+    "ville": "Saint-André-lez-Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 30,
+    "nom": "Atelier256",
+    "url_profil": "https://clutch.co/profile/atelier256",
+    "ville": "Neuville-en-Ferrain",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 31,
+    "nom": "AMELA Technology",
+    "url_profil": "https://clutch.co/profile/amela-technology",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 32,
+    "nom": "Redlab agency",
+    "url_profil": "https://clutch.co/profile/redlab-agency",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 33,
+    "nom": "SensioLabs",
+    "url_profil": "https://clutch.co/profile/sensiolabs",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 34,
+    "nom": "Web Maniac",
+    "url_profil": "https://clutch.co/profile/web-maniac",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 35,
+    "nom": "Contraste Europe",
+    "url_profil": "https://clutch.co/profile/contraste-europe",
+    "ville": "Marcq-en-Barœul",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 36,
+    "nom": "Les Fabricants",
+    "url_profil": "https://clutch.co/profile/les-fabricants",
+    "ville": "Villeneuve-d'Ascq",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 37,
+    "nom": "Nutshell Lab",
+    "url_profil": "https://clutch.co/profile/nutshell-lab",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 38,
+    "nom": "ouiflow.io",
+    "url_profil": "https://clutch.co/profile/ouiflowio",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 39,
+    "nom": "ikomobi",
+    "url_profil": "https://clutch.co/profile/ikomobi",
+    "ville": "Marcq-en-Barœul",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 40,
+    "nom": "SLASH CONSULTING",
+    "url_profil": "https://clutch.co/profile/slash-consulting",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 41,
+    "nom": "Kodo - Odoo Integrator",
+    "url_profil": "https://clutch.co/profile/kodo-odoo-integrator",
+    "ville": "Dourges",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 42,
+    "nom": "Dernier Cri",
+    "url_profil": "https://clutch.co/profile/dernier-cri",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 43,
+    "nom": "Archand",
+    "url_profil": "https://clutch.co/profile/archand",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 44,
+    "nom": "AmphiBee",
+    "url_profil": "https://clutch.co/profile/amphibee",
+    "ville": "Béthune",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 45,
+    "nom": "Denkimedia",
+    "url_profil": "https://clutch.co/profile/denkimedia",
+    "ville": "Villeneuve-d'Ascq",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 46,
+    "nom": "FAROUK NASRI",
+    "url_profil": "https://clutch.co/profile/farouk-nasri",
+    "ville": "Tourcoing",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 47,
+    "nom": "Silicon Salad",
+    "url_profil": "https://clutch.co/profile/silicon-salad",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 48,
+    "nom": "SAS Webagencelille.com",
+    "url_profil": "https://clutch.co/profile/sas-webagencelillecom",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 49,
+    "nom": "Celaneo",
+    "url_profil": "https://clutch.co/profile/celaneo",
+    "ville": "Valenciennes",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 50,
+    "nom": "Les-Tilleuls.coop",
+    "url_profil": "https://clutch.co/profile/les-tilleulscoop",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 51,
+    "nom": "Ideine",
+    "url_profil": "https://clutch.co/profile/ideine",
+    "ville": "Roubaix",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 52,
+    "nom": "Impala Webstudio",
+    "url_profil": "https://clutch.co/profile/impala-webstudio",
+    "ville": "Lambersart",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 53,
+    "nom": "Neoweb",
+    "url_profil": "https://clutch.co/profile/neoweb",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 54,
+    "nom": "Arexpo",
+    "url_profil": "https://clutch.co/profile/arexpo",
+    "ville": "Dunkerque",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 55,
+    "nom": "Crystal'ID",
+    "url_profil": "https://clutch.co/profile/crystalid",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 56,
+    "nom": "Whatson Web",
+    "url_profil": "https://clutch.co/profile/whatson-web",
+    "ville": "Saint-André-lez-Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 57,
+    "nom": "ATELIER 33",
+    "url_profil": "https://clutch.co/profile/atelier-33",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 58,
+    "nom": "La mobilery",
+    "url_profil": "https://clutch.co/profile/la-mobilery",
+    "ville": "Tourcoing",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 59,
+    "nom": "Tymate",
+    "url_profil": "https://clutch.co/profile/tymate",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 60,
+    "nom": "Wapiti Agency",
+    "url_profil": "https://clutch.co/profile/wapiti-agency",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 61,
+    "nom": "Dista",
+    "url_profil": "https://clutch.co/profile/dista",
+    "ville": "Roubaix",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 62,
+    "nom": "Inov Agency",
+    "url_profil": "https://clutch.co/profile/inov-agency",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 63,
+    "nom": "NiceToMeetYou",
+    "url_profil": "https://clutch.co/profile/nicetomeetyou",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 64,
+    "nom": "Octelio Conseil",
+    "url_profil": "https://clutch.co/profile/octelio-conseil",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 65,
+    "nom": "Tigre Blanc",
+    "url_profil": "https://clutch.co/profile/tigre-blanc",
+    "ville": "Douai",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 66,
+    "nom": "UKHÖM I Creative Studio",
+    "url_profil": "https://clutch.co/profile/ukh-m-i-creative-studio",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 67,
+    "nom": "DA VINCI COM",
+    "url_profil": "https://clutch.co/profile/da-vinci-com",
+    "ville": "La Chapelle-d'Armentières",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 68,
+    "nom": "Apresta",
+    "url_profil": "https://clutch.co/profile/apresta",
+    "ville": "Sainghin-en-Weppes",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 69,
+    "nom": "Dlinks Digital",
+    "url_profil": "https://clutch.co/profile/dlinks-digital",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 70,
+    "nom": "la revanche des sites",
+    "url_profil": "https://clutch.co/profile/la-revanche-des-sites",
+    "ville": "Lille",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  },
+  {
+    "id": 71,
+    "nom": "User Agency",
+    "url_profil": "https://clutch.co/profile/user-agency",
+    "ville": "Marcq-en-Barœul",
+    "service_type": "web",
+    "date_ajout": "2026-09-01"
+  }
+
+]

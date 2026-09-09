@@ -1,0 +1,76 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.97,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les clients soulignent régulièrement la qualité exceptionnelle du code, l'absence de bugs et la robustesse des solutions livrées, avec une attention particulière aux détails et aux bonnes pratiques de développement."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une réactivité remarquable face aux demandes de changement, aux problèmes soulevés et aux questions des clients, souvent avec des réponses rapides et des solutions efficaces."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est décrite comme claire, structurée, proactive et transparente, avec des mises à jour régulières et des échanges via réunions virtuelles ou applications de messagerie."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les délais sont systématiquement respectés et les jalons livrés à temps, même dans les situations difficiles ou face à des exigences changeantes en cours de projet."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'expertise technique en développement web et mobile est très appréciée, avec des compétences reconnues en WordPress, Laravel, React, et capacité à gérer des architectures complexes."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le rapport qualité-prix est jugé excellent par plusieurs clients, avec un positionnement tarifaire attractif et un très bon retour sur investissement perçu."
+      }
+    ],
+    "points_forts": [
+      "Excellence globale de la qualité du code et absence de bugs",
+      "Réactivité exceptionnelle aux demandes et changements",
+      "Communication transparente et proactive tout au long des projets",
+      "Respect rigoureux des délais et des jalons",
+      "Expertise technique approfondie multi-stack",
+      "Mentalité de partenaire véritable, pas simple prestataire",
+      "Gestion de projet structurée et organisée",
+      "Très bon rapport qualité-prix",
+      "Capacité à innover et à proposer des solutions non-standard",
+      "Dévouement et éthique de travail remarquables",
+      "Prise de responsabilité face aux défis et obstacles",
+      "Implication dans les décisions stratégiques et conseils techniques"
+    ],
+    "points_faibles": [
+      "Barrière linguistique occasionnelle mentionnée par un client",
+      "Documentation structurée pourrait être plus détaillée dans certains cas",
+      "Pas de travail les week-ends (mentionné une seule fois, perçu négativement par un client)",
+      "Transition design-développement peut être sujette à des ajustements mineurs sur qualité/performance"
+    ],
+    "autres_points": [
+      "Resilience remarquable : l'agence maintient une qualité exemplaire malgré des conditions difficiles (guerre, coupures de courant)",
+      "Valeurs d'entreprise alignées avec les clients : importance accordée à la culture d'entreprise et à l'éthique",
+      "Partenariats long-terme : plusieurs clients collaborent depuis des années et envisagent de poursuivre",
+      "Spécialisation en WordPress mais également compétences solides en frameworks modernes (Laravel, Yii 2, Vue.js)",
+      "Créativité remarquée : capacité à exécuter des designs complexes et des animations avancées",
+      "Suivi post-lancement : continuit du support et des améliorations après la mise en ligne",
+      "Flexibilité face aux changements de priorités et aux évolutions de scope en cours de projet"
+    ],
+    "concurrent": "Redlab agency",
+    "service_type": "web",
+    "nb_avis_analyses": 37
+  }
+]

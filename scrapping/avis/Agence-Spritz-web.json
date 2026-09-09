@@ -1,0 +1,30 @@
+[
+  {
+    "concurrent": "Agence Spritz",
+    "service_type": "web",
+    "titre": "Je suis extrêmement satisfait des services fournis par l'entreprise Spritz pour la création de mon site internet.",
+    "corps": "Je suis extrêmement satisfait des services fournis par l'entreprise Spritz pour la création de mon site internet. Sébastien PAQUET a fait preuve d'un professionnalisme exceptionnel tout au long du processus. Il a su parfaitement comprendre mes besoins et mes attentes, et a transformé ma vision en un site web exceptionnel. Ce que j'apprécie le plus, c'est sa capacité à allier créativité et fonctionnalité. Le design du site est à la fois attrayant …Plus",
+    "note": 5
+  },
+  {
+    "concurrent": "Agence Spritz",
+    "service_type": "web",
+    "titre": "Quant on m'a conseillé de contacter l'Agence Spritz, j'avais déjà rencontré des prestataires potentiels pour la réalisation de mon site marchand",
+    "corps": "Quant on m'a conseillé de contacter l'Agence Spritz, j'avais déjà rencontré des prestataires potentiels pour la réalisation de mon site marchand, dont je savais la complexité (nombreuses références et déclinaisons, choix multiples, ...). Avec Sébastien Pâquet, j'ai senti tout de suite que le site était entre de bonnes mains. Il est très à l'écoute de votre « projet » et, sans brimer votre créativité et vos aspirations, analyse rapidement sa…Plus",
+    "note": 5
+  },
+  {
+    "concurrent": "Agence Spritz",
+    "service_type": "web",
+    "titre": "Très grande satisfaction",
+    "corps": "Voilà une agence que je recommande vivement : Professionnalisme, écoute, bienveillance, compétence, efficacité. Tout y est ! Nombreux sont les utilisateurs de mon site à me complimenter à son sujet. Ils le trouvent fluide, intuitif, élégant et dynamique. Il correspond exactement à ce que je cherchais. Je suis ravie.",
+    "note": 5
+  },
+  {
+    "concurrent": "Agence Spritz",
+    "service_type": "web",
+    "titre": "Expertise et conseil au rendez-vous",
+    "corps": "De la prise de renseignements au projet finalisé, l'agence spritz a su me proposer un accompagnement sur mesure. Mon projet de site reposait sur mon activité artisanale de création de luminaires. Je n'avais aucun fil conducteur quant au résultat final attendu. Sebastien a su m'écouter, comprendre mon univers et me proposer un design et des maquettes en parfaite adéquation à mon univers. De plus il a su m'apporter ses compétences et conseils pour l'administration du site. Que mettre en place afin de répondre aux besoins utilisateurs. Aujourd'hui mon site est entièrement administrable par mes soins et il peut et a déjà évolué dans le temps.",
+    "note": 5
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité face aux demandes, aux retours et aux questions des clients, avec des réponses rapides et des implémentations des changements en temps voulu."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les canaux de communication sont efficaces et transparents (Zoom, email, WhatsApp, Google Teams), avec une disponibilité constante et une compréhension claire des objectifs du projet."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les applications et solutions livrées sont de haute qualité, fonctionnelles, stables, conviviales et conformes aux exigences des clients, avec une expérience utilisateur satisfaisante."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les projets sont livrés dans les délais convenus ou même en avance, avec une gestion rigoureuse des jalons et un respect des calendriers établis."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe possède une expertise technique solide couvrant multiples technologies et capacités à résoudre des problèmes complexes, avec des suggestions et améliorations proactives."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les tarifs sont compétitifs, rentables et représentent un bon rapport qualité-prix pour les services de développement fournis."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique multidisciplinaire en iOS, Android, Flutter, Laravel, MERN",
+      "Réactivité exceptionnelle et disponibilité constante de l'équipe",
+      "Qualité de code et architecture robuste avec documentation complète",
+      "Respect systématique des délais et des jalons de projet",
+      "Communication transparente et fréquentes mises à jour de progression",
+      "Gestion de projet structurée et professionnelle",
+      "Suggestions proactives et amélioration au-delà du périmètre initial",
+      "Support et maintenance post-lancement attentif",
+      "Tarification compétitive et rapport qualité-prix avantageux",
+      "Scalabilité des ressources et adaptation aux besoins évolutifs"
+    ],
+    "points_faibles": [
+      "Fourniture potentiellement moins fréquente de mises à jour proactives pendant certaines phases"
+    ],
+    "autres_points": [
+      "Contribution significative à l'amélioration du positionnement commercial des clients (augmentations de revenus, classements app store élevés, expansion d'utilisateurs)",
+      "Partenariats à long terme et intérêt du client pour prolonger la collaboration",
+      "Optimisation des opérations pour les clients avec réduction des coûts opérationnels et amélioration de l'efficacité",
+      "Formation et transfert de compétences aux clients en matière d'architecture et bonnes pratiques",
+      "Gestion fluide de multiples types de projets simultanément (applications mobiles, web, portails administratifs, systèmes de gestion)"
+    ],
+    "concurrent": "Kode Creators",
+    "service_type": "mobile",
+    "nb_avis_analyses": 20
+  }
+]

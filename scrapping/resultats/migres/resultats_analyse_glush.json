@@ -1,0 +1,55 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande disponibilité et répond promptement aux sollicitations des clients"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les échanges virtuels et actualisations fréquentes par courriel garantissent une coordination efficace du projet"
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livrables sont cohérents, visuellement aboutis et alignés avec les objectifs stratégiques des clients"
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les échéances fixées sont systématiquement honorées sans retard"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence saisit rapidement l'univers de marque et apporte des propositions créatives pertinentes"
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité constantes",
+      "Respect systématique des échéances",
+      "Créativité et richesse des propositions",
+      "Compréhension rapide de l'identité de marque",
+      "Fiabilité et proactivité de l'équipe",
+      "Qualité et cohérence des livrables",
+      "Communication fluide et régulière"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Résultats concrets mesurables : hausse du trafic web, augmentation de l'engagement sur les réseaux sociaux, accroissement des demandes de renseignements",
+      "Flexibilité dans la gestion des demandes clients"
+    ],
+    "concurrent": "Glush",
+    "service_type": "web",
+    "nb_avis_analyses": 3
+  }
+]

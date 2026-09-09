@@ -1,0 +1,30 @@
+[
+  {
+    "concurrent": "Adveris",
+    "service_type": "web",
+    "titre": "L'un de mes clients fait appel à Adveris pour l'un de ses projets depuis plusieurs mois.",
+    "corps": "L'un de mes clients fait appel à Adveris pour l'un de ses projets depuis plusieurs mois. La qualité des services de cette agence est exceptionnelle et l'équipe est toujours à l'écoute de ses clients. Nous continuerons à faire appel à leurs services et n'hésitons pas une seule seconde à les recommander !",
+    "note": 5
+  },
+  {
+    "concurrent": "Adveris",
+    "service_type": "web",
+    "titre": "Nous avons fait appel à l'agence ADVERIS pour la création de notre site web il y a environ 6 mois",
+    "corps": "Nous avons fait appel à l'agence ADVERIS pour la création de notre site web il y a environ 6 mois dans le cadre du lancement de notre structure et nous en sommes pleinement satisfaits. Merci notamment à l'équipe projet pour le suivi et l'avancement rapide de notre site ! L'agence a su s'adapter à nos contraintes de timing serré sans oublier l'essentiel. Je recommande à 100%. L'équipe d'OBEEVI Studio.",
+    "note": 5
+  },
+  {
+    "concurrent": "Adveris",
+    "service_type": "branding",
+    "titre": "Adveris nous a fourni un excellent accompagnement sur nos sujets branding.",
+    "corps": "Adveris nous a fourni un excellent accompagnement sur nos sujets branding. Super équipe. Hâte de démarrer le prochain sujet stratégie digitale ensemble",
+    "note": 5
+  },
+  {
+    "concurrent": "Adveris",
+    "service_type": "web",
+    "titre": "Agence remarquable de professionnalisme et de talent.",
+    "corps": "Agence remarquable de professionnalisme et de talent. Je leur ai confié le site vitrine de mon entreprise",
+    "note": 5
+  }
+]

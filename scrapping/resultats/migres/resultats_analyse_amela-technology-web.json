@@ -1,0 +1,75 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité face aux demandes et retours des clients, répondant rapidement aux questions et aux problèmes soulevés."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les projets sont systématiquement livrés à temps ou avant les délais convenus, même dans les contextes de calendriers serrés."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité des livrables est constamment louée, avec des produits finaux fonctionnels, testés et exempts de bugs majeurs."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est claire et fréquente, via email, appels vidéo et outils de collaboration, avec des mises à jour régulières sur l'avancement."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'expertise technique est très profonde, couvrant un large éventail de technologies modernes et domaines spécialisés comme la blockchain et l'IA."
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les tarifs sont compétitifs et offrent un excellent rapport qualité-prix, adaptés au budget des clients."
+      }
+    ],
+    "points_forts": [
+      "Respect constant des délais et des budgets",
+      "Réactivité exceptionnelle aux demandes et ajustements",
+      "Expertise technique profonde et diversifiée",
+      "Excellente qualité de code et de livrables",
+      "Communication claire et régulière",
+      "Approche agile et flexible",
+      "Alignement fort des valeurs d'entreprise",
+      "Gestion de projet structurée et transparente",
+      "Équipes hautement professionnelles et dévouées",
+      "Capacité à gérer des projets complexes et variés",
+      "Bon rapport qualité-prix",
+      "Implication personnelle du leadership",
+      "Support post-projet disponible",
+      "Approche lean et efficace"
+    ],
+    "points_faibles": [
+      "Compétences linguistiques orales à améliorer (anglais)",
+      "Potentiellement plus de canaux de communication à offrir (Whatsapp, Telegram, Zalo)"
+    ],
+    "autres_points": [
+      "Très forte capacité à adapter les méthodologies selon les besoins des clients",
+      "Excellente intégration des équipes augmentées au sein des structures clients",
+      "Capacité à clarifier et adapter les exigences des clients",
+      "Transparence appréciée notamment dans les problématiques de dérives calendaires",
+      "Approche proactive dans la résolution des problèmes",
+      "Équipes créatives capables de proposer des innovations"
+    ],
+    "concurrent": "AMELA Technology",
+    "service_type": "web",
+    "nb_avis_analyses": 25
+  }
+]

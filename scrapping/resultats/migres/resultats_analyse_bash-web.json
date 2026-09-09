@@ -1,0 +1,47 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 1,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une expertise solide et une capacité à proposer des solutions efficaces pour les projets web."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe communique clairement et savoir écouter les besoins des clients pour les traduire fidèlement dans les réalisations."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence est réactive et agile, capable de s'adapter rapidement aux évolutions et demandes des clients."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité du travail livré est sans reproche et contribue au succès des projets."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique reconnue",
+      "Rigueur et agilité dans la gestion des projets",
+      "Écoute active des besoins clients",
+      "Suivi et accompagnement continu après la création",
+      "Force de proposition",
+      "Excellente ambiance de travail"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Les clients apprécient le partenariat durable établi avec l'agence au-delà de la livraison initiale"
+    ],
+    "concurrent": "BASH",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  }
+]

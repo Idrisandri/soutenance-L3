@@ -1,0 +1,77 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les services fournis se distinguent par une qualité exceptionnelle et un professionnalisme remarquable"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une réactivité et une capacité d'avancement notable dans la réalisation des projets"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe est constamment à l'écoute et maintient un suivi régulier avec les clients"
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'agence a réussi à respecter des délais serrés tout en maintenant la qualité du livrable"
+      }
+    ],
+    "points_forts": [
+      "Qualité exceptionnelle et professionnalisme",
+      "Équipe réactive et efficace",
+      "Excellente écoute et suivi client",
+      "Capacité à s'adapter à des contraintes de délais",
+      "Forte recommandabilité"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Partenariat durable avec les clients",
+      "Expertise dans la création de sites web"
+    ],
+    "concurrent": "Adveris",
+    "service_type": "web",
+    "nb_avis_analyses": 3
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe a démontré une expertise solide dans l'accompagnement sur les thématiques de branding et identité visuelle."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe s'est avérée être de qualité et facile à collaborer avec pour progresser sur les objectifs."
+      }
+    ],
+    "points_forts": [
+      "Expertise branding",
+      "Qualité de l'équipe",
+      "Accompagnement complet"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Client exprime sa volonté de reconduire la collaboration sur de nouveaux sujets"
+    ],
+    "concurrent": "Adveris",
+    "service_type": "branding",
+    "nb_avis_analyses": 1
+  }
+]
