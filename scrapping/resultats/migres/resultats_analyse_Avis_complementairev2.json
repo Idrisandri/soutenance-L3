@@ -1,0 +1,322 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Maîtrise approfondie des contraintes techniques liées aux événements multi-sites et développement de modules d'inscription hautement personnalisables."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Capacité à clarifier les objectifs entre différents sites et à améliorer la fluidité des échanges internes."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Approche d'amélioration continue tout au long du cycle de vie des projets, permettant une adaptation régulière aux besoins évolutifs."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique avancée",
+      "Approche centrée utilisateur",
+      "Amélioration continue",
+      "Partenariat de longue durée",
+      "Personnalisation des modules"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Accompagnement de plus de 15 ans avec le client"
+    ],
+    "concurrent": "Neoweb",
+    "service_type": "web",
+    "nb_avis_analyses": 1
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe fait preuve d'une grande réactivité et rapidité à mettre en œuvre les modifications et à résoudre les problèmes soulevés par les clients."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une excellente écoute des besoins clients, une compréhension approfondie des demandes et une communication claire tout au long du projet."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les délais sont respectés et les projets sont livrés dans les timeframes annoncées, même en contexte de délais serrés ou de changements de scope."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité du rendu final est systématiquement saluée, avec des sites répondant parfaitement aux attentes et dépassant les standards attendus."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe possède une expertise technique solide, notamment en Webflow, et repoussent les limites de la plateforme avec des solutions innovantes et des conseils de valeur."
+      }
+    ],
+    "points_forts": [
+      "Réactivité exceptionnelle et adaptabilité face aux changements",
+      "Expertise technique reconnue en Webflow",
+      "Écoute et compréhension approfondie des besoins clients",
+      "Respect rigoureux des délais et du cahier des charges",
+      "Qualité de rendu bluffante et conformité aux attentes",
+      "Approche orientée client et service client de qualité",
+      "Force de proposition au-delà du périmètre initial",
+      "Flexibilité face aux évolutions de scope",
+      "Collaboration professionnelle et agréable"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Plusieurs clients ont confié plusieurs projets consécutifs à l'agence, démontrant une confiance établie",
+      "L'équipe propose des services complémentaires au-delà de la création web : conseils SEO, copywriting, design UX/UI, accompagnement Notion",
+      "Disponibilité et implication de l'équipe même dans les dernières phases des projets"
+    ],
+    "concurrent": "ouiflow.io",
+    "service_type": "web",
+    "nb_avis_analyses": 32
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 1,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Résultat du travail de qualité sur la création et développement du site web"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe démontre une grande réactivité dans la conduite du projet"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe montre une excellente capacité à l'écoute et à la compréhension des besoins clients"
+      }
+    ],
+    "points_forts": [
+      "Qualité de réalisation",
+      "Réactivité de l'équipe",
+      "Écoute client",
+      "Satisfaction globale"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Recommandation chaleureuse de la part du client"
+    ],
+    "concurrent": "ouiflow.io",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Capacité à respecter des délais serrés et à livrer rapidement sans compromettre la qualité"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Écoute active des attentes clients et force de proposition adaptée aux besoins spécifiques"
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Réalisations de qualité supérieure avec des sites esthétiques, ergonomiques et fonctionnels"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Disponibilité constante du prestataire et réactivité exemplaire face aux demandes clients"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Compétences étendues en développement web avec capacité à gérer des projets complexes et innovants"
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité permanente",
+      "Expertise technique transversale et conseil avisé",
+      "Respect des délais courts",
+      "Écoute client et adaptation aux besoins",
+      "Qualité esthétique et fonctionnelle des réalisations",
+      "Créativité et innovation",
+      "Professionnalisme et sérieux"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Approche sur mesure et personnalisée pour chaque projet",
+      "Accompagnement humain durant tout le processus de développement"
+    ],
+    "concurrent": "SAS Webagencelille.com",
+    "service_type": "web",
+    "nb_avis_analyses": 6
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 1,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre une solide maîtrise technique couvrant le design, le développement web, l'intégration, les performances et le SEO."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe se distingue par sa disponibilité et sa réactivité auprès des clients."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les livrables offrent une qualité générale reconnue, avec des résultats tangibles comme les taux de conversion attendus et une conformité réglementaire assurée."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Le professionnalisme et l'accompagnement de l'équipe tout au long du projet témoignent d'une bonne qualité relationnelle."
+      }
+    ],
+    "points_forts": [
+      "Expertise marketing digital et technique confirmée",
+      "Réactivité et disponibilité de l'équipe",
+      "Couverture complète des besoins (design, développement, SEO, conformité)",
+      "Résultats mesurables et conformes aux attentes",
+      "Plateforme évolutive et facilement personnalisable"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Approche de partenariat long terme : continuité de collaboration pour optimiser les KPI",
+      "Gestion de projet maîtrisée sur des domaines variés"
+    ],
+    "concurrent": "Wapiti Agency",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe démontre une grande réactivité dans ses interventions"
+      },
+      {
+        "theme": "prix",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les tarifs proposés sont compétitifs et offrent un bon rapport qualité-prix"
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les prestations fournies sont de qualité excellente"
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe possède un talent et une compétence remarquables"
+      }
+    ],
+    "points_forts": [
+      "Équipe talentueuse et compétente",
+      "Excellente réactivité",
+      "Qualité des prestations exceptionnelle",
+      "Tarifs attractifs et compétitifs",
+      "Professionnalisme de l'équipe (notamment des responsables nommés)"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Agence spécialisée en communication web"
+    ],
+    "concurrent": "Dista",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe fait preuve d'une grande réactivité et capacité à répondre rapidement aux besoins des clients."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le personnel possède des compétences techniques solides et une expertise reconnue dans leurs domaines respectifs."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe se montre accessible, à l'écoute des clients et capable de comprendre leurs enjeux et besoins spécifiques."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Le professionnalisme et la qualité du service sont constants, avec une approche orientée solutions adaptées à chaque client."
+      }
+    ],
+    "points_forts": [
+      "Réactivité et responsivité du personnel",
+      "Expertise technique reconnue et compétence multidisciplinaire",
+      "Approche client centrée sur l'écoute et les besoins spécifiques",
+      "Professionnalisme irréprochable et atmosphère humaine",
+      "Conception de solutions sur mesure plutôt que solutions standards",
+      "Réputation établie et crédibilité locale de longue date"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Forte dynamique locale et positionnement clair en tant que partenaire de confiance pour les PME et collectivités",
+      "Orientation marquée vers l'innovation numérique",
+      "Engagement de l'équipe et atmosphère collaborative"
+    ],
+    "concurrent": "Kodo - Odoo Integrator",
+    "service_type": "web",
+    "nb_avis_analyses": 7
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.99,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité face aux demandes clients et aux modifications en cours de projet, répondant rapidement aux besoins."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Excellente écoute du client et compréhension approfondie des attentes, avec une communication claire tout au long du projet."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les délais sont systématiquement respectés, y compris dans les contextes de calendrier serré ou de changements de scope."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité de la réalisation est constamment saluée, avec des rendus bluffants et des sites répondant parfaitement aux attentes."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe maîtrise remarquablement Webflow et apporte une valeur ajoutée technique significative, avec une capacité à déployer des solutions innovantes."
+      }
+    ],
+    "points_forts": [
+      "Réactivité exceptionnelle aux demandes et modifications",
+      "Écoute client et compréhension approfondie des besoins",
+      "Respect systématique des délais",
+      "Expertise Webflow de haut niveau",
+      "Qualité des rendus et design impeccables",
+      "Flexibilité face aux changements de scope",
+      "Force de proposition et conseils au-delà du périmètre initial",
+      "Professionnalisme et sympathie de l'équipe",
+      "Disponibilité et accompagnement adapté",
+      "Collaboration de confiance sur la durée"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Capacité à accomplir des missions complexes en temps record",
+      "Accompagnement sur des services complémentaires (SEO, copywriting, UX/UI)",
+      "Support rapide et efficace en cas de besoin technique",
+      "Relation de confiance permettant l'évolution de la collaboration vers des projets plus ambitieux"
+    ],
+    "concurrent": "ouiflow.io",
+    "service_type": "web",
+    "nb_avis_analyses": 34
+  }
+]

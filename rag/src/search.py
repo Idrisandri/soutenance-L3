@@ -6,6 +6,7 @@ Applique un seuil de confiance : les résultats trop peu similaires à la
 question sont écartés, pour éviter que le LLM ne réponde à partir de
 concurrents qui n'ont en fait rien à voir avec la demande (hallucination).
 """
+import re
 from typing import Any
 
 from . import config
@@ -18,6 +19,27 @@ from .document_builder import build_document
 # sur des questions génériques ("Parle-moi de la concurrence à Lille"), qui
 # donne l'impression trompeuse que la base ne couvre presque personne.
 MIN_RESULTS_FLOOR = 5
+
+# Mots-clés pour détecter si une question cible explicitement le web ou le
+# mobile. Volontairement conservateur : en cas d'ambiguïté ou d'absence de
+# mot-clé, on ne filtre rien (mieux vaut du bruit compensé par le LLM qu'un
+# filtre trop agressif qui exclut à tort des résultats pertinents).
+MOTS_CLES_WEB = [r"\bweb\b", r"\bsite\b", r"\bsite internet\b", r"\bsite web\b"]
+MOTS_CLES_MOBILE = [r"\bmobile\b", r"\bapp\b", r"\bapplication\b", r"\bappli\b"]
+
+
+def _detecter_service_type(question: str) -> str | None:
+    """Détecte si la question porte explicitement sur le web ou le mobile.
+    Retourne None si ambigu (les deux mentionnés) ou si rien n'est détecté —
+    dans ces cas, search() ne filtre rien."""
+    q = question.lower()
+    a_web = any(re.search(m, q) for m in MOTS_CLES_WEB)
+    a_mobile = any(re.search(m, q) for m in MOTS_CLES_MOBILE)
+    if a_web and not a_mobile:
+        return "web"
+    if a_mobile and not a_web:
+        return "mobile"
+    return None
 
 
 def search(question: str) -> list[dict[str, Any]]:
@@ -41,6 +63,21 @@ def search(question: str) -> list[dict[str, Any]]:
 
     if not resultats_bruts:
         return []
+
+    # Filtre optionnel sur le type de service si la question le mentionne
+    # explicitement et sans ambiguïté (ex: "taux horaire mobile uniquement").
+    # Appliqué avant le seuil de confiance pour ne pas gaspiller de la place
+    # dans le top-N avec des résultats du mauvais type de service.
+    service_type_detecte = _detecter_service_type(question)
+    if service_type_detecte:
+        resultats_filtres_service = [
+            r for r in resultats_bruts if r["service_type"] == service_type_detecte
+        ]
+        # Garde-fou : si le filtre élimine tout (ex: faux positif sur un mot
+        # ambigu), on revient aux résultats non filtrés plutôt que de risquer
+        # une réponse vide à tort.
+        if resultats_filtres_service:
+            resultats_bruts = resultats_filtres_service
 
     # Seuil de confiance : on écarte tout ce qui est en dessous
     resultats_filtres = [
