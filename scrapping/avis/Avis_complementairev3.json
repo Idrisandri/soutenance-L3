@@ -1,0 +1,80 @@
+[
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "Un travail très professionnel",
+        "corps": "Très professionnel !",
+        "note": 5
+    },
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "Un accompagnement à la hauteur pour mes projets",
+        "corps": "Ma première impression en découvrant le travail de Mr Nasri sur internet s’est révélée à la hauteur de mes attentes dans son accompagnement pour la réalisation de mes projets.Conception logo, email, web …,",
+        "note": 5
+    },
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "Un informaticien compétent et à l'écoute",
+        "corps": "informaticien très compétant et d'une gentillesse à l'écoute du client encore merci",
+        "note": 5
+    },
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "Une image de marque professionnelle et aboutie",
+        "corps": "Farouk est attentif au besoin concret et sous-jacent de son client. Son travail est très professionnel et abouti. Je suis très fière d'arborer l'image qu'il m'a créée pour mon entreprise.",
+        "note": 5
+    },
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "De précieux conseils et une aide appréciée",
+        "corps": "Merci à vous pour vos précieux conseils et votre aide !",
+        "note": 5
+    },
+    {
+        "concurrent": "FAROUK NASRI",
+        "service_type": "web",
+        "titre": "Un échange qui aide à clarifier ses besoins",
+        "corps": "Très bon échange. Farouk a su nous orienter afin que nous puissions nous poser les bonnes questions et sur ce que nous désirons vraiment. Merci",
+        "note": 5
+    },
+    {
+    "concurrent": "Tigre Blanc",
+    "service_type": "web",
+    "titre": "Un accompagnement personnalisé en communication",
+    "corps": "De véritables professionnels de la communication, offrant un accompagnement très personnalisé. À recommander.",
+    "note": 5
+  },
+  {
+    "concurrent": "Tigre Blanc",
+    "service_type": "web",
+    "titre": "Des échanges constructifs et une collaboration au top",
+    "corps": "Une collaboration au top avec Tigre Blanc ! Un grand merci Guillaume pour nos échanges constructifs et ta sympathie.",
+    "note": 5
+  },
+  {
+    "concurrent": "Tigre Blanc",
+    "service_type": "web",
+    "titre": "Une communication intelligente qui donne du sens aux images",
+    "corps": "Merci Guillaume pour cette collaboration sur un formidable sujet en identité. C'est un plaisir de pouvoir faire de la communication intelligente, de donner du sens aux images. Cette façon de travailler donne une équipe et des clients ravis. À bientôt pour une nouvelle collaboration",
+    "note": 5
+  },
+  {
+    "concurrent": "Tigre Blanc",
+    "service_type": "web",
+    "titre": "Des recommandations qui bousculent mais qui fonctionnent",
+    "corps": "Merci pour ton écoute lors de nos briefs et tes recommandations qui parfois me/nous bousculent mais qui fonctionnent. On poursuit la collaboration !",
+    "note": 5
+  },
+  {
+    "concurrent": "Tigre Blanc",
+    "service_type": "web",
+    "titre": "Rien à redire : engagement, justesse et respect des délais",
+    "corps": "Très chouette expérience de travail avec Guillaume : compréhension immédiate du brief (et de l'esprit du brief), beaucoup d'engagement et d'enthousiasme dans le projet, de la justesse dans les recommandations, du rythme dans l'accompagnement, des convictions comme il en faut dans tout travail créatif, respect d'un calendrier contraint et d'un budget serré. Tout est à dire, rien à redire. Merci !",
+    "note": 5
+  }
+   
+]

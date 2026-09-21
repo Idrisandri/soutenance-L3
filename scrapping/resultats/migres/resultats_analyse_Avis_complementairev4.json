@@ -1,0 +1,194 @@
+[
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.95,
+    "themes": [
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe possède une expertise technique reconnue et capable de gérer des projets complexes et innovants."
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La réactivité de l'équipe est régulièrement soulignée et appréciée par les clients."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité des prestations et des équipes techniques dépasse les attentes des clients."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande disponibilité et une excellente communication dans son accompagnement des clients."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Un léger retard s'est produit mais il a été jugé insignifiant et n'a pas impacté la satisfaction globale."
+      }
+    ],
+    "points_forts": [
+      "Expertise technique élevée pour projets complexes",
+      "Réactivité et disponibilité de l'équipe",
+      "Qualité de prestation dépassant les attentes",
+      "Accompagnement personnalisé",
+      "Capacité à transformer les idées en solutions concrètes",
+      "Professionnalisme reconnu"
+    ],
+    "points_faibles": [
+      "Léger retard ponctuel lors d'un projet (jugé insignifiant)"
+    ],
+    "autres_points": [
+      "Implication de l'équipe tout au long de la collaboration",
+      "Capacité à supporter les clients durant les phases d'exploitation post-mise en production"
+    ],
+    "concurrent": "Whatson Web",
+    "service_type": "web",
+    "nb_avis_analyses": 4
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe se montre très réactive face aux demandes et questions des clients tout au long du projet."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence possède une expertise confirmée en développement mobile et conseille efficacement sur les choix technologiques et stratégiques."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe assure un accompagnement constant, des échanges de qualité et un suivi attentif tout au long du projet."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité du travail livré est professionnelle, conforme aux attentes et produit des résultats concluants."
+      }
+    ],
+    "points_forts": [
+      "Réactivité et disponibilité confirmées",
+      "Expertise technique en développement mobile avérée",
+      "Accompagnement pédagogique et conseils stratégiques de qualité",
+      "Équipe pluridisciplinaire complète (design, développement, communication)",
+      "Méthode agile bien maîtrisée",
+      "Professionnalisme et respect des engagements"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Structure équipe jeune et dynamique",
+      "Capacité démontrée à créer des applications rentables et génériques pour l'activité clients"
+    ],
+    "concurrent": "Web Maniac",
+    "service_type": "mobile",
+    "nb_avis_analyses": 6
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 1,
+    "themes": [
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'agence démontre un haut niveau de sérieux et de qualité dans la réalisation de projets complexes et innovants"
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'équipe se distingue par sa capacité d'écoute et son professionnalisme dans les interactions avec les clients"
+      },
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "L'agence fait preuve de flexibilité et d'adaptabilité face aux besoins spécifiques des projets"
+      }
+    ],
+    "points_forts": [
+      "Sérieux et fiabilité",
+      "Traitement de projets complexes et innovants",
+      "Qualité d'écoute",
+      "Professionnalisme",
+      "Flexibilité"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "Relation client stable et à long terme"
+    ],
+    "concurrent": "Web Maniac",
+    "service_type": "web",
+    "nb_avis_analyses": 2
+  },
+  {
+    "sentiment_global": "positif",
+    "score_sentiment": 0.98,
+    "themes": [
+      {
+        "theme": "reactivite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "L'équipe démontre une grande réactivité dans son accompagnement et son suivi des demandes clients."
+      },
+      {
+        "theme": "expertise_technique",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "Les compétences techniques en HubSpot, SEO et développement sont reconnues et appliquées efficacement."
+      },
+      {
+        "theme": "communication",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La communication est transparente, claire et pédagogique, facilitant la compréhension des enjeux métier."
+      },
+      {
+        "theme": "delais",
+        "polarite": "positif",
+        "frequence": "ponctuel",
+        "resume": "Les projets sont menés de manière efficace et rapide."
+      },
+      {
+        "theme": "qualite",
+        "polarite": "positif",
+        "frequence": "recurrent",
+        "resume": "La qualité des livrables et de l'accompagnement satisfait pleinement les attentes, avec des résultats concrets mesurables."
+      }
+    ],
+    "points_forts": [
+      "Expertise HubSpot pointue",
+      "Réactivité constante de l'équipe",
+      "Transparence et clarté de la communication",
+      "Accompagnement pédagogique et patient",
+      "Adaptabilité aux moyens financiers et humains",
+      "Résultats mesurables et générateurs de leads",
+      "Suivi long terme après la mise en place"
+    ],
+    "points_faibles": [],
+    "autres_points": [
+      "La relation client perdure au-delà du projet initial, montrant une confiance établie",
+      "Les clients comparent favorablement avec d'autres agences web de plus grande taille",
+      "Sous-exposition sur le marché parisien malgré une excellente qualité de service"
+    ],
+    "concurrent": "Impala Webstudio",
+    "service_type": "web",
+    "nb_avis_analyses": 7
+  }
+]
