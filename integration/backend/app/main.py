@@ -12,7 +12,7 @@ Puis :
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import ask
+from app.routers import ask, history
 
 app = FastAPI(
     title="API — Intelligence concurrentielle",
@@ -20,12 +20,11 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# CORS restreint aux origines connues du frontend React en développement.
-# Vite (port 5173) et Create React App (port 3000) sont couverts par défaut —
-# retire celui que tu n'utilises pas, et ajoute l'URL de prod le jour du déploiement
-# (ex: "https://ton-app-deployee.vercel.app").
 FRONTEND_ORIGINS = [
     "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
+    "http://localhost:5176",
     "http://localhost:3000",
 ]
 
@@ -40,8 +39,8 @@ app.add_middleware(
 
 @app.get("/health")
 def health():
-    """Vérifie que l'API tourne — utile pour un futur déploiement/monitoring."""
     return {"status": "ok"}
 
 
 app.include_router(ask.router)
+app.include_router(history.router)

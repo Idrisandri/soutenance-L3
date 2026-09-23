@@ -1,0 +1,7 @@
+React (login via supabase-js)
+   → récupère un access_token (JWT) dans la session Supabase
+   → l'envoie dans le header "Authorization: Bearer <token>" à chaque appel /ask
+FastAPI
+   → vérifie la signature du JWT avec le secret Supabase
+   → en extrait le user_id (claim "sub")
+   → l'utilise comme clé pour la mémoire de conversation

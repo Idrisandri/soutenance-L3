@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 
 class QuestionRequest(BaseModel):
     question: str = Field(..., min_length=3, description="Question en langage naturel")
+    conversation_id: str = Field(..., description="UUID généré côté front pour regrouper un fil de discussion")
 
 
 class Source(BaseModel):
@@ -14,8 +15,6 @@ class Source(BaseModel):
     service_type: str
     similarity: float
     confiance_faible: bool = False
-    # Texte complet réellement vu par le LLM pour ce concurrent (prix + avis).
-    # Utile côté front pour un lien "voir la source" ou un mode audit/debug.
     extrait: str | None = None
 
 
