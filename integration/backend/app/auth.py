@@ -29,6 +29,7 @@ def get_current_user(authorization: str = Header(...)) -> dict:
             signing_key.key,
             algorithms=["ES256", "RS256"],
             audience="authenticated",
+            
         )
     except jwt.ExpiredSignatureError:
         raise HTTPException(status_code=401, detail="Session expirée, reconnecte-toi")

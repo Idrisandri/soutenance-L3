@@ -16,11 +16,10 @@ router = APIRouter()
 
 @router.get("/history/{conversation_id}")
 def get_history_endpoint(conversation_id: str, user: dict = Depends(get_current_user)):
-    """Retourne l'historique d'une conversation précise, filtré par
-    l'utilisateur connecté (sécurité : on ne retourne jamais l'historique
-    d'un conversation_id appartenant à un autre utilisateur)."""
+    """Retourne l'historique COMPLET d'une conversation, pour l'affichage —
+    jamais tronqué par le résumé (voir memory.get_historique_complet)."""
     user_id = user["sub"]
-    historique = memory.get_historique(conversation_id, user_id, limite=50)
+    historique = memory.get_historique_complet(conversation_id, user_id)
     return {"messages": historique}
 
 
@@ -34,3 +33,15 @@ def list_conversations_endpoint(user: dict = Depends(get_current_user)):
     user_id = user["sub"]
     conversations = memory.get_conversations(user_id)
     return {"conversations": conversations}
+
+@router.delete("/conversations/{conversation_id}")
+def delete_conversation_endpoint(conversation_id: str, user: dict = Depends(get_current_user)):
+    """
+    Supprime complètement une conversation : tous ses messages ET son
+    résumé associé (le résumé est stocké dans une table séparée, donc il
+    faut le supprimer explicitement — pas de cascade automatique entre les
+    deux tables).
+    """
+    user_id = user["sub"]
+    memory.delete_conversation(conversation_id, user_id)
+    return {"status": "ok"}

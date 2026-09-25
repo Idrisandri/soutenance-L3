@@ -16,3 +16,9 @@ export function getHistory(conversationId) {
 export function getConversations() {
   return apiFetch('/conversations', { method: 'GET' });
 }
+
+export function deleteConversation(conversationId) {
+  return apiFetch(`/conversations/${conversationId}`, {
+    method: 'DELETE',
+  });
+}

@@ -18,17 +18,7 @@ function AppContent() {
     );
   }
 
-  return (
-    <div>
-      <div className="flex justify-between items-center p-4 border-b">
-        <span className="text-sm text-gray-600">Connecté : {user.email}</span>
-        <button onClick={signOut} className="text-sm text-red-600 underline">
-          Se déconnecter
-        </button>
-      </div>
-      <AskPage />
-    </div>
-  );
+  return <AskPage user={user} onSignOut={signOut} />;
 }
 
 export default function App() {

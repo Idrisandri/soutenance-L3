@@ -1,10 +1,12 @@
 """
 Router pour l'endpoint /ask.
 
-Flow : récupère l'historique récent de la conversation -> reformule la
-question si besoin (query_rewriter, pour la rendre autonome) -> appelle le
-RAG (stateless) avec la question reformulée -> sauvegarde l'échange
-(question ORIGINALE + réponse) dans l'historique.
+Flow : récupère le contexte de la conversation (résumé + échanges bruts
+récents) -> reformule la question si besoin (query_rewriter, pour la rendre
+autonome) -> appelle le RAG (stateless) avec la question reformulée ->
+sauvegarde l'échange (question ORIGINALE + réponse) -> vérifie si les
+anciens échanges doivent être résumés (maintain_memory), pour garder
+l'historique brut léger sans perdre le contexte.
 """
 import os
 import sys
@@ -27,10 +29,11 @@ router = APIRouter()
 def ask_endpoint(payload: QuestionRequest, user: dict = Depends(get_current_user)):
     user_id = user["sub"]
 
-    historique = memory.get_historique(payload.conversation_id, user_id, limite=3)
-    history_text = memory.format_historique(historique)
+    # Contexte = résumé (si la conversation a déjà dépassé le seuil au moins
+    # une fois) + échanges bruts récents non encore résumés.
+    contexte = memory.get_contexte_complet(payload.conversation_id, user_id)
 
-    question_a_chercher = rewrite_query(payload.question, history_text)
+    question_a_chercher = rewrite_query(payload.question, contexte)
 
     try:
         resultat = rag_ask(question_a_chercher)
@@ -43,6 +46,11 @@ def ask_endpoint(payload: QuestionRequest, user: dict = Depends(get_current_user
         question=payload.question,
         reponse=resultat["reponse"],
     )
+
+    # Vérifie si le nombre d'échanges bruts dépasse le seuil maintenant que
+    # ce nouvel échange a été ajouté — si oui, résume les plus anciens et
+    # les supprime de conversation_messages.
+    memory.maintain_memory(payload.conversation_id, user_id)
 
     return AnswerResponse(
         reponse=resultat["reponse"],

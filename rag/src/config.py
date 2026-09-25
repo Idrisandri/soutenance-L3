@@ -31,7 +31,7 @@ EMBEDDING_DIMENSIONS = 768  # doit correspondre à vector(768) dans Supabase
 # Le jour de la soutenance : change juste cette ligne dans le .env en LLM_PROVIDER=claude
 LLM_PROVIDER = _optional("LLM_PROVIDER", "gemini")  # "gemini" ou "claude"
 
-GEMINI_CHAT_MODEL = "gemini-3.5-flash"  # modèle de chat pour la réponse finale (LLM)
+GEMINI_CHAT_MODEL = "gemini-3.1-flash-lite"  # modèle de chat pour la réponse finale (LLM)
 ANTHROPIC_API_KEY = _optional("ANTHROPIC_API_KEY")  # requis seulement si LLM_PROVIDER=claude
 CLAUDE_MODEL = "claude-sonnet-4-5b"  # modèle de chat pour la réponse finale (LLM)
 

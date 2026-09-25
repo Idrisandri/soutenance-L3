@@ -5,6 +5,13 @@ Interrupteur simple entre Gemini (gratuit, utilisé en développement) et
 Claude (utilisé le jour de la soutenance) — contrôlé par LLM_PROVIDER dans le .env.
 Le reste du code (rag.py) appelle juste generate_response(prompt) sans se
 soucier de quel provider est actif.
+
+OPTIMISATION : generate_response_light() est utilisé pour les tâches
+secondaires (reformulation de question, résumé de conversation) — des
+tâches simples qui n'ont pas besoin de la puissance du modèle principal,
+peu importe LLM_PROVIDER. Ça réduit le coût et la pression sur les quotas
+API sans dégrader la qualité de la réponse finale (qui, elle, continue
+d'utiliser le modèle configuré normalement).
 """
 from . import config
 import time
@@ -13,6 +20,12 @@ import time
 def generate_response(prompt: str) -> str:
     if config.LLM_PROVIDER == "claude":
         return _generate_with_claude(prompt)
+    return _generate_with_gemini(prompt)
+
+
+def generate_response_light(prompt: str) -> str:
+    """Toujours Gemini Flash, peu importe LLM_PROVIDER — pour les tâches
+    secondaires (rewrite, résumé), qui n'ont pas besoin du modèle premium."""
     return _generate_with_gemini(prompt)
 
 
