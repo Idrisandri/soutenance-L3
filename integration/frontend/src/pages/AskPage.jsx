@@ -11,15 +11,6 @@ function nouvelId() {
   return id;
 }
 
-function SettingsIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="3" />
-      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-    </svg>
-  );
-}
-
 function MenuIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -46,7 +37,7 @@ function SendIcon() {
   );
 }
 
-export default function AskPage({ user, onSignOut }) {
+export default function AskPage({ user, onSignOut, onGoHome }) {
   const [conversationId, setConversationId] = useState(() => {
     return localStorage.getItem('conversation_id') || nouvelId();
   });
@@ -104,7 +95,7 @@ export default function AskPage({ user, onSignOut }) {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-white">
+    <div className="flex h-dvh overflow-hidden bg-[radial-gradient(120%_90%_at_30%_58%,_#2b2b2b_0%,_#1c1c1c_46%,_#141414_100%)] text-white">
       <Sidebar
         activeConversationId={conversationId}
         onSelectConversation={handleSelectConversation}
@@ -116,38 +107,52 @@ export default function AskPage({ user, onSignOut }) {
 
       <div className="flex-1 flex flex-col min-h-0">
         {/* En-tête */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 shrink-0">
+        <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-6 py-4">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setSidebarOpen((v) => !v)}
-              className="text-slate-500 hover:text-slate-700 p-1.5 rounded-md hover:bg-slate-100"
+              className="rounded-md p-1.5 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white"
               aria-label="Basculer la sidebar"
             >
               <MenuIcon />
             </button>
-            <h1 className="text-lg font-semibold text-slate-900">Aether AI Chat Assistant</h1>
+            <h1 className="text-lg font-medium text-white">Agent IA</h1>
           </div>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-2 bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full">
-              AI Status: Online
-              <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            </span>
-            <button className="text-slate-500 hover:text-slate-700 flex items-center gap-1 text-sm">
-              <SettingsIcon />
-              Settings
+            <button
+              type="button"
+              onClick={onGoHome}
+              className="text-sm text-neutral-400 transition-colors hover:text-white"
+            >
+              Accueil
             </button>
-            <div className="w-8 h-8 rounded-full bg-slate-200" />
+            <span className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-1.5 text-xs text-neutral-300">
+              En ligne
+              <span className="h-2 w-2 rounded-full bg-white" />
+            </span>
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-neutral-300">
+              <span className="text-[11px] font-medium">VA</span>
+            </div>
           </div>
         </div>
 
         <div className="flex-1 flex flex-col min-h-0">
           <div className="flex-1 min-h-0 overflow-y-auto">
-            <div className="max-w-3xl mx-auto p-6 space-y-4">
+            <div className="mx-auto max-w-3xl space-y-4 p-6">
+            {messages.length === 0 && (
+              <div className="flex flex-col items-center pt-16 text-center">
+                <img src="/oeil.png" alt="" className="w-40 select-none opacity-90" draggable="false" />
+                <p className="mt-6 text-2xl font-medium tracking-tight text-white">Voyez le marché avant d&apos;agir</p>
+                <p className="mt-2 max-w-sm text-sm text-neutral-400">
+                  Interrogez l&apos;agent en langage naturel.
+                </p>
+              </div>
+            )}
             {messages.map((m, i) => (
               <div key={i} className="space-y-2">
                 {/* Question — alignée à droite, bulle bleu marine */}
                 <div className="flex justify-end">
-                  <div className="bg-[#0B1220] text-white rounded-2xl rounded-br-sm px-4 py-2.5 max-w-[75%] text-sm">
+                  <div className="max-w-[75%] rounded-2xl rounded-br-sm bg-white px-4 py-2.5 text-sm text-neutral-950">
                     {m.question}
                   </div>
                 </div>
@@ -155,13 +160,13 @@ export default function AskPage({ user, onSignOut }) {
                 {/* Réponse — alignée à gauche, bulle grise avec rendu markdown */}
                 <div className="flex justify-start">
                   {m.reponse === null ? (
-                    <div className="bg-slate-100 rounded-2xl rounded-bl-sm px-4 py-3 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-slate-400 animate-bounce [animation-delay:-0.3s]" />
-                      <span className="w-1.5 h-1.5 rounded-full bg-slate-400 animate-bounce [animation-delay:-0.15s]" />
-                      <span className="w-1.5 h-1.5 rounded-full bg-slate-400 animate-bounce" />
+                    <div className="flex items-center gap-1 rounded-2xl rounded-bl-sm border border-white/10 bg-white/5 px-4 py-3">
+                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400 [animation-delay:-0.3s]" />
+                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400 [animation-delay:-0.15s]" />
+                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400" />
                     </div>
                   ) : (
-                    <div className="bg-slate-100 text-slate-800 rounded-2xl rounded-bl-sm px-4 py-2.5 max-w-[75%] text-sm prose prose-sm prose-slate max-w-none prose-p:my-1.5 prose-headings:my-2 prose-ul:my-1.5 prose-li:my-0.5">
+                    <div className="max-w-[75%] rounded-2xl rounded-bl-sm border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-neutral-100 prose prose-sm prose-invert max-w-none prose-p:my-1.5 prose-headings:my-2 prose-ul:my-1.5 prose-li:my-0.5">
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.reponse}</ReactMarkdown>
                     </div>
                   )}
@@ -173,13 +178,13 @@ export default function AskPage({ user, onSignOut }) {
             </div>
           </div>
 
-          {error && <p className="max-w-3xl mx-auto text-red-600 text-sm px-6 shrink-0">{error}</p>}
+          {error && <p className="mx-auto max-w-3xl shrink-0 px-6 text-sm text-red-400">{error}</p>}
 
-          <div className="border-t border-slate-200 shrink-0">
-            <form onSubmit={handleSubmit} className="max-w-3xl mx-auto flex items-center gap-2 p-4">
+          <div className="shrink-0 border-t border-white/10">
+            <form onSubmit={handleSubmit} className="mx-auto flex max-w-3xl items-center gap-2 p-4">
               <button
                 type="button"
-                className="text-slate-400 hover:text-slate-600 p-2 rounded-full hover:bg-slate-100"
+                className="rounded-full p-2 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white"
                 aria-label="Joindre un fichier"
               >
                 <PaperclipIcon />
@@ -188,13 +193,13 @@ export default function AskPage({ user, onSignOut }) {
                 type="text"
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
-                placeholder="Type your message or ask a question..."
-                className="flex-1 border border-slate-300 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1220]/20"
+                placeholder="Interrogez l'agent en langage naturel..."
+                className="flex-1 rounded-full border border-white/15 bg-black/20 px-4 py-2.5 text-sm text-white outline-none placeholder:text-neutral-500 focus:border-white/40"
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-[#0B1220] text-white w-10 h-10 flex items-center justify-center rounded-full disabled:opacity-50 hover:bg-[#0B1220]/90 transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-neutral-950 transition-transform hover:scale-[1.03] disabled:opacity-50"
                 aria-label="Envoyer"
               >
                 <SendIcon />

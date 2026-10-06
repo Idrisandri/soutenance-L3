@@ -30,6 +30,7 @@ export function AuthProvider({ children }) {
     signUp: (email, password, metadata = {}) =>
       supabase.auth.signUp({ email, password, options: { data: metadata } }),
     signOut: () => supabase.auth.signOut(),
+    resetPassword: (email) => supabase.auth.resetPasswordForEmail(email),
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

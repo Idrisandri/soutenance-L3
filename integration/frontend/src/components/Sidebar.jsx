@@ -1,17 +1,11 @@
 import { useState, useEffect } from 'react';
 import { getConversations, deleteConversation } from '../services/ragApi';
 
-function LogoIcon() {
+function LogoMark() {
   return (
-    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 2 L29 27 L16 21 L3 27 Z" fill="url(#aether-grad)" stroke="#60A5FA" strokeWidth="1" strokeLinejoin="round" />
-      <defs>
-        <linearGradient id="aether-grad" x1="3" y1="2" x2="29" y2="27" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#60A5FA" />
-          <stop offset="1" stopColor="#1E3A8A" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-[11px] font-medium tracking-wide">
+      VA
+    </span>
   );
 }
 
@@ -86,32 +80,32 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
 
   return (
     <div
-      className={`shrink-0 bg-[#0B1220] text-slate-100 h-full flex flex-col border-r border-white/10 overflow-hidden transition-all duration-300 ease-in-out ${
+      className={`flex h-full shrink-0 flex-col overflow-hidden border-r border-white/10 bg-[#141414] text-neutral-100 transition-all duration-300 ease-in-out ${
         open ? 'w-64' : 'w-0 border-r-0'
       }`}
     >
       <div className="w-64 h-full flex flex-col">
         {/* Logo */}
         <div className="flex items-center gap-2 px-4 py-4 border-b border-white/10 shrink-0">
-          <LogoIcon />
-          <span className="font-semibold text-lg tracking-tight">Aether AI</span>
+          <LogoMark />
+          <span className="text-sm font-medium tracking-tight">Agent IA</span>
         </div>
 
         {/* New chat button */}
         <div className="p-3 shrink-0">
           <button
             onClick={onNewConversation}
-            className="w-full flex items-center justify-center gap-2 border border-white/15 bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium py-2.5 rounded-lg"
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-white py-2.5 text-sm font-medium text-neutral-950 transition-transform hover:scale-[1.01]"
           >
             <PlusIcon />
-            New Chat
+            Nouvelle conversation
           </button>
         </div>
 
         {/* Conversation list */}
         <div className="flex-1 min-h-0 overflow-y-auto px-2 space-y-1 pb-3">
           {conversations.length === 0 && (
-            <p className="text-xs text-slate-500 px-3 py-2">Aucune conversation pour l'instant</p>
+            <p className="px-3 py-2 text-xs text-neutral-500">Aucune conversation pour l&apos;instant</p>
           )}
           {conversations.map((conv) => {
             const isActive = conv.conversation_id === activeConversationId;
@@ -122,13 +116,13 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
                 className={`group w-full flex items-center gap-1 px-3 py-2.5 text-sm rounded-lg cursor-pointer transition-colors ${
                   isActive
                     ? 'bg-white/10 text-white font-medium'
-                    : 'text-slate-300 hover:bg-white/5'
+                    : 'text-neutral-300 hover:bg-white/5'
                 }`}
               >
                 <span className="flex-1 truncate">{conv.titre}</span>
                 <button
                   onClick={(e) => handleDelete(e, conv.conversation_id)}
-                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-red-400 p-1 rounded transition-opacity shrink-0"
+                  className="shrink-0 rounded p-1 text-neutral-500 opacity-0 transition-opacity hover:text-red-400 group-hover:opacity-100"
                   aria-label="Supprimer cette conversation"
                   title="Supprimer"
                 >
@@ -142,15 +136,15 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
         {/* Profil connecté + déconnexion */}
         {user && (
           <div className="border-t border-white/10 p-3 flex items-center gap-2 shrink-0">
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-slate-300 shrink-0">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-neutral-300">
               <UserIcon />
             </div>
-            <span className="flex-1 text-xs text-slate-300 truncate" title={user.email}>
+            <span className="flex-1 truncate text-xs text-neutral-300" title={user.email}>
               {user.email}
             </span>
             <button
               onClick={onSignOut}
-              className="text-slate-400 hover:text-white p-1.5 rounded-md hover:bg-white/10 shrink-0"
+              className="shrink-0 rounded-md p-1.5 text-neutral-400 hover:bg-white/10 hover:text-white"
               aria-label="Se déconnecter"
               title="Se déconnecter"
             >
