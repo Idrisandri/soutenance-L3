@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import ThemeToggle from '../components/ThemeToggle';
 
 const REMEMBER_KEY = 'login_email';
 
@@ -56,7 +57,7 @@ function EyeIcon({ off = false }) {
 }
 
 const fieldClass =
-  'w-full rounded-xl border border-white/15 bg-black/20 py-3 pl-11 text-sm text-white outline-none placeholder:text-neutral-500 focus:border-white/40';
+  'w-full rounded-xl border border-field-border bg-field py-3 pl-11 text-sm text-ink outline-none placeholder:text-muted focus:border-ink/30';
 
 export default function LoginPage({ onSwitchToRegister, onGoHome }) {
   const { signIn, resetPassword } = useAuth();
@@ -102,27 +103,28 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
   }
 
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-[radial-gradient(120%_90%_at_30%_58%,_#2b2b2b_0%,_#1c1c1c_46%,_#141414_100%)] text-white">
+    <div className="bg-stage flex h-dvh flex-col overflow-hidden">
       <header className="flex items-center justify-between gap-4 px-6 pt-6 sm:px-10">
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-300">
-          <button type="button" onClick={() => onGoHome?.('home')} className="text-white">
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-soft">
+          <button type="button" onClick={() => onGoHome?.('home')} className="text-ink">
             Accueil
           </button>
-          <button type="button" onClick={() => onGoHome?.('features')} className="transition-colors hover:text-white">
+          <button type="button" onClick={() => onGoHome?.('features')} className="transition-colors hover:text-ink">
             Fonctionnalités
           </button>
-          <button type="button" className="text-white">
+          <button type="button" className="text-ink">
             Agent IA
           </button>
-          <button type="button" onClick={() => onGoHome?.('about')} className="transition-colors hover:text-white">
+          <button type="button" onClick={() => onGoHome?.('about')} className="transition-colors hover:text-ink">
             À propos
           </button>
         </nav>
-        <div className="flex items-center gap-4 text-neutral-300">
-          <button type="button" aria-label="Rechercher" className="transition-colors hover:text-white">
+        <div className="text-soft flex items-center gap-4">
+          <ThemeToggle />
+          <button type="button" aria-label="Rechercher" className="transition-colors hover:text-ink">
             <SearchIcon />
           </button>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-700/80 text-neutral-200">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-chip text-soft">
             <UserIcon />
           </span>
         </div>
@@ -134,11 +136,11 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
             <img
               src="/oeil.png"
               alt=""
-              className="pointer-events-none absolute left-1/2 top-1/2 w-[min(78%,560px)] -translate-x-1/2 -translate-y-[54%] select-none drop-shadow-[0_30px_40px_rgba(0,0,0,0.55)]"
+              className="eye-shadow pointer-events-none absolute left-1/2 top-1/2 w-[min(78%,560px)] -translate-x-1/2 -translate-y-[54%] select-none"
               draggable="false"
             />
-            <p className="relative z-10 flex items-center gap-3 text-sm text-neutral-200">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-[11px] font-medium tracking-wide">
+            <p className="relative z-10 flex items-center gap-3 text-sm text-soft">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-line text-[11px] font-medium tracking-wide">
                 VA
               </span>
               Voyez le marché avant d&apos;agir.
@@ -146,14 +148,14 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
           </div>
 
           <form onSubmit={handleSubmit} className="mx-auto flex w-full max-w-md flex-col justify-center overflow-y-auto px-6 py-10 sm:px-8">
-            <h1 className="text-4xl font-medium tracking-tight text-white sm:text-5xl">Bon retour</h1>
-            <p className="mt-2 text-sm text-neutral-400">Connectez-vous à votre espace</p>
+            <h1 className="text-4xl font-medium tracking-tight text-ink sm:text-5xl">Bon retour</h1>
+            <p className="mt-2 text-sm text-muted">Connectez-vous à votre espace</p>
 
-            <label className="mt-8 block text-sm text-neutral-200" htmlFor="login-email">
+            <label className="mt-8 block text-sm text-soft" htmlFor="login-email">
               Email
             </label>
             <div className="relative mt-2">
-              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
                 <MailIcon />
               </span>
               <input
@@ -168,11 +170,11 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
               />
             </div>
 
-            <label className="mt-5 block text-sm text-neutral-200" htmlFor="login-password">
+            <label className="mt-5 block text-sm text-soft" htmlFor="login-password">
               Mot de passe
             </label>
             <div className="relative mt-2">
-              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
                 <LockIcon />
               </span>
               <input
@@ -188,7 +190,7 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
               <button
                 type="button"
                 onClick={() => setShowPassword((value) => !value)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 transition-colors hover:text-white"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-muted transition-colors hover:text-ink"
                 aria-label={showPassword ? 'Masquer le mot de passe' : 'Afficher le mot de passe'}
               >
                 <EyeIcon off={showPassword} />
@@ -196,41 +198,41 @@ export default function LoginPage({ onSwitchToRegister, onGoHome }) {
             </div>
 
             <div className="mt-4 flex items-center justify-between gap-3 text-sm">
-              <label className="flex items-center gap-2 text-neutral-300">
+              <label className="flex items-center gap-2 text-soft">
                 <input
                   type="checkbox"
                   checked={remember}
                   onChange={(e) => setRemember(e.target.checked)}
-                  className="h-4 w-4 rounded border-white/30 bg-transparent accent-white"
+                  className="border-field-border h-4 w-4 rounded bg-transparent accent-fill"
                 />
                 Se souvenir de moi
               </label>
               <button
                 type="button"
                 onClick={handleForgot}
-                className="text-neutral-200 underline underline-offset-2 transition-colors hover:text-white"
+                className="text-soft underline underline-offset-2 transition-colors hover:text-ink"
               >
                 Mot de passe oublié ?
               </button>
             </div>
 
             {error && <p className="mt-4 text-sm text-red-400">{error}</p>}
-            {notice && <p className="mt-4 text-sm text-neutral-300">{notice}</p>}
+            {notice && <p className="mt-4 text-sm text-soft">{notice}</p>}
 
             <button
               type="submit"
               disabled={loading}
-              className="mt-6 w-full rounded-full bg-white py-3 text-sm font-medium text-neutral-950 transition-transform hover:scale-[1.01] disabled:opacity-60"
+              className="bg-fill text-fill-ink mt-6 w-full rounded-full py-3 text-sm font-medium transition-transform hover:scale-[1.01] disabled:opacity-60"
             >
               {loading ? 'Connexion...' : 'Se connecter'}
             </button>
 
-            <p className="mt-5 text-center text-sm text-neutral-400">
+            <p className="mt-5 text-center text-sm text-muted">
               Pas encore de compte ?{' '}
               <button
                 type="button"
                 onClick={onSwitchToRegister}
-                className="text-neutral-100 underline underline-offset-2 hover:text-white"
+                className="text-ink underline underline-offset-2 hover:text-ink"
               >
                 Créer un compte
               </button>

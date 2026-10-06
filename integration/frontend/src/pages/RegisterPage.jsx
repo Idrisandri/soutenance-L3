@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import ThemeToggle from '../components/ThemeToggle';
 
 function SearchIcon() {
   return (
@@ -62,34 +63,35 @@ function EyeIcon({ off = false }) {
 }
 
 const fieldClass =
-  'w-full rounded-xl border border-white/15 bg-black/20 py-3 pl-11 text-sm text-white outline-none placeholder:text-neutral-500 focus:border-white/40';
+  'w-full rounded-xl border border-field-border bg-field py-3 pl-11 text-sm text-ink outline-none placeholder:text-muted focus:border-ink/30';
 
 function Shell({ onGoHome, onSwitchToLogin, children }) {
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-[radial-gradient(120%_90%_at_30%_58%,_#2b2b2b_0%,_#1c1c1c_46%,_#141414_100%)] text-white">
+    <div className="bg-stage flex h-dvh flex-col overflow-hidden">
       <header className="flex items-center justify-between gap-4 px-6 pt-6 sm:px-10">
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-300">
-          <button type="button" onClick={() => onGoHome?.('home')} className="text-white">
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-soft">
+          <button type="button" onClick={() => onGoHome?.('home')} className="text-ink">
             Accueil
           </button>
-          <button type="button" onClick={() => onGoHome?.('features')} className="transition-colors hover:text-white">
+          <button type="button" onClick={() => onGoHome?.('features')} className="transition-colors hover:text-ink">
             Fonctionnalités
           </button>
-          <button type="button" className="text-white">
+          <button type="button" className="text-ink">
             Agent IA
           </button>
-          <button type="button" onClick={() => onGoHome?.('about')} className="transition-colors hover:text-white">
+          <button type="button" onClick={() => onGoHome?.('about')} className="transition-colors hover:text-ink">
             À propos
           </button>
         </nav>
-        <div className="flex items-center gap-3 text-sm text-neutral-200">
-          <button type="button" aria-label="Rechercher" className="text-neutral-300 transition-colors hover:text-white">
+        <div className="text-soft flex items-center gap-3 text-sm">
+          <ThemeToggle />
+          <button type="button" aria-label="Rechercher" className="text-soft transition-colors hover:text-ink">
             <SearchIcon />
           </button>
-          <button type="button" onClick={onSwitchToLogin} className="transition-colors hover:text-white">
+          <button type="button" onClick={onSwitchToLogin} className="transition-colors hover:text-ink">
             Mon Profil
           </button>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-700/80 text-neutral-200">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-chip text-soft">
             <UserIcon />
           </span>
         </div>
@@ -102,11 +104,11 @@ function Shell({ onGoHome, onSwitchToLogin, children }) {
             <img
               src="/oeil.png"
               alt=""
-              className="pointer-events-none absolute left-1/2 top-1/2 w-[min(78%,560px)] -translate-x-1/2 -translate-y-[54%] select-none drop-shadow-[0_30px_40px_rgba(0,0,0,0.55)]"
+              className="eye-shadow pointer-events-none absolute left-1/2 top-1/2 w-[min(78%,560px)] -translate-x-1/2 -translate-y-[54%] select-none"
               draggable="false"
             />
-            <p className="relative z-10 flex items-center gap-3 text-sm text-neutral-200">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-[11px] font-medium tracking-wide">
+            <p className="relative z-10 flex items-center gap-3 text-sm text-soft">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-line text-[11px] font-medium tracking-wide">
                 VA
               </span>
               Voyez le marché avant d&apos;agir.
@@ -157,13 +159,13 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
       <Shell onGoHome={onGoHome} onSwitchToLogin={onSwitchToLogin}>
         <div className="mx-auto flex w-full max-w-md flex-col justify-center px-6 py-10 sm:px-8">
           <h1 className="text-4xl font-medium tracking-tight">Compte créé</h1>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+          <p className="mt-3 text-sm leading-relaxed text-muted">
             Vérifie ta boîte mail pour confirmer ton compte avant de te connecter.
           </p>
           <button
             type="button"
             onClick={onSwitchToLogin}
-            className="mt-8 w-full rounded-full bg-white py-3 text-sm font-medium text-neutral-950"
+            className="bg-fill text-fill-ink mt-8 w-full rounded-full py-3 text-sm font-medium"
           >
             Se connecter
           </button>
@@ -175,14 +177,14 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
   return (
     <Shell onGoHome={onGoHome} onSwitchToLogin={onSwitchToLogin}>
       <form onSubmit={handleSubmit} className="mx-auto flex w-full max-w-md flex-col justify-center overflow-y-auto px-6 py-8 sm:px-8">
-        <h1 className="text-4xl font-medium tracking-tight text-white sm:text-5xl">Créer un compte</h1>
-        <p className="mt-2 text-sm text-neutral-400">Rejoignez votre espace en quelques secondes</p>
+        <h1 className="text-4xl font-medium tracking-tight text-ink sm:text-5xl">Créer un compte</h1>
+        <p className="mt-2 text-sm text-muted">Rejoignez votre espace en quelques secondes</p>
 
-        <label className="mt-6 block text-sm text-neutral-200" htmlFor="register-name">
+        <label className="mt-6 block text-sm text-soft" htmlFor="register-name">
           Nom complet
         </label>
         <div className="relative mt-2">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
             <UserIcon />
           </span>
           <input
@@ -197,11 +199,11 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
           />
         </div>
 
-        <label className="mt-4 block text-sm text-neutral-200" htmlFor="register-phone">
+        <label className="mt-4 block text-sm text-soft" htmlFor="register-phone">
           Numéro de téléphone
         </label>
         <div className="relative mt-2">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
             <PhoneIcon />
           </span>
           <input
@@ -216,11 +218,11 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
           />
         </div>
 
-        <label className="mt-4 block text-sm text-neutral-200" htmlFor="register-email">
+        <label className="mt-4 block text-sm text-soft" htmlFor="register-email">
           Email
         </label>
         <div className="relative mt-2">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
             <MailIcon />
           </span>
           <input
@@ -235,11 +237,11 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
           />
         </div>
 
-        <label className="mt-4 block text-sm text-neutral-200" htmlFor="register-password">
+        <label className="mt-4 block text-sm text-soft" htmlFor="register-password">
           Mot de passe
         </label>
         <div className="relative mt-2">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted">
             <LockIcon />
           </span>
           <input
@@ -256,19 +258,19 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
           <button
             type="button"
             onClick={() => setShowPassword((value) => !value)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 transition-colors hover:text-white"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-muted transition-colors hover:text-ink"
             aria-label={showPassword ? 'Masquer le mot de passe' : 'Afficher le mot de passe'}
           >
             <EyeIcon off={showPassword} />
           </button>
         </div>
 
-        <label className="mt-4 flex items-center gap-2 text-sm text-neutral-300">
+        <label className="mt-4 flex items-center gap-2 text-sm text-soft">
           <input
             type="checkbox"
             checked={accepted}
             onChange={(e) => setAccepted(e.target.checked)}
-            className="h-4 w-4 rounded border-white/30 bg-transparent accent-white"
+            className="border-field-border h-4 w-4 rounded bg-transparent accent-fill"
           />
           J&apos;accepte les conditions d&apos;utilisation
         </label>
@@ -278,17 +280,17 @@ export default function RegisterPage({ onSwitchToLogin, onGoHome }) {
         <button
           type="submit"
           disabled={loading}
-          className="mt-5 w-full rounded-full bg-white py-3 text-sm font-medium text-neutral-950 transition-transform hover:scale-[1.01] disabled:opacity-60"
+          className="bg-fill text-fill-ink mt-5 w-full rounded-full py-3 text-sm font-medium transition-transform hover:scale-[1.01] disabled:opacity-60"
         >
           {loading ? 'Création...' : 'Créer mon compte'}
         </button>
 
-        <p className="mt-4 text-center text-sm text-neutral-400">
+        <p className="mt-4 text-center text-sm text-muted">
           Déjà un compte ?{' '}
           <button
             type="button"
             onClick={onSwitchToLogin}
-            className="text-neutral-100 underline underline-offset-2 hover:text-white"
+            className="text-ink underline underline-offset-2 hover:text-ink"
           >
             Se connecter
           </button>

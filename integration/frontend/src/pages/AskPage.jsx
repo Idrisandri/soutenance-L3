@@ -4,6 +4,8 @@ import { getHistory } from '../services/ragApi';
 import Sidebar from '../components/Sidebar';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import ThemeToggle from '../components/ThemeToggle';
+import { useTheme } from '../context/ThemeContext';
 
 function nouvelId() {
   const id = crypto.randomUUID();
@@ -38,6 +40,7 @@ function SendIcon() {
 }
 
 export default function AskPage({ user, onSignOut, onGoHome }) {
+  const { theme } = useTheme();
   const [conversationId, setConversationId] = useState(() => {
     return localStorage.getItem('conversation_id') || nouvelId();
   });
@@ -95,7 +98,7 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
   }
 
   return (
-    <div className="flex h-dvh overflow-hidden bg-[radial-gradient(120%_90%_at_30%_58%,_#2b2b2b_0%,_#1c1c1c_46%,_#141414_100%)] text-white">
+    <div className="bg-stage flex h-dvh overflow-hidden">
       <Sidebar
         activeConversationId={conversationId}
         onSelectConversation={handleSelectConversation}
@@ -107,30 +110,31 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
 
       <div className="flex-1 flex flex-col min-h-0">
         {/* En-tête */}
-        <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-6 py-4">
+        <div className="border-line flex shrink-0 items-center justify-between border-b px-6 py-4">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setSidebarOpen((v) => !v)}
-              className="rounded-md p-1.5 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white"
+              className="text-muted hover:bg-bubble hover:text-ink rounded-md p-1.5 transition-colors"
               aria-label="Basculer la sidebar"
             >
               <MenuIcon />
             </button>
-            <h1 className="text-lg font-medium text-white">Agent IA</h1>
+            <h1 className="text-ink text-lg font-medium">Agent IA</h1>
           </div>
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <button
               type="button"
               onClick={onGoHome}
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
+              className="text-muted hover:text-ink text-sm transition-colors"
             >
               Accueil
             </button>
-            <span className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-1.5 text-xs text-neutral-300">
+            <span className="border-line text-soft flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs">
               En ligne
-              <span className="h-2 w-2 rounded-full bg-white" />
+              <span className="bg-fill h-2 w-2 rounded-full" />
             </span>
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-neutral-300">
+            <div className="bg-chip text-soft flex h-8 w-8 items-center justify-center rounded-full">
               <span className="text-[11px] font-medium">VA</span>
             </div>
           </div>
@@ -142,8 +146,8 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
             {messages.length === 0 && (
               <div className="flex flex-col items-center pt-16 text-center">
                 <img src="/oeil.png" alt="" className="w-40 select-none opacity-90" draggable="false" />
-                <p className="mt-6 text-2xl font-medium tracking-tight text-white">Voyez le marché avant d&apos;agir</p>
-                <p className="mt-2 max-w-sm text-sm text-neutral-400">
+                <p className="text-ink mt-6 text-2xl font-medium tracking-tight">Voyez le marché avant d&apos;agir</p>
+                <p className="text-muted mt-2 max-w-sm text-sm">
                   Interrogez l&apos;agent en langage naturel.
                 </p>
               </div>
@@ -152,7 +156,7 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
               <div key={i} className="space-y-2">
                 {/* Question — alignée à droite, bulle bleu marine */}
                 <div className="flex justify-end">
-                  <div className="max-w-[75%] rounded-2xl rounded-br-sm bg-white px-4 py-2.5 text-sm text-neutral-950">
+                  <div className="bg-fill text-fill-ink max-w-[75%] rounded-2xl rounded-br-sm px-4 py-2.5 text-sm">
                     {m.question}
                   </div>
                 </div>
@@ -160,13 +164,13 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
                 {/* Réponse — alignée à gauche, bulle grise avec rendu markdown */}
                 <div className="flex justify-start">
                   {m.reponse === null ? (
-                    <div className="flex items-center gap-1 rounded-2xl rounded-bl-sm border border-white/10 bg-white/5 px-4 py-3">
-                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400 [animation-delay:-0.3s]" />
-                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400 [animation-delay:-0.15s]" />
-                      <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-neutral-400" />
+                    <div className="border-line bg-bubble flex items-center gap-1 rounded-2xl rounded-bl-sm border px-4 py-3">
+                      <span className="bg-muted h-1.5 w-1.5 animate-bounce rounded-full [animation-delay:-0.3s]" />
+                      <span className="bg-muted h-1.5 w-1.5 animate-bounce rounded-full [animation-delay:-0.15s]" />
+                      <span className="bg-muted h-1.5 w-1.5 animate-bounce rounded-full" />
                     </div>
                   ) : (
-                    <div className="max-w-[75%] rounded-2xl rounded-bl-sm border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-neutral-100 prose prose-sm prose-invert max-w-none prose-p:my-1.5 prose-headings:my-2 prose-ul:my-1.5 prose-li:my-0.5">
+                    <div className={`border-line bg-bubble text-ink max-w-[75%] rounded-2xl rounded-bl-sm border px-4 py-2.5 text-sm prose prose-sm max-w-none prose-p:my-1.5 prose-headings:my-2 prose-ul:my-1.5 prose-li:my-0.5 ${theme === 'dark' ? 'prose-invert' : ''}`}>
                       <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.reponse}</ReactMarkdown>
                     </div>
                   )}
@@ -180,11 +184,11 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
 
           {error && <p className="mx-auto max-w-3xl shrink-0 px-6 text-sm text-red-400">{error}</p>}
 
-          <div className="shrink-0 border-t border-white/10">
+          <div className="border-line shrink-0 border-t">
             <form onSubmit={handleSubmit} className="mx-auto flex max-w-3xl items-center gap-2 p-4">
               <button
                 type="button"
-                className="rounded-full p-2 text-neutral-400 transition-colors hover:bg-white/5 hover:text-white"
+                className="text-muted hover:bg-bubble hover:text-ink rounded-full p-2 transition-colors"
                 aria-label="Joindre un fichier"
               >
                 <PaperclipIcon />
@@ -194,12 +198,12 @@ export default function AskPage({ user, onSignOut, onGoHome }) {
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
                 placeholder="Interrogez l'agent en langage naturel..."
-                className="flex-1 rounded-full border border-white/15 bg-black/20 px-4 py-2.5 text-sm text-white outline-none placeholder:text-neutral-500 focus:border-white/40"
+                className="border-field-border bg-field text-ink placeholder:text-muted focus:border-ink/30 flex-1 rounded-full border px-4 py-2.5 text-sm outline-none"
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-neutral-950 transition-transform hover:scale-[1.03] disabled:opacity-50"
+                className="bg-fill text-fill-ink flex h-10 w-10 items-center justify-center rounded-full transition-transform hover:scale-[1.03] disabled:opacity-50"
                 aria-label="Envoyer"
               >
                 <SendIcon />

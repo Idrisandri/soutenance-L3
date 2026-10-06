@@ -18,7 +18,7 @@ function AppContent() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#3d3d3d] text-sm text-neutral-300">
+      <div className="bg-stage flex min-h-screen items-center justify-center text-sm text-muted">
         Chargement...
       </div>
     );

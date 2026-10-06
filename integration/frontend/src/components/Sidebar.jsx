@@ -3,7 +3,7 @@ import { getConversations, deleteConversation } from '../services/ragApi';
 
 function LogoMark() {
   return (
-    <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 text-[11px] font-medium tracking-wide">
+    <span className="border-line flex h-8 w-8 items-center justify-center rounded-full border text-[11px] font-medium tracking-wide">
       VA
     </span>
   );
@@ -80,13 +80,13 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
 
   return (
     <div
-      className={`flex h-full shrink-0 flex-col overflow-hidden border-r border-white/10 bg-[#141414] text-neutral-100 transition-all duration-300 ease-in-out ${
+      className={`border-line bg-sidebar text-ink flex h-full shrink-0 flex-col overflow-hidden border-r transition-all duration-300 ease-in-out ${
         open ? 'w-64' : 'w-0 border-r-0'
       }`}
     >
       <div className="w-64 h-full flex flex-col">
         {/* Logo */}
-        <div className="flex items-center gap-2 px-4 py-4 border-b border-white/10 shrink-0">
+        <div className="border-line flex shrink-0 items-center gap-2 border-b px-4 py-4">
           <LogoMark />
           <span className="text-sm font-medium tracking-tight">Agent IA</span>
         </div>
@@ -95,7 +95,7 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
         <div className="p-3 shrink-0">
           <button
             onClick={onNewConversation}
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-white py-2.5 text-sm font-medium text-neutral-950 transition-transform hover:scale-[1.01]"
+            className="bg-fill text-fill-ink flex w-full items-center justify-center gap-2 rounded-full py-2.5 text-sm font-medium transition-transform hover:scale-[1.01]"
           >
             <PlusIcon />
             Nouvelle conversation
@@ -105,7 +105,7 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
         {/* Conversation list */}
         <div className="flex-1 min-h-0 overflow-y-auto px-2 space-y-1 pb-3">
           {conversations.length === 0 && (
-            <p className="px-3 py-2 text-xs text-neutral-500">Aucune conversation pour l&apos;instant</p>
+            <p className="text-muted px-3 py-2 text-xs">Aucune conversation pour l&apos;instant</p>
           )}
           {conversations.map((conv) => {
             const isActive = conv.conversation_id === activeConversationId;
@@ -115,14 +115,14 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
                 onClick={() => onSelectConversation(conv.conversation_id)}
                 className={`group w-full flex items-center gap-1 px-3 py-2.5 text-sm rounded-lg cursor-pointer transition-colors ${
                   isActive
-                    ? 'bg-white/10 text-white font-medium'
-                    : 'text-neutral-300 hover:bg-white/5'
+                    ? 'bg-bubble text-ink font-medium'
+                    : 'text-soft hover:bg-bubble'
                 }`}
               >
                 <span className="flex-1 truncate">{conv.titre}</span>
                 <button
                   onClick={(e) => handleDelete(e, conv.conversation_id)}
-                  className="shrink-0 rounded p-1 text-neutral-500 opacity-0 transition-opacity hover:text-red-400 group-hover:opacity-100"
+                  className="text-muted shrink-0 rounded p-1 opacity-0 transition-opacity hover:text-red-400 group-hover:opacity-100"
                   aria-label="Supprimer cette conversation"
                   title="Supprimer"
                 >
@@ -135,16 +135,16 @@ export default function Sidebar({ activeConversationId, onSelectConversation, on
 
         {/* Profil connecté + déconnexion */}
         {user && (
-          <div className="border-t border-white/10 p-3 flex items-center gap-2 shrink-0">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-neutral-300">
+          <div className="border-line flex shrink-0 items-center gap-2 border-t p-3">
+            <div className="bg-chip text-soft flex h-8 w-8 shrink-0 items-center justify-center rounded-full">
               <UserIcon />
             </div>
-            <span className="flex-1 truncate text-xs text-neutral-300" title={user.email}>
+            <span className="text-soft flex-1 truncate text-xs" title={user.email}>
               {user.email}
             </span>
             <button
               onClick={onSignOut}
-              className="shrink-0 rounded-md p-1.5 text-neutral-400 hover:bg-white/10 hover:text-white"
+              className="text-muted hover:bg-bubble hover:text-ink shrink-0 rounded-md p-1.5"
               aria-label="Se déconnecter"
               title="Se déconnecter"
             >
