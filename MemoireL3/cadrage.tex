@@ -1,0 +1,230 @@
+\section{Cadrage}
+
+Le secteur du développement web et mobile, en particulier dans un contexte de forte concurrence
+entre agences et sociétés de services numériques, fait face à un défi récurrent : la difficulté à connaître
+précisément le positionnement tarifaire et la réputation des entreprises concurrentes. Cette problématique
+revêt une importance stratégique, car une méconnaissance du marché peut conduire à un mauvais
+positionnement commercial, à des offres mal chiffrées, voire à une perte de compétitivité face à des
+concurrents mieux informés.
+
+Les défis spécifiques rencontrés dans ce domaine incluent :
+\begin{itemize}
+    \item \textbf{Dispersion et hétérogénéité de l'information} : les prix et les avis clients des concurrents
+    sont disséminés sur de multiples supports (sites vitrines, plateformes d'avis, réseaux sociaux), sans
+    format ni structure commune, ce qui rend leur collecte manuelle longue et peu fiable.
+    \item \textbf{Évolution constante du marché} : les tarifs pratiqués et la réputation des concurrents évoluent
+    en continu, rendant obsolète toute veille ponctuelle réalisée à un instant donné.
+    \item \textbf{Absence d'outillage adapté} : les équipes commerciales ne disposent d'aucun outil centralisé
+    leur permettant d'interroger rapidement ces informations au moment de chiffrer une offre ou de
+    préparer une prospection.
+\end{itemize}
+
+Ce projet vise à développer un système capable d'automatiser la collecte de ces données, de les
+structurer et de les rendre accessibles à travers un agent conversationnel intelligent, en s'appuyant sur des
+techniques d'intelligence artificielle générative et de traitement automatique du langage. L'objectif est de
+substituer une démarche manuelle et ponctuelle par une veille continue, structurée et directement
+exploitable par des utilisateurs non techniques.
+
+\subsection{Besoins exprimés et opportunités identifiées}
+
+ICHTUS IT a exprimé le besoin de disposer d'une vision consolidée et actualisée du marché sur lequel elle
+évolue, sans mobiliser de ressources humaines supplémentaires pour cette veille. Concrètement, l'entreprise
+souhaite que ses commerciaux puissent, en une question posée en langage naturel, obtenir à la fois le
+positionnement tarifaire d'un ou plusieurs concurrents et une synthèse qualitative de leur réputation
+client. Cette opportunité s'inscrit dans la volonté plus large de l'entreprise d'outiller ses équipes
+commerciales avec des solutions basées sur la donnée plutôt que sur l'intuition.
+
+\subsection{Données disponibles}
+
+Les données mobilisées dans ce projet proviennent exclusivement de sources publiquement accessibles sur
+le web : pages tarifaires publiées par les entreprises concurrentes, et avis clients publiés sur des plateformes
+publiques. Ces données sont hétérogènes par nature (texte libre, tableaux de prix, notes chiffrées) et
+nécessitent un travail de structuration avant exploitation. Le volume de données dépend directement du
+nombre de concurrents suivis et de la fréquence de rafraîchissement du scraping, ce volume étant appelé à
+croître progressivement au fil du stage à mesure que de nouveaux concurrents sont ajoutés au périmètre de
+veille.
+
+\subsection{Contraintes}
+
+Plusieurs contraintes encadrent la réalisation de ce projet :
+\begin{itemize}
+    \item \textbf{Contraintes légales} : seules des données publiquement accessibles sont collectées, dans le
+    respect des conditions d'utilisation des sites concernés et des principes du RGPD, notamment en évitant
+    toute collecte de données à caractère personnel identifiable.
+    \item \textbf{Contraintes techniques liées à la structure des sites cibles} : la majorité des sites de
+    concurrents ciblés sont construits avec des frameworks JavaScript modernes (rendu côté client), ce qui
+    rend leur contenu inaccessible à un scraping classique basé sur des bibliothèques comme BeautifulSoup,
+    limitées à l'analyse du HTML statique. Cette contrainte impose le recours à un outil de scraping capable
+    d'interpréter le rendu dynamique des pages, en l'occurrence ScrapeGraphAI, qui combine navigation
+    automatisée et extraction pilotée par un modèle de langage.
+    \item \textbf{Contraintes de coût} : le recours à une solution de scraping basée sur des appels à une API
+    (ScrapeGraphAI) engendre un coût par requête, ce qui impose d'optimiser la fréquence de rafraîchissement
+    des données et de limiter le nombre d'appels redondants, plutôt que de scraper en continu l'ensemble des
+    sources suivies.
+    \item \textbf{Contraintes métier} : le système doit rester utilisable par des profils non techniques ; toute
+    réponse fournie par l'agent conversationnel doit donc être claire, synthétique et directement actionnable
+    par un commercial.
+    \item \textbf{Contraintes temporelles} : le développement, l'expérimentation et l'évaluation du système
+    doivent être réalisés dans le cadre du stage, ce qui impose de prioriser un périmètre fonctionnel réaliste.
+\end{itemize}
+
+\subsection{Périmètre géographique et utilisateurs}
+
+Le périmètre retenu est la \textbf{métropole lilloise et ses environs} (Lille, communes limitrophes,
+Hauts-de-France proches), sur des prestations de \textbf{développement web et mobile}. Les utilisateurs
+cibles sont les commerciaux et l'encadrement commercial d'ICHTUS IT. On distingue les concurrents
+\textit{implantés ou suivis} dans ce périmètre (présents en base) des acteurs simplement cités hors zone,
+pour lesquels le système doit s'abstenir ou signaler une couverture insuffisante.
+
+\subsection{Objectifs mesurables et questions techniques}
+
+Les objectifs du projet sont formulés de manière vérifiable :
+\begin{itemize}
+    \item \textbf{O1 --- Collecte et structuration.} Disposer d'une base de concurrents avec fiches prix
+    exploitables (cible observée : environ 69 fiches après filtrage qualité) et d'analyses de sentiment
+    pour une part significative de ces fiches.
+    \item \textbf{O2 --- Interrogation en langage naturel.} Permettre à un commercial d'obtenir, via une
+    question en français, une réponse fondée uniquement sur les fiches retrouvées (architecture RAG).
+    \item \textbf{O3 --- Robustesse des gardes-fous.} Rejeter ou signaler les questions hors sujet, hors
+    zone géographique et hors couverture métier.
+    \item \textbf{O4 --- Évaluation.} Séparer un jeu de développement et un jeu de test indépendant ;
+    mesurer le comportement de retrieval et compléter par une grille humaine de qualité de réponse.
+\end{itemize}
+
+Questions techniques / hypothèses de travail :
+\begin{itemize}
+    \item \textbf{Q1.} Un RAG sur fiches structurées (prix + avis) suffit-il à produire des réponses
+    commercialement utiles, sans fine-tuning d'un modèle de langue ?
+    \item \textbf{Q2.} Un seuil de similarité et un filtre géographique structurel réduisent-ils les
+    réponses hors périmètre par rapport à un prompt seul ?
+    \item \textbf{Q3.} Une analyse de sentiment zero-shot par LLM est-elle suffisamment fiable, sur un
+    échantillon annoté, pour enrichir les fiches sans modèle supervisé dédié ?
+\end{itemize}
+
+\subsection{Définition des indicateurs de performance (KPI)}
+
+Afin d'évaluer objectivement la réussite du projet, les indicateurs suivants sont retenus :
+\begin{itemize}
+    \item \textbf{Couverture de la veille} : nombre de concurrents et de sources suivis de manière automatisée.
+    \item \textbf{Fraîcheur des données} : délai moyen entre la mise à jour d'une information chez un
+    concurrent et sa disponibilité dans le système (à mesurer ou à déclarer non mesuré si hors délai du stage).
+    \item \textbf{Comportement de retrieval du RAG} : taux de questions pertinentes avec résultat, taux de
+    rejet hors sujet, Hit Rate@$k$ / MRR sur vérité terrain nominative (diagnostics de recherche).
+    \item \textbf{Qualité des réponses générées} : grille humaine (sources, montants/devises, fidélité,
+    complétude, abstention, utilité commerciale).
+    \item \textbf{Qualité de l'analyse de sentiment} : comparaison à une annotation manuelle de référence
+    sur un échantillon d'avis (macro-F1 / matrice de confusion).
+    \item \textbf{Gain de temps commercial} : réduction estimée du temps de recherche d'information par
+    rapport à une veille manuelle (avec le référent métier si disponible).
+\end{itemize}
+
+\subsection{Cahier des charges}
+
+\subsubsection{Exigences fonctionnelles}
+
+\begin{itemize}
+    \item \textbf{EF1.} Collecter et mettre à jour les données tarifaires et d'avis de concurrents web/mobile
+    du périmètre depuis des sources publiques (Clutch, La Fabrique du Net).
+    \item \textbf{EF2.} Stocker les données dans une base relationnelle (Supabase/PostgreSQL) avec historique
+    des changements de prix.
+    \item \textbf{EF3.} Produire une analyse de sentiment structurée (global, score, points forts/faibles)
+    à partir des avis.
+    \item \textbf{EF4.} Indexer les fiches en embeddings et répondre à des questions en français via RAG,
+    en citant les sources utilisées.
+    \item \textbf{EF5.} Appliquer des gardes-fous : hors sujet, hors zone, hors couverture, seuil de
+    similarité.
+    \item \textbf{EF6.} Exposer le pipeline de façon testable en ligne de commande (et, si le calendrier le
+    permet, via une API / interface).
+\end{itemize}
+
+\subsubsection{Exigences non fonctionnelles}
+
+\begin{itemize}
+    \item \textbf{ENF1 --- Utilisabilité.} Réponses en français, synthétiques, actionnables par un
+    commercial non technique.
+    \item \textbf{ENF2 --- Fidélité.} Interdiction d'inventer des tarifs ou avis absents des fiches ;
+    signaler les informations manquantes.
+    \item \textbf{ENF3 --- Coût.} Limiter les appels API (scraping, embeddings, LLM) ; privilégier Gemini
+    en développement et un modèle plus capable en démonstration si besoin.
+    \item \textbf{ENF4 --- Reproductibilité.} Documenter modèles, paramètres, version du corpus, scripts
+    d'évaluation et séparation développement / test.
+    \item \textbf{ENF5 --- Conformité.} Données publiques uniquement ; pas de données personnelles
+    identifiables ; respect des conditions d'usage des sources.
+\end{itemize}
+
+\subsubsection{Hors périmètre (Éval~1 / stage)}
+
+Sauf réalisation explicite et évaluée : génération automatisée de leads commerciaux, pricing
+prescriptif (recommandation du prix ICHTUS), couverture nationale hors métropole lilloise, fine-tuning
+d'un modèle de langue from scratch.
+
+\subsubsection{Critères d'acceptation}
+
+Un critère est \textbf{satisfait} uniquement s'il est démontrable (script, capture, tableau de résultats
+ou annotation).
+
+\begin{table}[H]
+\centering
+\begingroup
+\setstretch{1.15}
+\small
+\begin{tabularx}{\textwidth}{|c|X|X|}
+\hline
+\textbf{ID} & \textbf{Critère} & \textbf{Preuve attendue} \\
+\hline
+CA1 & Au moins une base de fiches prix indexées (embeddings non nuls)
+& Comptage SQL / script ; $n$ fiches documenté \\
+\hline
+CA2 & Une question nominative ramène la fiche attendue dans le TOP-$k$
+& Hit Rate sur jeu de test / vérité terrain \\
+\hline
+CA3 & Une question hors sujet ne ramène pas de fiche concurrent
+& Scénarios hors sujet du protocole d'évaluation \\
+\hline
+CA4 & Une question hors zone (ex.\ Tokyo) est bloquée ou signalée
+& Filtre géographique + scénario de test \\
+\hline
+CA5 & Les montants cités dans la réponse sont présents dans les sources
+& Grille humaine (exactitude montants/devises) \\
+\hline
+CA6 & Jeu de développement distinct du jeu de test ; config figée avant le test
+& Fichiers \texttt{dev\_questions} / \texttt{test\_questions} + config figée \\
+\hline
+CA7 & Échantillon d'avis annoté pour évaluer le sentiment (même réduit)
+& Règles d'annotation + scores (ex.\ macro-F1) \\
+\hline
+CA8 & Pipeline exécutable par un tiers autorisé
+& README : installation, variables, commandes de test \\
+\hline
+\end{tabularx}
+\endgroup
+\caption{Critères d'acceptation du système (Évaluation~1 et suivi)}
+\label{tab:criteres_acceptation}
+\end{table}
+
+\subsection{Importance des solutions apportées}
+
+\subsubsection{Amélioration de la prise de décision commerciale}
+
+L'automatisation de la veille concurrentielle permet de transformer des données dispersées et non
+structurées en informations directement exploitables. En combinant recherche vectorielle et analyse de
+sentiment, le système proposé offre une vision à la fois quantitative (positionnement tarifaire) et
+qualitative (perception client) du marché, permettant aux commerciaux d'argumenter leurs offres sur des
+bases factuelles plutôt que sur des impressions.
+
+L'impact de cette solution dépasse le cadre strictement opérationnel : en réduisant le temps consacré à la
+recherche manuelle d'informations, elle libère du temps commercial pouvant être réinvesti dans la relation
+client. Elle contribue également à une meilleure réactivité de l'entreprise face aux évolutions du marché.
+
+\subsubsection{Objectifs et impacts attendus}
+
+Les principaux objectifs de ce projet consistent à développer un système fonctionnel de veille
+concurrentielle automatisée, adapté aux spécificités du secteur du développement web et mobile. Ce
+développement s'accompagne d'une exigence de fiabilité, tant dans la collecte des données que dans la
+pertinence des réponses fournies par l'agent conversationnel.
+
+L'évaluation rigoureuse du système, à travers les indicateurs définis précédemment, constitue un axe
+essentiel du projet, permettant de mesurer objectivement son apport par rapport à une démarche de veille
+manuelle. Enfin, ce projet ambitionne de constituer un socle réutilisable, l'architecture développée pouvant
+être étendue à d'autres secteurs d'activité ou à d'autres types de données concurrentielles au sein de
+l'entreprise.

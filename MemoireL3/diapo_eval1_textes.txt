@@ -1,0 +1,201 @@
+================================================================================
+DIAPO ÉVALUATION 1 — Textes à coller dans Canva (12 min)
+Style : garder TA 1ère page (titre). Remplacer le contenu template pages 2→10.
+Présenté par : Idris | ICHTUS IT | 31 Octobre 2026
+================================================================================
+
+------------------------------------------------------------------------------
+SLIDE 1 — TITRE (déjà fait — garder)
+------------------------------------------------------------------------------
+EVALUATION 1
+MEMOIRE L3
+31 Octobre 2026
+Présenté par : Idris
+ICHTUS IT
+
+Titre long (sous-titre optionnel) :
+Mise en place d'un système intelligent pour l'intelligence concurrentielle
+et l'aide à la décision commerciale
+
+
+------------------------------------------------------------------------------
+SLIDE 2 — CONTEXTE & PROBLÉMATIQUE  (~1 min 30)
+------------------------------------------------------------------------------
+Titre : PROBLÉMATIQUE
+
+Chapeau :
+Les commerciaux d'ICHTUS IT peinent à connaître rapidement le positionnement
+tarifaire et la réputation des concurrents web / mobile sur la métropole lilloise.
+
+3 puces :
+• Information dispersée (Clutch, La Fabrique du Net, sites, avis)
+• Veille manuelle longue, peu fiable, vite obsolète
+• Pas d'outil centralisé pour interroger ces données en langage naturel
+
+Phrase de clôture :
+Objectif : automatiser la veille et rendre les données exploitables
+via un agent conversationnel (RAG).
+
+
+------------------------------------------------------------------------------
+SLIDE 3 — OBJECTIFS MESURABLES & CONTRIBUTION  (~1 min)
+------------------------------------------------------------------------------
+Titre : OBJECTIFS & CONTRIBUTION
+
+O1 — Collecter et structurer prix + avis (base concurrentielle)
+O2 — Répondre en français via RAG, ancré sur les fiches
+O3 — Gardes-fous : hors sujet, hors zone, hors couverture
+O4 — Évaluer : jeu de développement ≠ jeu de test + grille humaine
+
+Contribution personnelle :
+Pipeline bout-en-bout (collecte → stockage → sentiment → embeddings → RAG)
++ protocole d'évaluation adapté à un corpus métier réel.
+
+
+------------------------------------------------------------------------------
+SLIDE 4 — ÉTAT DE L'ART (TABLEAU)  (~1 min 30)
+------------------------------------------------------------------------------
+Titre : ÉTAT DE L'ART — CHOIX RETENUS
+
+| Approche              | Verdict projet                          |
+| LLM seul              | Écarté (hallucinations)                 |
+| RAG                   | Retenu (ancrage documents)              |
+| Sentiment zero-shot   | Retenu (pas de dataset labellisé)       |
+| Scraping IA           | Retenu (sites JS dynamiques)            |
+
+Gaps (à dire à l'oral) :
+Peu d'évals RAG sur corpus tarifaires locaux ;
+validation humaine du sentiment souvent absente.
+
+
+------------------------------------------------------------------------------
+SLIDE 5 — CAHIER DES CHARGES  (~1 min)
+------------------------------------------------------------------------------
+Titre : CAHIER DES CHARGES
+
+Fonctionnel :
+• Collecte Clutch + La Fabrique du Net
+• Stockage Supabase + historique prix
+• Sentiment structuré + index embeddings
+• RAG + filtres (géo, seuil, hors sujet)
+
+Non fonctionnel :
+• Réponses FR, fidèles aux fiches (pas d'invention)
+• Coût API maîtrisé · reproductibilité · données publiques
+
+Hors périmètre (stage) :
+Génération de leads, pricing ICHTUS, couverture nationale, fine-tuning LLM.
+
+
+------------------------------------------------------------------------------
+SLIDE 6 — CRITÈRES D'ACCEPTATION  (~1 min)
+------------------------------------------------------------------------------
+Titre : CRITÈRES D'ACCEPTATION (extraits)
+
+CA1  Fiches prix indexées (embeddings)
+CA2  Concurrent nommé trouvé dans le TOP-k
+CA3  Hors sujet → aucune fiche
+CA4  Hors zone (ex. Tokyo) → bloqué / signalé
+CA5  Montants de la réponse présents dans les sources
+CA6  Dev (19 Q) ≠ Test (60 Q) · config figée
+CA7  Échantillon sentiment annoté (même réduit)
+CA8  README : pipeline exécutable
+
+Preuve = script, tableau ou annotation — pas une affirmation.
+
+
+------------------------------------------------------------------------------
+SLIDE 7 — ARCHITECTURE  (~1 min 30)
+------------------------------------------------------------------------------
+Titre : ARCHITECTURE DU SYSTÈME
+
+Insérer l'image : architecture_rag.png
+
+Légende courte sous le schéma :
+Collecte → Supabase → Sentiment (Claude) → Embeddings (Gemini)
+→ Recherche vectorielle → Génération (Gemini/Claude) → Sources citées
+
+Choix clés (3 bulles) :
+• pgvector + similarité cosinus
+• Seuil τ = 0,60 + filtre géographique
+• Pas d'entraînement de poids : transfert / orchestration
+
+
+------------------------------------------------------------------------------
+SLIDE 8 — PROTOCOLE D'ÉVALUATION  (~1 min 30)
+------------------------------------------------------------------------------
+Titre : PROTOCOLE D'ÉVALUATION
+
+Deux jeux distincts :
+• Développement (19 Q) → régler seuil / filtres
+• Test indépendant (60 Q) → mesurer après figement
+
+Métriques auto (portée étroite) :
+• Comportement retrieval · questions pertinentes avec résultat
+• Rejet hors sujet · Hit Rate@k / MRR (diagnostic recherche)
+
++ Grille humaine :
+sources · montants/devises · fidélité · complétude · abstention · utilité
+
+Risques / éthique :
+données publiques, pas de données personnelles, coûts API, hallucinations
+contrôlées par le retrieval.
+
+
+------------------------------------------------------------------------------
+SLIDE 9 — FAISABILITÉ, PLANNING, GIT  (~1 min)
+------------------------------------------------------------------------------
+Titre : FAISABILITÉ & PLANNING
+
+Déjà démontrable :
+• Base ~69 fiches prix · embeddings · RAG en CLI
+• Schéma relationnel + architecture documentés
+• Protocole dev/test formalisé
+
+Planning (jalons INSI) :
+S5–S10  réalisation + tests + démo
+S11–S12 rédaction / corrections
+S12–S13 soutenance
+
+Git :
+dépôt avec README, .env.example, scripts evaluate_rag.py
+
+
+------------------------------------------------------------------------------
+SLIDE 10 — CONCLUSION / QUESTIONS  (~30 s)
+------------------------------------------------------------------------------
+Titre : POUR CONCLURE
+
+• Problème réel ICHTUS · périmètre Lille web/mobile clair
+• Solution : pipeline IA (collecte + sentiment + RAG)
+• Éval 1 : cadrage, CdC, architecture, protocole prêts
+• Suite : run test 60 Q, annotation sentiment, démonstrateur
+
+Merci — questions ?
+
+Idris · Mémoire L3 · ICHTUS IT
+
+
+================================================================================
+TIMING ORAL (12 min) — repères
+================================================================================
+0:00–0:40   Slide 1 titre
+0:40–2:10   Slide 2 problème
+2:10–3:10   Slide 3 objectifs
+3:10–4:40   Slide 4 état de l'art
+4:40–5:40   Slide 5 CdC
+5:40–6:40   Slide 6 critères acceptation
+6:40–8:10   Slide 7 architecture (+ montrer le schéma)
+8:10–9:40   Slide 8 protocole
+9:40–11:10  Slide 9 faisabilité / planning / git
+11:10–12:00 Slide 10 conclusion + ouverture questions
+
+================================================================================
+CONSEILS CANVA
+================================================================================
+1. Ne garde QUE la slide 1 du template actuel.
+2. Duplique le style (couleurs / polices) de la slide 1 sur les autres.
+3. Supprime les textes « Agence Vision / Borcelle » (template).
+4. Slide 7 : importe MemoireL3/img/architecture_rag.png
+5. Max 5–7 lignes par slide ; le détail est dans le dossier / mémoire.
+6. Répète à voix haute avec chrono 12:00.

@@ -1,0 +1,82 @@
+\section{Méthodologie}
+
+\subsection{Démarche méthodologique adoptée}
+
+Ce projet suit une démarche inspirée de CRISP-DM (\textit{Cross-Industry Standard Process for Data Mining}),
+le cadre méthodologique de référence pour les projets de data science, structuré en six phases itératives :
+compréhension du métier, compréhension des données, préparation des données, modélisation, évaluation et
+déploiement. Ce cadre a été enrichi d'une exécution agile à l'intérieur de chaque phase --- itérations
+courtes, tests immédiats, ajustements empiriques --- plutôt qu'un déroulement strictement séquentiel et
+figé. Ce choix hybride reflète fidèlement la réalité du travail mené en autonomie durant le stage : certaines
+décisions (seuil de confiance du RAG, périmètre de la couche sentiment, structure des tables de prix) ont été
+révisées plusieurs fois au fil de retours empiriques, sans jamais remettre en cause le cadre global du
+projet.
+
+\subsection{Déroulement du projet selon les phases retenues}
+
+\subsubsection{Collecte des données}
+
+La phase de collecte a mobilisé un scraping intelligent piloté par IA (ScrapeGraphAI) plutôt que des
+extracteurs à sélecteurs statiques, afin de limiter la maintenance face aux évolutions de structure des
+pages sources. Deux sources ont été exploitées de façon complémentaire : Clutch.co, pour les taux horaires
+et les avis clients détaillés des agences de développement web et mobile de la région lilloise, et La
+Fabrique du Net, pour des données de fourchette de prix par projet absentes de la première source. Cette
+phase a été conduite de façon incrémentale : un premier prototype a validé la faisabilité technique sur un
+échantillon réduit avant l'extension à l'ensemble du périmètre (près de 80 entreprises identifiées, mobile
+et web confondus).
+
+\subsubsection{Préparation des données}
+
+La préparation a consisté à structurer les données brutes extraites en un schéma relationnel exploitable
+(Supabase/PostgreSQL), avec une attention particulière portée à plusieurs problèmes rencontrés en cours de
+projet : la distinction entre profils mobile et web d'une même entreprise (traités comme des entités
+distinctes plutôt que fusionnées, car portant des tarifs différents), la séparation entre un historique de
+prix en append-only (pour l'apprentissage de tendances futures) et un état courant mis à jour (pour
+l'interrogation en temps réel), et le traitement des valeurs manquantes ou incohérentes (champs vides,
+doublons de titres d'avis, erreurs de syntaxe dans les données collectées manuellement). Un filtrage qualité
+a également conduit à exclure explicitement certaines entreprises dont les données extraites étaient trop
+incomplètes pour être exploitées de façon fiable --- une décision de curation documentée plutôt que
+dissimulée.
+
+\subsubsection{Modélisation}
+
+La brique de modélisation combine deux composants. D'une part, un système de RAG s'appuyant sur des
+embeddings vectoriels (Gemini) et une recherche par similarité cosinus, complété par un seuil de confiance
+calibré empiriquement et par un filtre géographique structurel ajouté après observation de ses limites en
+évaluation. D'autre part, une extraction structurée de sentiment sur les avis clients réalisée par un grand
+modèle de langage (Claude) en zero-shot, produisant un sentiment global, des points forts et des points
+faibles par concurrent. Le choix du zero-shot plutôt que du fine-tuning d'un modèle spécialisé a été motivé
+par l'absence de jeu de données annoté disponible en début de stage, un arbitrage assumé et documenté en
+section état de l'art.
+
+\subsubsection{Évaluation}
+
+L'évaluation a été conduite en deux temps distincts, afin de ne pas confondre réglage et mesure finale.
+Un premier jeu de 19 questions a servi de jeu de développement : il a permis d'observer des échecs
+(seuil de similarité, filtre géographique) et d'ajuster la configuration. Ce jeu n'est plus présenté comme
+un test indépendant. Une fois les modèles, prompts, filtres et paramètres figés, un second jeu de test
+indépendant a été construit (cible de 60 questions), avec réponses et sources attendues définies avant
+toute exécution.
+
+Les métriques automatiques mesurent le comportement de la recherche (présence ou absence de fiches,
+Hit Rate@5, MRR, similarité moyenne) et non l'exactitude générale du contenu généré. Elles sont
+complétées par une grille d'évaluation humaine (sources pertinentes, exactitude des montants et devises,
+fidélité aux documents, complétude, abstention correcte, utilité commerciale), avec conservation des
+sorties brutes et des justifications des évaluateurs. Les itérations de réglage (seuil, filtre
+géographique) ont été réalisées uniquement sur le jeu de développement.
+
+\subsubsection{Déploiement (phase en cours)}
+
+Le déploiement est la phase actuellement en cours de réalisation au moment de la rédaction de ce mémoire.
+L'architecture retenue sépare explicitement la logique métier du RAG (dossier autonome, testable en ligne de
+commande) d'une couche API construite avec FastAPI, elle-même appelée à être consommée par une interface
+utilisateur développée en React. Le déploiement cible la plateforme Render, avec une authentification
+déléguée à Supabase Auth. Cette phase n'étant pas achevée, ce mémoire en documentera l'aboutissement (ou les
+limites rencontrées) dans sa version finale.
+
+\subsection{Justification du choix méthodologique}
+
+Le choix de CRISP-DM plutôt qu’un cadre alternatif (Design Thinking, orienté vers la conception centrée utilisateur, ou une démarche Agile Data Science pure, orientée vers le développement logiciel itératif) se justifie par la nature du projet. Celui-ci part d’un besoin métier clairement défini dès le début du stage par l’entreprise d’accueil : automatiser la veille tarifaire et la génération de leads. Cette situation correspond précisément au point de départ de CRISP-DM, à savoir la compréhension du métier, plutôt qu’à une phase d’exploration ouverte des besoins utilisateurs, typique du Design Thinking. CRISP-DM offre par ailleurs un vocabulaire méthodologique standard et largement reconnu dans le domaine de la donnée, permettant de structurer et de présenter de manière claire et rigoureuse les différentes étapes du projet.
+
+L’enrichissement agile de ce cadre répond, quant à lui, à une contrainte concrète du contexte de stage : l’absence de spécification figée en amont. Le périmètre exact du projet — d’abord centré sur le RAG, puis étendu à l’analyse de sentiment, avec un ajustement du seuil de confiance en cours de réalisation  a évolué au fil des échanges avec le tuteur en entreprise et des résultats d’évaluation. Un déroulement strictement séquentiel aurait donc mal représenté la réalité du travail effectué. Documenter les itérations réellement réalisées, plutôt que de reconstruire artificiellement un déroulement linéaire a posteriori, permet ainsi de rendre compte plus fidèlement de la démarche suivie et de renforcer la rigueur méthodologique de ce mémoire.
+

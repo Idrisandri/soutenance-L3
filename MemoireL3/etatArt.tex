@@ -1,0 +1,222 @@
+\section{État de l'Art}
+
+\subsection{Méthodologie de la revue de littérature}
+
+Cette revue de l'état de l'art a été conduite en croisant deux types de sources, conformément aux exigences
+méthodologiques d'un mémoire de licence en intelligence artificielle et data : des sources bibliographiques
+scientifiques (articles évalués par les pairs, prépublications arXiv, actes de conférences ACM/IEEE,
+chapitres Springer) et des sources webographiques (blogs techniques spécialisés, dépôts GitHub de
+référence, livres blancs d'éditeurs). Les bases consultées incluent arXiv, Springer Link, ScienceDirect et
+ResearchGate. Les mots-clés de recherche combinaient les trois axes techniques du projet : retrieval-augmented
+generation, analyse de sentiment par modèles de langage, et web scraping appliqué à l'intelligence
+concurrentielle.
+
+\subsection{Études bibliographiques}
+
+\subsubsection{Retrieval-Augmented Generation (RAG)}
+
+Le paradigme RAG a été introduit par Lewis et al. (2020) \cite{lewis2020} dans un article fondateur présenté
+à NeurIPS, qui propose de coupler un modèle génératif à un mécanisme de récupération d'information externe
+afin de pallier les limites des modèles de langage purement paramétriques : hallucinations, obsolescence des
+connaissances et absence d'expertise de domaine spécifique. Cette approche a depuis fait l'objet de
+nombreuses synthèses. Wu et al. (2024) \cite{wu2024} proposent une revue systématique centrée sur les
+mécanismes de récupération et de fusion (query-based, logits-based, latente, paramétrique), et établissent
+une taxonomie comparant ces approches selon leur accessibilité, leur efficacité et leurs cas d'usage. Yu et
+al. (2024) \cite{yu2024} se concentrent quant à eux sur l'évaluation des systèmes RAG et proposent un cadre
+unifié (Auepora) structurant les métriques autour de trois axes : la pertinence de la récupération,
+l'exactitude de la génération et la fidélité aux sources récupérées.
+
+Plusieurs travaux récents traitent des limites intrinsèques du RAG de base et proposent des correctifs
+pertinents pour ce projet. Yan et al. (2024) \cite{yan2024} introduisent le Corrective RAG, qui ajoute une
+étape de vérification de la pertinence des documents récupérés avant leur transmission au modèle générateur
+--- une logique proche du seuil de confiance mis en œuvre dans ce projet. Xu et al. (2024) \cite{xu2024},
+lors de SIGIR 2024, montrent l'intérêt de coupler RAG et graphes de connaissances pour des cas d'usage de
+service client, un contexte proche de l'assistance commerciale visée ici. Xue et al. (2024) \cite{xue2024}
+documentent par ailleurs des vulnérabilités de sécurité propres aux systèmes RAG (BadRAG), rappelant que la
+fiabilité de ces architectures reste un sujet de recherche actif plutôt qu'un problème résolu.
+
+\subsubsection{Analyse de sentiment par grands modèles de langage}
+
+L'analyse de sentiment a longtemps reposé sur des modèles supervisés entraînés spécifiquement sur la tâche
+(SVM, puis modèles Transformer de type BERT ou FinBERT). L'émergence des grands modèles de langage
+généralistes a introduit un nouveau paradigme, le zero-shot, où le modèle classe le sentiment sans exemple
+d'entraînement spécifique. Simmering et Huoviala (2023) \cite{simmering2023} comparent GPT-4 et GPT-3.5 en
+zero-shot, few-shot et fine-tuné sur une tâche d'analyse de sentiment par aspect (ABSA) : le modèle fine-tuné
+atteint un score F1 état de l'art de 83,8, mais au prix d'un coût d'inférence largement supérieur ; les
+auteurs concluent que des prompts détaillés améliorent significativement les performances en zero-shot et
+few-shot, rendant cette approche viable en l'absence de données annotées.
+
+Cette conclusion est corroborée par une étude publiée dans JMIR Formative Research (2025) évaluant GPT-4 sur
+des données de santé publique : la précision en configuration zero-shot atteint déjà 92\,\% pour le sentiment
+positif, avec une amélioration marginale seulement en few-shot, ce qui suggère que les grands modèles
+récents disposent d'une capacité de classification de sentiment déjà robuste sans exemples. Vamvourellis et
+Mehta (2025) \cite{vamvourellis2025}, dans une étude menée chez BlackRock sur le sentiment financier,
+comparent plusieurs LLM propriétaires en zero-shot face à des modèles FinBERT spécialisés fine-tunés, et
+notent que les stratégies de raisonnement explicite (chain-of-thought) n'améliorent pas systématiquement
+l'alignement avec l'annotation humaine, en particulier sur les cas peu ambigus. Une synthèse plus large
+portant sur 13 tâches et 26 jeux de données (citée dans une revue de 2026 sur l'analyse de sentiment
+appliquée aux critiques de films) confirme que les LLM en zero-shot restent compétitifs sur des tâches de
+classification simple, mais restent en retrait des modèles spécialisés fine-tunés sur les tâches nécessitant
+une compréhension fine de phénomènes de sentiment complexes. Beno (2025) \cite{beno2025} montre enfin qu'une
+approche hybride combinant un modèle spécialisé (ELECTRA) et un LLM généraliste (GPT-4o) permet d'obtenir le
+meilleur rapport coût/performance, ouvrant une piste d'amélioration pour des travaux futurs.
+
+\subsubsection{Web scraping et intelligence concurrentielle}
+
+La littérature académique portant spécifiquement sur le web scraping appliqué à l'intelligence
+concurrentielle reste comparativement restreinte. Un chapitre publié chez Springer Nature (2025)
+\cite{springer2025} propose un état de l'art accompagné d'une étude de cas démontrant que l'intégration du
+web scraping dans une stratégie d'entreprise améliore la compréhension du marché ; les auteurs soulignent
+également les défis inhérents à cette pratique (structuration des données hétérogènes, maintenance des
+extracteurs face aux évolutions des sites) et évoquent la contribution potentielle de l'intelligence
+artificielle pour renforcer ces systèmes --- un argument central pour justifier le recours à un extracteur
+piloté par IA plutôt qu'à des sélecteurs CSS statiques dans ce projet. Une revue bibliométrique de 2025,
+fondée sur l'analyse de 567 publications \cite{bibliometrique2025}, confirme la croissance rapide mais
+récente du champ de recherche combinant web scraping et modèles d'IA pour des applications d'entreprise, ce
+qui situe ce projet dans un domaine de recherche encore émergent académiquement, malgré une pratique déjà
+répandue dans l'industrie.
+
+\subsection{Études webographiques}
+
+En complément des sources académiques, plusieurs ressources techniques non évaluées par les pairs ont été
+consultées pour leur pertinence opérationnelle immédiate. Des livres blancs et articles de blog d'éditeurs
+spécialisés en extraction de données (Grepsr, Firecrawl) détaillent les bonnes pratiques de collecte pour
+l'intelligence concurrentielle : respect des fichiers robots.txt, limitation de la fréquence des requêtes,
+exclusion des contenus authentifiés, et constitution d'un historique longitudinal plutôt que de simples
+relevés ponctuels --- principes directement appliqués dans la conception du pipeline de collecte de ce projet
+(tables d'historique en append-only, seuils de délai entre requêtes).
+
+Sur le plan des outils, les dépôts GitHub des frameworks LangChain et LlamaIndex constituent des références
+techniques de facto pour l'implémentation de systèmes RAG, bien que non publiés dans un cadre académique
+formel. L'outil ScrapeGraphAI, utilisé pour la collecte de données de ce projet, illustre une tendance
+récente au sein de l'écosystème open source consistant à piloter l'extraction web par des modèles de langage
+plutôt que par des sélecteurs codés en dur, réduisant la maintenance nécessaire face aux changements de
+structure des pages sources. Enfin, une revue bibliométrique et systématique publiée sur F1000Research
+(Yesuf et al., 2025) \cite{yesuf2025} portant sur l'adoption de l'IA dans les PME situe le contexte
+économique de ce projet : les auteurs identifient l'aide à la décision entrepreneuriale et la perception du
+marché comme des axes majeurs de la littérature récente sur la compétitivité des PME assistée par IA, ce qui
+correspond précisément au cas d'usage traité ici (une agence de développement web/mobile cherchant à mieux
+positionner son offre commerciale).
+
+\subsection{Tableau comparatif des approches}
+
+Le tableau~\ref{tab:comparatif_etat_art} synthétise les approches examinées au regard du besoin du projet
+(veille concurrentielle locale, corpus métier, contraintes de stage).
+
+\begin{table}[H]
+\centering
+\begingroup
+\setstretch{1.1}
+\small
+\begin{tabularx}{\textwidth}{|p{2.6cm}|p{2.8cm}|p{3.2cm}|X|}
+\hline
+\textbf{Approche} & \textbf{Forces} & \textbf{Limites pour ce projet} & \textbf{Décision} \\
+\hline
+LLM seul (sans retrieval)
+& Réponses fluides en langage naturel
+& Hallucinations ; pas d'ancrage sur tarifs/avis réels
+& Écarté comme solution principale \\
+\hline
+RAG générique (Lewis ; Wu ; Yu)
+& Ancrage documentaire ; métriques retrieval / fidélité
+& Benchmarks souvent génériques (Wikipedia, HotpotQA), peu de corpus tarifaires métier
+& Retenu, adapté au corpus concurrentiel \\
+\hline
+RAG correctif / filtres (Yan et al.)
+& Vérifie la pertinence avant génération
+& Complexité supplémentaire
+& Inspiré : seuil $\tau$, filtre géographique structurel \\
+\hline
+Sentiment supervisé (BERT / FinBERT)
+& Bonnes performances si données annotées
+& Coût d'annotation et d'entraînement incompatibles avec le stage
+& Écarté en production ; annotation réservée à l'évaluation \\
+\hline
+Sentiment zero-shot LLM (Simmering ; Beno)
+& Pas de dataset labellisé pour entraîner ; extraction structurée possible
+& Fiabilité à valider ; pas une probabilité calibrée
+& Retenu pour enrichir les fiches \\
+\hline
+Scraping CSS statique
+& Simple, contrôlable
+& Cassant sur sites JS dynamiques
+& Écarté \\
+\hline
+Scraping piloté IA (ScrapeGraphAI)
+& Résilient aux changements de structure
+& Coût API ; variabilité à nettoyer
+& Retenu pour la collecte \\
+\hline
+\end{tabularx}
+\endgroup
+\caption{Comparaison des approches de la littérature et choix retenus pour le projet}
+\label{tab:comparatif_etat_art}
+\end{table}
+
+\textbf{Manques identifiés (gaps).}
+ (i)~Peu d'évaluations RAG sur des corpus tarifaires / réputationnels
+d'agences locales. (ii)~Absence de consensus sur des métriques métier pour l'aide commerciale.
+(iii)~Littérature scraping + intelligence concurrentielle encore dominée par la littérature grise.
+(iv)~Validation humaine du sentiment zero-shot souvent absente des retours d'expérience industriels
+publiés. Ces manques motivent le protocole retenu : corpus réel ICHTUS, séparation développement/test,
+diagnostics de retrieval et grille humaine.
+
+\subsection{Analyse critique des approches existantes}
+
+Trois constats critiques se dégagent de cette revue et ont directement orienté les choix techniques du
+projet.
+
+Premièrement, concernant le RAG, la littérature d'évaluation \cite{yu2024} souligne l'absence de consensus
+sur des bancs d'essai (benchmarks) standardisés, la plupart des travaux étant validés sur des jeux de
+données de questions-réponses génériques (HotpotQA, Wikipedia) plutôt que sur des corpus métier réels et
+propriétaires. Les enjeux de robustesse et de sécurité restent également des sujets de recherche ouverts,
+comme le montrent les travaux sur les vulnérabilités adversariales \cite{xue2024}.
+
+Deuxièmement, concernant l'analyse de sentiment, la littérature converge sur un arbitrage coût/performance
+clair : le fine-tuning d'un modèle spécialisé reste supérieur en performance brute mais nécessite un jeu de
+données annoté et un coût d'entraînement/inférence significativement plus élevé \cite{simmering2023}, tandis
+que l'approche zero-shot par LLM offre une performance déjà satisfaisante pour des tâches de classification
+simples sans nécessiter de données annotées, au prix d'une fiabilité moindre sur des cas nuancés (synthèse
+SentiEval, citée dans la revue de 2026).
+
+Troisièmement, concernant le web scraping pour l'intelligence concurrentielle, le champ reste dominé par la
+littérature grise (blogs d'éditeurs, contenus commerciaux) plutôt que par la recherche académique rigoureuse,
+la seule étude de cas académique identifiée \cite{springer2025} étant elle-même récente et signalant
+explicitement des défis non résolus (structuration des données, maintenance).
+
+\subsection{Positionnement du projet par rapport à la littérature}
+
+Ce projet se positionne à l'intersection de trois domaines rarement combinés dans un même système au sein de
+la littérature consultée : l'extraction automatisée de données web pour l'intelligence concurrentielle,
+l'interrogation en langage naturel de données métier via une architecture RAG, et l'analyse de sentiment
+zero-shot sur des avis clients non structurés. Ce positionnement répond directement à plusieurs limites
+identifiées dans l'analyse critique ci-dessus.
+
+Concernant le RAG, la littérature évalue majoritairement les systèmes sur des corpus génériques ; ce projet
+contribue, à l'échelle d'un mémoire de licence, une évaluation empirique sur un corpus métier réel et
+propriétaire (données tarifaires et avis clients d'agences de développement web/mobile), avec un protocole
+distinguant un jeu de développement (réglage) et un jeu de test indépendant (mesure finale), construit
+spécifiquement pour ce domaine (questions pertinentes, hors-sujet, vérité terrain nominative, grille humaine).
+La calibration empirique du seuil de confiance, réalisée en observant la distribution réelle des scores de
+similarité plutôt qu'en fixant une valeur arbitraire, rejoint la recommandation de la littérature
+d'évaluation RAG \cite{yu2024} d'adapter les métriques au contexte réel plutôt que d'appliquer un seuil
+universel.
+
+Le filtre géographique structurel ajouté en amont de la génération répond directement à une limite
+documentée dans la littérature sur le RAG correctif \cite{yan2024} : la fiabilité du respect d'une consigne
+de prompt par un LLM n'est pas garantie, ce qui justifie l'ajout d'une vérification indépendante du modèle
+générateur plutôt qu'une confiance aveugle dans l'instruction textuelle --- une démarche méthodologique
+directement inspirée de cette famille de travaux.
+
+Concernant l'analyse de sentiment, le choix d'une approche zero-shot par LLM plutôt qu'un modèle fine-tuné
+s'appuie explicitement sur l'arbitrage documenté par Simmering et Huoviala (2023) \cite{simmering2023} : en
+l'absence d'un jeu de données annoté et dans un contexte de stage à ressources limitées, l'approche zero-shot
+constitue un choix raisonné plutôt qu'une solution de facilité, dont les limites (absence de métriques de
+précision formelles, performance potentiellement inférieure sur des cas nuancés) sont explicitement
+documentées dans ce mémoire plutôt que dissimulées.
+
+Enfin, ce projet illustre concrètement la piste évoquée par le chapitre Springer (2025) \cite{springer2025}
+consistant à renforcer les systèmes de web scraping par l'intelligence artificielle : l'utilisation d'un
+extracteur piloté par LLM (ScrapeGraphAI) plutôt que par des sélecteurs statiques constitue une application
+directe de cette recommandation, avec un bénéfice observé en pratique sur la résilience du pipeline face aux
+évolutions de structure des pages sources.

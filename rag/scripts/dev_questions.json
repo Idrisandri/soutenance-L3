@@ -1,0 +1,121 @@
+[
+  {
+    "id": "q01",
+    "question": "Quel est le prix moyen d'une application mobile chez nos concurrents ?",
+    "categorie": "pertinente_prix",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q02",
+    "question": "Quel concurrent a le meilleur rapport qualité-prix pour un développement mobile ?",
+    "categorie": "pertinente_prix_sentiment",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q03",
+    "question": "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget ?",
+    "categorie": "pertinente_prix",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q04",
+    "question": "Quels sont les points faibles récurrents mentionnés dans les avis clients de nos concurrents ?",
+    "categorie": "pertinente_sentiment",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q05",
+    "question": "Y a-t-il des concurrents connus pour ne pas respecter les délais ?",
+    "categorie": "pertinente_sentiment",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q06",
+    "question": "Quel est le budget minimum demandé par les agences de développement web à Lille ?",
+    "categorie": "pertinente_prix",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q07",
+    "question": "Quelle est l'agence la mieux notée sur Clutch parmi nos concurrents mobile ?",
+    "categorie": "pertinente_prix",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q08",
+    "question": "Compare les tarifs entre le développement web et le développement mobile chez nos concurrents.",
+    "categorie": "pertinente_prix",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q09",
+    "question": "Un prospect nous compare à Altar.io, que sais-tu sur leurs prix et leur réputation ?",
+    "categorie": "pertinente_nominative",
+    "attendu": "reponse_avec_sources",
+    "concurrent_attendu": ["Altar.io"]
+  },
+  {
+    "id": "q10",
+    "question": "Quels arguments puis-je utiliser face à un concurrent qui a des avis négatifs sur la communication ?",
+    "categorie": "pertinente_sentiment",
+    "attendu": "reponse_avec_sources"
+  },
+  {
+    "id": "q16",
+    "question": "Quel est le taux horaire pratiqué par SensioLabs ?",
+    "categorie": "pertinente_nominative",
+    "attendu": "reponse_avec_sources",
+    "concurrent_attendu": ["SensioLabs"]
+  },
+  {
+    "id": "q17",
+    "question": "Que disent les avis clients à propos de Ideine ?",
+    "categorie": "pertinente_nominative",
+    "attendu": "reponse_avec_sources",
+    "concurrent_attendu": ["Ideine"]
+  },
+  {
+    "id": "q18",
+    "question": "Quel est le budget minimum de projet demandé par Build Me App ?",
+    "categorie": "pertinente_nominative",
+    "attendu": "reponse_avec_sources",
+    "concurrent_attendu": ["Build Me App"]
+  },
+  {
+    "id": "q19",
+    "question": "Quelle est la note Clutch de Kode Creators ?",
+    "categorie": "pertinente_nominative",
+    "attendu": "reponse_avec_sources",
+    "concurrent_attendu": ["Kode Creators"]
+  },
+  {
+    "id": "q11",
+    "question": "Quelle est la météo à Lille aujourd'hui ?",
+    "categorie": "hors_sujet",
+    "attendu": "aucune_source"
+  },
+  {
+    "id": "q12",
+    "question": "Peux-tu me donner la recette d'une quiche lorraine ?",
+    "categorie": "hors_sujet",
+    "attendu": "aucune_source"
+  },
+  {
+    "id": "q13",
+    "question": "Quel est le cours actuel du bitcoin ?",
+    "categorie": "hors_sujet",
+    "attendu": "aucune_source"
+  },
+  {
+    "id": "q14",
+    "question": "Quel est le prix d'une application mobile chez un concurrent basé à Tokyo ?",
+    "categorie": "limite_geographique",
+    "attendu": "aucune_source_ou_faible_confiance"
+  },
+  {
+    "id": "q15",
+    "question": "Quels concurrents proposent aussi des services de référencement SEO ?",
+    "categorie": "hors_couverture",
+    "attendu": "aucune_source_ou_reponse_prudente"
+  }
+]

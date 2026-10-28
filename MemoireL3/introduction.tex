@@ -1,0 +1,105 @@
+\section{Introduction Générale}
+
+\subsection{Contexte général}
+
+Dans un secteur des services numériques de plus en plus concurrentiel, la capacité d'une entreprise à
+positionner correctement son offre commerciale constitue un avantage stratégique déterminant. Les
+entreprises de développement web et mobile évoluent dans un marché où les prix pratiqués, la qualité
+perçue des prestations et la réputation des concurrents évoluent en permanence. Or, la collecte et
+l'exploitation de ces informations reposent encore, dans la majorité des cas, sur des démarches manuelles,
+ponctuelles et peu structurées.
+
+Le développement récent des techniques d'intelligence artificielle générative, et en particulier des
+architectures de \textit{Retrieval-Augmented Generation} (RAG), ouvre de nouvelles perspectives pour
+automatiser la collecte, la structuration et l'exploitation de données non structurées issues du web. Combinées
+à des techniques de traitement automatique du langage naturel (NLP) telles que l'analyse de sentiment,
+ces approches permettent de transformer des données brutes --- prix affichés, avis clients --- en
+informations directement exploitables par les équipes commerciales.
+
+C'est dans ce contexte que s'inscrit le stage de fin d'études réalisé au sein d'ICHTUS IT, entreprise
+spécialisée dans le développement de plateformes web et d'applications mobiles.
+
+\subsection{Problématique et enjeux}
+
+Aujourd'hui, ICHTUS IT ne dispose d'aucun outil centralisant les données tarifaires et les avis clients de
+ses concurrents. Chaque commercial doit effectuer ses propres recherches ponctuelles, sans historique ni
+vision d'ensemble sur le positionnement du marché. Cette absence d'outillage ralentit le chiffrage des
+offres et prive l'équipe commerciale d'arguments de vente construits sur des données réelles.
+
+La problématique de ce mémoire peut donc être formulée ainsi : \textit{comment automatiser la collecte des
+données tarifaires et des avis clients des entreprises concurrentes, et les rendre exploitables en temps réel
+via un agent conversationnel, pour permettre à l'équipe commerciale de prendre des décisions de pricing et
+de prospection plus rapides et mieux argumentées ?}
+
+Cette problématique soulève des enjeux à plusieurs niveaux :
+\begin{itemize}
+    \item \textbf{Enjeux scientifiques et techniques} : concevoir un pipeline robuste de collecte de données
+    web non structurées, une architecture de recherche vectorielle performante, et un système de
+    classification de sentiment fiable en l'absence de données annotées.
+    \item \textbf{Enjeux industriels} : réduire le temps de recherche manuelle des commerciaux et fiabiliser
+    la prise de décision en matière de pricing.
+    \item \textbf{Enjeux socio-économiques} : renforcer la compétitivité d'ICHTUS IT sur son marché grâce à
+    une meilleure connaissance de son environnement concurrentiel.
+\end{itemize}
+
+\subsection{Objectifs du stage et du mémoire}
+
+Ce stage vise à concevoir et développer un système capable de :
+\begin{itemize}
+    \item collecter automatiquement les prix pratiqués par les entreprises concurrentes du secteur du
+    développement web et mobile ;
+    \item mettre ces données à disposition de l'équipe commerciale via un agent conversationnel interrogeable
+    en langage naturel ;
+    \item analyser les avis clients laissés sur les concurrents afin d'en extraire automatiquement le
+    sentiment global ainsi que les points forts et points faibles récurrents.
+\end{itemize}
+
+L'objectif du mémoire est, quant à lui, de documenter la démarche scientifique et technique ayant permis
+d'aboutir à ce système, de la revue de littérature jusqu'à l'évaluation des résultats obtenus.
+
+\subsection{Hypothèses et questions de recherche}
+
+Ce travail repose sur les hypothèses suivantes :
+\begin{itemize}
+    \item il est possible de collecter de manière automatisée et fiable des données tarifaires et des avis
+    clients publiés en ligne par des entreprises concurrentes, malgré l'hétérogénéité de leur présentation ;
+    \item une architecture RAG appuyée sur une recherche par similarité vectorielle permet de restituer une
+    information de marché pertinente et à jour, sans nécessiter de réentraînement du modèle de langage ;
+    \item une analyse de sentiment en \textit{zero-shot}, sans fine-tuning ni jeu de données annoté, offre une
+    précision suffisante pour être exploitée par des utilisateurs non techniques.
+\end{itemize}
+
+Ces hypothèses guident les questions de recherche suivantes : dans quelle mesure un pipeline ETL appliqué à
+des données web non structurées permet-il d'alimenter un système d'aide à la décision fiable ? Et comment
+combiner recherche vectorielle et extraction de sentiment pour produire une réponse à la fois quantitative
+et qualitative sur le positionnement des concurrents ?
+
+\subsection{Méthodologie générale adoptée}
+
+La démarche suivie s'articule en trois grandes phases correspondant aux trois couches du système développé :
+
+\begin{enumerate}
+    \item une phase de \textbf{collecte de données}, reposant sur un scraping intelligent automatisé
+    (ScrapeGraphAI) des pages de tarifs et d'avis clients, suivie d'un pipeline de transformation
+    (parsing, structuration) inspiré des démarches ETL classiques ;
+    \item une phase de \textbf{stockage et de traitement}, avec une base de données Supabase/PostgreSQL
+    indexée pour la recherche sémantique grâce à l'extension \texttt{pgvector} ;
+    \item une phase d'\textbf{intelligence artificielle}, combinant un système de RAG pour l'interrogation en
+    langage naturel du marché, et un module d'analyse de sentiment basé sur un grand modèle de langage en
+    extraction \textit{zero-shot}.
+\end{enumerate}
+
+Cette méthodologie est détaillée et justifiée dans les chapitres consacrés à l'état de l'art et à la
+méthodologie du présent mémoire.
+
+\subsection{Organisation du mémoire}
+
+Ce mémoire s'organise de la manière suivante. Le chapitre 2 présente l'établissement académique
+d'origine, l'INSI. Le chapitre 3 présente l'entreprise d'accueil, ICHTUS IT. Le chapitre 4 expose le
+cadrage du projet, les besoins identifiés et les contraintes rencontrées. Le chapitre 5 propose une revue
+de la littérature scientifique et technique relative au sujet traité. Le chapitre 6 détaille la méthodologie
+adoptée. Les chapitres 7 et 8 présentent respectivement l'exploration et la préparation des données, puis
+la modélisation et les expérimentations menées. Le chapitre 9 décrit le déploiement du système sous forme
+de démonstrateur. Le chapitre 10 propose une discussion critique des résultats obtenus, avant que le
+chapitre 11 n'expose les limites du travail et les perspectives envisagées. Le mémoire se conclut par une
+synthèse générale des apports scientifiques, techniques et professionnels de ce stage.

@@ -33,7 +33,7 @@ LLM_PROVIDER = _optional("LLM_PROVIDER", "gemini")  # "gemini" ou "claude"
 
 GEMINI_CHAT_MODEL = "gemini-3.1-flash-lite"  # modèle de chat pour la réponse finale (LLM)
 ANTHROPIC_API_KEY = _optional("ANTHROPIC_API_KEY")  # requis seulement si LLM_PROVIDER=claude
-CLAUDE_MODEL = "claude-sonnet-4-5b"  # modèle de chat pour la réponse finale (LLM)
+CLAUDE_MODEL = "claude-haiku-5-5"  # modèle de chat pour la réponse finale (LLM)
 
 if LLM_PROVIDER == "claude" and not ANTHROPIC_API_KEY:
     raise RuntimeError(

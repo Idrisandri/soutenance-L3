@@ -1,121 +1,1847 @@
-[
-  {
-    "id": "q01",
-    "question": "Quel est le prix moyen d'une application mobile chez nos concurrents ?",
-    "categorie": "pertinente_prix",
-    "attendu": "reponse_avec_sources"
+{
+  "_meta": {
+    "role": "test_independant",
+    "nb_questions": 60,
+    "separation": "Jeu de TEST final, distinct du jeu de développement (dev_questions.json, 19 Q). Vérité terrain (reponse_attendue) définie AVANT exécution. Paramètres figés : voir config_fige.json.",
+    "repartition": {
+      "pertinente_nominative": 21,
+      "pertinente_prix": 9,
+      "pertinente_sentiment": 10,
+      "hors_sujet": 8,
+      "limite_geographique": 6,
+      "hors_couverture": 6
+    },
+    "grille_humaine_echelle": "0=échec, 1=partiel, 2=correct, 3=excellent ; null = non noté"
   },
-  {
-    "id": "q02",
-    "question": "Quel concurrent a le meilleur rapport qualité-prix pour un développement mobile ?",
-    "categorie": "pertinente_prix_sentiment",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q03",
-    "question": "Je dois répondre à un prospect qui veut un site web pour 15 000€, quel concurrent propose ce budget ?",
-    "categorie": "pertinente_prix",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q04",
-    "question": "Quels sont les points faibles récurrents mentionnés dans les avis clients de nos concurrents ?",
-    "categorie": "pertinente_sentiment",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q05",
-    "question": "Y a-t-il des concurrents connus pour ne pas respecter les délais ?",
-    "categorie": "pertinente_sentiment",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q06",
-    "question": "Quel est le budget minimum demandé par les agences de développement web à Lille ?",
-    "categorie": "pertinente_prix",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q07",
-    "question": "Quelle est l'agence la mieux notée sur Clutch parmi nos concurrents mobile ?",
-    "categorie": "pertinente_prix",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q08",
-    "question": "Compare les tarifs entre le développement web et le développement mobile chez nos concurrents.",
-    "categorie": "pertinente_prix",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q09",
-    "question": "Un prospect nous compare à Altar.io, que sais-tu sur leurs prix et leur réputation ?",
-    "categorie": "pertinente_nominative",
-    "attendu": "reponse_avec_sources",
-    "concurrent_attendu": ["Altar.io"]
-  },
-  {
-    "id": "q10",
-    "question": "Quels arguments puis-je utiliser face à un concurrent qui a des avis négatifs sur la communication ?",
-    "categorie": "pertinente_sentiment",
-    "attendu": "reponse_avec_sources"
-  },
-  {
-    "id": "q16",
-    "question": "Quel est le taux horaire pratiqué par SensioLabs ?",
-    "categorie": "pertinente_nominative",
-    "attendu": "reponse_avec_sources",
-    "concurrent_attendu": ["SensioLabs"]
-  },
-  {
-    "id": "q17",
-    "question": "Que disent les avis clients à propos de Ideine ?",
-    "categorie": "pertinente_nominative",
-    "attendu": "reponse_avec_sources",
-    "concurrent_attendu": ["Ideine"]
-  },
-  {
-    "id": "q18",
-    "question": "Quel est le budget minimum de projet demandé par Build Me App ?",
-    "categorie": "pertinente_nominative",
-    "attendu": "reponse_avec_sources",
-    "concurrent_attendu": ["Build Me App"]
-  },
-  {
-    "id": "q19",
-    "question": "Quelle est la note Clutch de Kode Creators ?",
-    "categorie": "pertinente_nominative",
-    "attendu": "reponse_avec_sources",
-    "concurrent_attendu": ["Kode Creators"]
-  },
-  {
-    "id": "q11",
-    "question": "Quelle est la météo à Lille aujourd'hui ?",
-    "categorie": "hors_sujet",
-    "attendu": "aucune_source"
-  },
-  {
-    "id": "q12",
-    "question": "Peux-tu me donner la recette d'une quiche lorraine ?",
-    "categorie": "hors_sujet",
-    "attendu": "aucune_source"
-  },
-  {
-    "id": "q13",
-    "question": "Quel est le cours actuel du bitcoin ?",
-    "categorie": "hors_sujet",
-    "attendu": "aucune_source"
-  },
-  {
-    "id": "q14",
-    "question": "Quel est le prix d'une application mobile chez un concurrent basé à Tokyo ?",
-    "categorie": "limite_geographique",
-    "attendu": "aucune_source_ou_faible_confiance"
-  },
-  {
-    "id": "q15",
-    "question": "Quels concurrents proposent aussi des services de référencement SEO ?",
-    "categorie": "hors_couverture",
-    "attendu": "aucune_source_ou_reponse_prudente"
-  }
-]
+  "questions": [
+    {
+      "id": "t01",
+      "question": "Quel est le budget minimum de projet demandé par Build Me App ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum Build Me App = $10,000+"
+        ],
+        "montants": [
+          "$10,000+",
+          "10000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Build Me App"
+        ],
+        "notes": "Source Clutch, mobile."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App"
+      ]
+    },
+    {
+      "id": "t02",
+      "question": "Quel est le taux horaire pratiqué par Kode Creators ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "taux horaire Kode Creators = < $25 / hr"
+        ],
+        "montants": [
+          "< $25",
+          "25"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Kode Creators"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Kode Creators"
+      ]
+    },
+    {
+      "id": "t03",
+      "question": "Quelle est la note Clutch de Kode Creators ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "note Clutch Kode Creators = 5/5",
+          "19 avis"
+        ],
+        "montants": [
+          "5"
+        ],
+        "devises": [],
+        "sources_attendues": [
+          "Kode Creators"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Kode Creators"
+      ]
+    },
+    {
+      "id": "t04",
+      "question": "Quel est le budget minimum de projet chez Altar.io ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum Altar.io = $25,000+"
+        ],
+        "montants": [
+          "$25,000+",
+          "25000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Altar.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Altar.io"
+      ]
+    },
+    {
+      "id": "t05",
+      "question": "Quelle est la note Clutch d'Altar.io et combien d'avis a-t-elle ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "note 4.9/5",
+          "28 avis"
+        ],
+        "montants": [
+          "4.9",
+          "28"
+        ],
+        "devises": [],
+        "sources_attendues": [
+          "Altar.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Altar.io"
+      ]
+    },
+    {
+      "id": "t06",
+      "question": "Quel est le taux horaire d'Ideine ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "taux horaire Ideine = $100 - $149 / hr"
+        ],
+        "montants": [
+          "$100",
+          "$149",
+          "100",
+          "149"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Ideine"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Ideine"
+      ]
+    },
+    {
+      "id": "t07",
+      "question": "Que disent les avis clients à propos d'Ideine ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "sentiment positif",
+          "réactivité",
+          "accompagnement"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Ideine"
+        ],
+        "notes": "Doit s'appuyer sur l'analyse d'avis, pas inventer de points faibles."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Ideine"
+      ]
+    },
+    {
+      "id": "t08",
+      "question": "Quel est le budget minimum demandé par Hello Pomelo ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum Hello Pomelo = 50 000 €+"
+        ],
+        "montants": [
+          "50000",
+          "50 000",
+          "50 000"
+        ],
+        "devises": [
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "Hello Pomelo"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Hello Pomelo"
+      ]
+    },
+    {
+      "id": "t09",
+      "question": "Quel est le budget médian de BASH ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget médian BASH = 16 500 EUR",
+          "budget min 8 000 €+"
+        ],
+        "montants": [
+          "16500",
+          "16 500",
+          "8000",
+          "8 000"
+        ],
+        "devises": [
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "BASH"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "BASH"
+      ]
+    },
+    {
+      "id": "t10",
+      "question": "Quel est le budget minimum de projet chez Contraste Europe ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum Contraste Europe = $75,000+"
+        ],
+        "montants": [
+          "$75,000+",
+          "75000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Contraste Europe"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Contraste Europe"
+      ]
+    },
+    {
+      "id": "t11",
+      "question": "Quel est le taux horaire de Memory Squared ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "taux horaire Memory Squared présent dans la fiche"
+        ],
+        "montants": [],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Memory Squared"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Memory Squared"
+      ]
+    },
+    {
+      "id": "t12",
+      "question": "Quelle est la note Clutch de SolveIt et combien d'avis ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "note 5/5",
+          "51 avis"
+        ],
+        "montants": [
+          "5",
+          "51"
+        ],
+        "devises": [],
+        "sources_attendues": [
+          "SolveIt"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "SolveIt"
+      ]
+    },
+    {
+      "id": "t13",
+      "question": "Quel est le coût moyen de projet déclaré pour Tallium Inc. ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "coût moyen $40,000 to $1.5 million"
+        ],
+        "montants": [
+          "40000",
+          "40,000",
+          "1.5"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Tallium Inc."
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Tallium Inc."
+      ]
+    },
+    {
+      "id": "t14",
+      "question": "Quels points faibles sont mentionnés pour TRIARE, LLC ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "retards occasionnels",
+          "manque d'anticipation sur les délais"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "TRIARE, LLC"
+        ],
+        "notes": "Ne pas inventer d'autres points faibles."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "TRIARE, LLC"
+      ]
+    },
+    {
+      "id": "t15",
+      "question": "AMELA Technology respecte-t-elle les délais selon les avis ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "respect constant des délais et des budgets (point fort)"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "AMELA Technology"
+        ],
+        "notes": "Réponse attendue : oui, c'est un point fort documenté."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "AMELA Technology"
+      ]
+    },
+    {
+      "id": "t16",
+      "question": "Quel est le budget minimum chez Les Fabricants ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum = $50,000+"
+        ],
+        "montants": [
+          "$50,000+",
+          "50000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Les Fabricants"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Les Fabricants"
+      ]
+    },
+    {
+      "id": "t17",
+      "question": "Quelle est la note de Lemon Interactive et son budget médian ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "données La Fabrique du Net pour Lemon Interactive"
+        ],
+        "montants": [],
+        "devises": [
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "Lemon Interactive"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Lemon Interactive"
+      ]
+    },
+    {
+      "id": "t18",
+      "question": "Quel est le taux horaire de Web Maniac ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "taux horaire Web Maniac présent dans la fiche"
+        ],
+        "montants": [],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Web Maniac"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Web Maniac"
+      ]
+    },
+    {
+      "id": "t19",
+      "question": "Quels concurrents mobiles ont un budget minimum inférieur ou égal à 10 000 $ ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "ex: Kode Creators $5,000+",
+          "Build Me App $10,000+",
+          "Ideine $5,000+"
+        ],
+        "montants": [
+          "5000",
+          "10000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [],
+        "notes": "Doit citer des fiches réellement dans le TOP-K, sans inventer."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t20",
+      "question": "Quels concurrents web ont un ticket d'entrée autour de 5 000 € ou 5 000 $ ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "plusieurs agences web autour de 5 000"
+        ],
+        "montants": [
+          "5000",
+          "5 000"
+        ],
+        "devises": [
+          "EUR",
+          "USD",
+          "€",
+          "$"
+        ],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t21",
+      "question": "Compare le budget minimum de Build Me App et celui d'Altar.io.",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "Build Me App $10,000+",
+          "Altar.io $25,000+"
+        ],
+        "montants": [
+          "10000",
+          "25000"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Build Me App",
+          "Altar.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App",
+        "Altar.io"
+      ]
+    },
+    {
+      "id": "t22",
+      "question": "Quels sont les taux horaires les plus bas parmi les concurrents mobiles ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "Kode Creators < $25/hr est parmi les plus bas"
+        ],
+        "montants": [
+          "25"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Kode Creators"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t23",
+      "question": "Y a-t-il des agences avec un budget minimum de 50 000 € ou plus ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "Hello Pomelo 50 000 €+",
+          "Les Fabricants $50,000+"
+        ],
+        "montants": [
+          "50000",
+          "50 000"
+        ],
+        "devises": [
+          "EUR",
+          "USD",
+          "€",
+          "$"
+        ],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t24",
+      "question": "Quel est le positionnement tarifaire de BASH (min, médian, tranche) ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "min 8 000 €+",
+          "médian 16 500 EUR",
+          "tranche < 10 000€"
+        ],
+        "montants": [
+          "8000",
+          "16500"
+        ],
+        "devises": [
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "BASH"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "BASH"
+      ]
+    },
+    {
+      "id": "t25",
+      "question": "Compare les notes Clutch de Build Me App, Kode Creators et SolveIt.",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "les trois ont 5/5"
+        ],
+        "montants": [
+          "5"
+        ],
+        "devises": [],
+        "sources_attendues": [
+          "Build Me App",
+          "Kode Creators",
+          "SolveIt"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App",
+        "Kode Creators",
+        "SolveIt"
+      ]
+    },
+    {
+      "id": "t26",
+      "question": "Quels concurrents ont un taux horaire supérieur à 100 $ / h ?",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "ex: Ideine $100-$149",
+          "Les Fabricants $100-$149"
+        ],
+        "montants": [
+          "100"
+        ],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t27",
+      "question": "Donne-moi le budget minimum et le taux horaire de Niji.",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "fiche Niji avec budget min et taux horaire"
+        ],
+        "montants": [],
+        "devises": [
+          "USD",
+          "$"
+        ],
+        "sources_attendues": [
+          "Niji"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Niji"
+      ]
+    },
+    {
+      "id": "t28",
+      "question": "Quel est le budget minimum chez ouiflow.io ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "budget minimum ouiflow.io dans la fiche"
+        ],
+        "montants": [],
+        "devises": [
+          "EUR",
+          "USD",
+          "€",
+          "$"
+        ],
+        "sources_attendues": [
+          "ouiflow.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "ouiflow.io"
+      ]
+    },
+    {
+      "id": "t29",
+      "question": "SAS Webagencelille.com : quel budget minimum et quelle source de données ?",
+      "categorie": "pertinente_nominative",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "fiche SAS Webagencelille.com"
+        ],
+        "montants": [],
+        "devises": [
+          "USD",
+          "$",
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "SAS Webagencelille.com"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "SAS Webagencelille.com"
+      ]
+    },
+    {
+      "id": "t30",
+      "question": "Compare Hello Pomelo et Blaaaz sur le ticket d'entrée.",
+      "categorie": "pertinente_prix",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "Hello Pomelo 50 000 €+",
+          "Blaaaz 1 000 €+"
+        ],
+        "montants": [
+          "50000",
+          "1000"
+        ],
+        "devises": [
+          "EUR",
+          "€"
+        ],
+        "sources_attendues": [
+          "Hello Pomelo",
+          "Blaaaz"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Hello Pomelo",
+        "Blaaaz"
+      ]
+    },
+    {
+      "id": "t31",
+      "question": "Quels points forts reviennent le plus souvent dans les avis de Build Me App ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "réactivité",
+          "respect des délais",
+          "communication"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Build Me App"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App"
+      ]
+    },
+    {
+      "id": "t32",
+      "question": "Quels concurrents ont des points faibles liés aux délais ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "TRIARE retards occasionnels",
+          "Altar.io estimations de temps inexactes"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "TRIARE, LLC",
+          "Altar.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t33",
+      "question": "Inov Agency a-t-elle une réputation positive ou négative selon les avis analysés ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "sentiment négatif",
+          "score ~0.35",
+          "suivi défaillant"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Inov Agency"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Inov Agency"
+      ]
+    },
+    {
+      "id": "t34",
+      "question": "Que disent les avis sur la communication chez Altar.io ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "communications proactives (fort)",
+          "visibilité parfois insuffisante (faible)"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Altar.io"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Altar.io"
+      ]
+    },
+    {
+      "id": "t35",
+      "question": "Quels arguments commerciaux puis-je tirer des avis positifs de Kode Creators ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "expertise technique",
+          "réactivité",
+          "respect des délais"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Kode Creators"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Kode Creators"
+      ]
+    },
+    {
+      "id": "t36",
+      "question": "Y a-t-il des avis négatifs documentés sur le support client chez nos concurrents ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "Inov Agency : support client inefficace"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Inov Agency"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t37",
+      "question": "Résume le sentiment global et le score d'AMELA Technology.",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "positif",
+          "score 0.98"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "AMELA Technology"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "AMELA Technology"
+      ]
+    },
+    {
+      "id": "t38",
+      "question": "Quels points faibles sont signalés pour Tallium Inc. ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "erreurs de communication occasionnelles",
+          "choix techno non approuvés"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Tallium Inc."
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Tallium Inc."
+      ]
+    },
+    {
+      "id": "t39",
+      "question": "SolveIt : quels points d'amélioration mentionnent les clients ?",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "formation interne",
+          "intégration initiale",
+          "planification des réunions"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "SolveIt"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "SolveIt"
+      ]
+    },
+    {
+      "id": "t40",
+      "question": "Compare le sentiment des avis entre Build Me App et Ideine.",
+      "categorie": "pertinente_sentiment",
+      "attendu": "reponse_avec_sources",
+      "reponse_attendue": {
+        "faits_cles": [
+          "tous deux positifs",
+          "scores élevés (~0.98 et ~0.95)"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Build Me App",
+          "Ideine"
+        ],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App",
+        "Ideine"
+      ]
+    },
+    {
+      "id": "t41",
+      "question": "Quelle est la capitale de l'Australie ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": "Hors périmètre concurrentiel. Rejet attendu."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t42",
+      "question": "Comment faire une pâte à crêpes ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t43",
+      "question": "Quel est le score du dernier match du LOSC ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t44",
+      "question": "Peux-tu m'expliquer la photosynthèse ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t45",
+      "question": "Quel est le prix actuel de l'or en euros ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t46",
+      "question": "Écris-moi un poème sur Lille.",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t47",
+      "question": "Quelle est la différence entre Python et Java ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": "Tech générique hors base concurrents."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t48",
+      "question": "Combien de kilomètres entre Lille et Paris ?",
+      "categorie": "hors_sujet",
+      "attendu": "aucune_source",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t49",
+      "question": "Quel est le prix d'une app mobile chez un concurrent basé à Tokyo ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": "Hors zone Lille / métropole."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t50",
+      "question": "Quels concurrents à New York proposent du développement web ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t51",
+      "question": "Y a-t-il des agences concurrentes à Berlin dans la base ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t52",
+      "question": "Compare les tarifs des agences de Lyon avec celles de Lille.",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": "Lyon hors zone ; ne doit pas inventer de données lyonnaises."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t53",
+      "question": "Quel concurrent à Londres a le meilleur taux horaire ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t54",
+      "question": "Peux-tu me donner des concurrents situés à Marseille ?",
+      "categorie": "limite_geographique",
+      "attendu": "aucune_source_ou_faible_confiance",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t55",
+      "question": "Quels concurrents proposent aussi des services de référencement SEO comme offre principale documentée ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": "Couverture partielle ; prudence attendue si pas de champ SEO dédié."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t56",
+      "question": "Quel est le taux horaire de SensioLabs ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [
+          "SensioLabs absent de la base courante"
+        ],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "SensioLabs"
+        ],
+        "notes": "Absent du snapshot figé — abstention ou prudence attendue."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "SensioLabs"
+      ]
+    },
+    {
+      "id": "t57",
+      "question": "Combien de développeurs emploie Build Me App ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Build Me App"
+        ],
+        "notes": "Effectifs non présents dans les fiches prix/avis."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Build Me App"
+      ]
+    },
+    {
+      "id": "t58",
+      "question": "Quel concurrent a gagné un trophée Awwwards en 2024 ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    },
+    {
+      "id": "t59",
+      "question": "Quel est le chiffre d'affaires 2025 de Lemon Interactive ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [
+          "Lemon Interactive"
+        ],
+        "notes": "CA non présent dans les fiches."
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      },
+      "concurrent_attendu": [
+        "Lemon Interactive"
+      ]
+    },
+    {
+      "id": "t60",
+      "question": "Nos concurrents acceptent-ils le paiement en crypto-monnaie ?",
+      "categorie": "hors_couverture",
+      "attendu": "aucune_source_ou_reponse_prudente",
+      "reponse_attendue": {
+        "faits_cles": [],
+        "montants": [],
+        "devises": [],
+        "sources_attendues": [],
+        "notes": ""
+      },
+      "grille_humaine": {
+        "sources_pertinentes": null,
+        "exactitude_montants_devises": null,
+        "fidelite_documents": null,
+        "completude": null,
+        "abstention_correcte": null,
+        "utilite_commerciale": null,
+        "justification": null,
+        "evaluateur": null
+      }
+    }
+  ]
+}

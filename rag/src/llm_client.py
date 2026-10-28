@@ -49,13 +49,32 @@ def _generate_with_gemini(prompt: str, tentative: int = 1) -> str:
         raise
 
 
+def _texte_reponse_claude(response) -> str:
+    """Le premier bloc peut être une réflexion (ThinkingBlock), sans attribut text."""
+    textes = [
+        block.text
+        for block in response.content
+        if getattr(block, "type", None) == "text" and getattr(block, "text", None)
+    ]
+    texte = "\n".join(textes).strip()
+    if texte:
+        return texte
+    raise RuntimeError(
+        "Claude n'a renvoyé aucun texte "
+        f"(stop_reason={getattr(response, 'stop_reason', None)})."
+    )
+
+
 def _generate_with_claude(prompt: str) -> str:
     import anthropic
 
     client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
     response = client.messages.create(
         model=config.CLAUDE_MODEL,
-        max_tokens=1000,
+        max_tokens=2000,
+        # Haiku récent renvoie d'abord un bloc de réflexion. On le coupe :
+        # l'évaluation a besoin de la réponse, pas du raisonnement interne.
+        thinking={"type": "disabled"},
         messages=[{"role": "user", "content": prompt}],
     )
-    return response.content[0].text
+    return _texte_reponse_claude(response)

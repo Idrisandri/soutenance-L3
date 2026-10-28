@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "role": "parametres_figes_avant_evaluation_finale",
+    "date_fige": "2026-03-28",
+    "consigne": "Ne plus modifier ces valeurs pour le jeu de TEST (test_questions.json). Tout réglage ultérieur se fait uniquement sur le jeu de développement (dev_questions.json)."
+  },
+  "llm": {
+    "LLM_PROVIDER": "gemini | claude (selon .env au moment du run — documenter la valeur utilisée dans les résultats)",
+    "GEMINI_CHAT_MODEL": "gemini-3.1-flash-lite",
+    "CLAUDE_MODEL": "claude-haiku-5-5"
+  },
+  "embeddings": {
+    "EMBEDDING_MODEL": "gemini-embedding-2",
+    "EMBEDDING_DIMENSIONS": 768
+  },
+  "retrieval": {
+    "TOP_K_RESULTS": 5,
+    "CONFIDENCE_THRESHOLD": 0.60,
+    "MIN_RESULTS_FLOOR": 5,
+    "filtre_geographique": {
+      "ZONE_COUVERTURE_KEYWORDS": [
+        "lille", "nord", "hauts-de-france", "hauts de france", "roubaix",
+        "tourcoing", "villeneuve d'ascq", "villeneuve-d'ascq", "wasquehal",
+        "marcq-en-baroeul", "lomme", "métropole lilloise", "mel"
+      ],
+      "VILLES_HORS_ZONE_CONNUES": [
+        "tokyo", "paris", "londres", "london", "new york", "berlin",
+        "bruxelles", "marseille", "lyon", "bordeaux", "toulouse",
+        "amsterdam", "madrid", "barcelone", "rome", "milan"
+      ]
+    }
+  },
+  "jeux": {
+    "developpement": "scripts/dev_questions.json (19 questions — réglage uniquement)",
+    "test_independant": "scripts/test_questions.json (60 questions — évaluation finale)"
+  }
+}

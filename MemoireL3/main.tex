@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{tocloft}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setstretch{1.5}
+
+\newcommand{\fonctionLogistique}[1]{%
+    \frac{1}{1 + \exp\left(-#1\right)}%
+}
+
+\newcommand{\optimisationSVM}{%
+    \min_{w, b} \ \frac{1}{2} \|w\|^2 \quad \text{s.c.} \quad y_i(w^T x_i + b) \geq 1
+}
+
+\newcommand{\noyauRBF}[2]{%
+    \exp\left(-\gamma \|#1 - #2\|^2\right)
+}
+
+\newcommand{\voteMajoritaire}[1]{%
+    \text{mode}\left(#1\right)
+}
+
+\newcommand{\fonctionObjectifXGBoost}{%
+    \mathcal{L}(t) = \sum_{i=1}^n l\bigl(y_i, \hat{y}_i^{(t-1)} + f_t(x_i)\bigr) + \Omega(f_t)
+}
+
+\newcommand{\regulXGBoost}{%
+    \Omega(f) = \gamma T + \frac{1}{2} \lambda \sum_j w_j^2
+}
+
+
+\begin{document}
+
+\pagenumbering{roman}
+\pagestyle{plain}
+
+% ===== PAGE DE GARDE =====
+\begin{titlepage}
+\thispagestyle{empty}
+\input{premiere_page.tex}
+\end{titlepage}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+% ===== RESUME / ABSTRACT (a activer quand les fichiers existeront) =====
+% \input{resume}
+% \newpage
+% \input{abstract}
+% \newpage
+
+\tableofcontents
+\newpage
+
+\renewcommand{\listfigurename}{Listes des Figures}
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ===== CORPS DU MEMOIRE (a activer partie par partie) =====
+\input{introduction}
+\newpage
+% \input{INSI}
+% \newpage
+\input{cadrage}
+\newpage
+\input{etatArt}
+\newpage
+\input{methodologie}
+\newpage
+\input{donnees.tex}
+\newpage
+\input{modele}
+\newpage
+% \input{choixModèle}
+% \newpage
+% \input{deploiement}
+% \newpage
+% \input{conclusion_generale}
+% \newpage
+
+\pagenumbering{Roman}
+\input{reference}
+\newpage
+% \input{annexe}
+
+\end{document}

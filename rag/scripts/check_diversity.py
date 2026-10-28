@@ -11,10 +11,21 @@ import json
 import os
 from collections import Counter
 
-RESULTS_FILE = os.path.join(os.path.dirname(__file__), "evaluation_results.json")
+# Cherche le dernier run test, puis fallback legacy
+_dir = os.path.dirname(__file__)
+_candidates = [
+    os.path.join(_dir, "..", "result_eval", "evaluation_test_gemini.json"),
+    os.path.join(_dir, "..", "result_eval", "evaluation_test_claude.json"),
+    os.path.join(_dir, "..", "result_eval", "evaluation_results.json"),
+    os.path.join(_dir, "evaluation_results_gemini.json"),
+    os.path.join(_dir, "evaluation_results_claude.json"),
+    os.path.join(_dir, "evaluation_results.json"),
+]
+RESULTS_FILE = next((p for p in _candidates if os.path.exists(p)), _candidates[0])
 
 with open(RESULTS_FILE, encoding="utf-8") as f:
     data = json.load(f)
+print(f"(source : {RESULTS_FILE})\n")
 
 details = data["details"]
 
